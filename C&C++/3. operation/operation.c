@@ -29,5 +29,7 @@ int main(void){
     int absoluteX = (x > 0) ? x : -x;
     printf("\nx 의 절댓값은 다음과 같습니다: %d", absoluteX);
 
-    double x = pow(2.0, 20.0); // 2의 20제곱
+    double power = pow(2.0, 20.0); // 2의 20제곱
+
+    return 0;
 }
