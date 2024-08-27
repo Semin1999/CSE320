@@ -3,6 +3,6 @@
 int main(void){
     int x;
     x = 3;
-    printf("변수 x의 메모리 크기는 %d 입니다", sizeof(x));
+    printf("변수 x의 메모리 크기는 %d 입니다", x);
     return 0;
 }
