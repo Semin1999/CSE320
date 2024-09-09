@@ -4,7 +4,8 @@
 #include <stdio.h>
 
 int main() {
-    char *str = 
+    /*
+        char *str = 
         "Eeny, meeny, miny, moe,"
         "Catch a tiger by the toe."
         "If he hollers, let him go,"
@@ -28,6 +29,11 @@ int main() {
     make_word_freqs(words, wc, &word_freqs, &uwc);
     print_word_freqs(word_freqs, uwc);
     printf("unique word count: %d\n", unique_word_count(words, wc));
+    
+    */
+
+
+
 
     return 0;
 }
