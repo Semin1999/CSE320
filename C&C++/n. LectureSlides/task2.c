@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-double average(double a, double b);
+double average(double a, double b)
+{
+    return (a + b) / 2;
+}
 
 int main()
 {
@@ -9,13 +12,9 @@ int main()
     scanf("%lf %lf", &a, &b);
     double mean = average(a, b);
 
-    prinf("\n the Mean value for %.2f and %.2f is %.2f\n", a, b, mean);
+    printf("\n the Mean value for %.2f and %.2f is %.2f\n", a, b, mean);
 
     return 0;
 }
 
 
-double average(double a, double b)
-{
-    return (a + b) / 2;
-}
