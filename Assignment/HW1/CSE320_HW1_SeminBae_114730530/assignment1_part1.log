@@ -1,0 +1,2909 @@
+Script started on 2024-09-06 05:39:38+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="94" LINES="27"]
+[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ pwd
+[?2004l/home/ubuntu
+[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ cd ../../usr/include/
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ls
+[?2004laio.h        fcntl.h            lastlog.h   [0m[01;34mnetiucv[0m         sched.h        termio.h
+aliases.h    features-time64.h  libgen.h    [01;34mnetpacket[0m       [01;34mscsi[0m           termios.h
+alloca.h     features.h         libintl.h   [01;34mnetrom[0m          search.h       tgmath.h
+ar.h         fenv.h             limits.h    [01;34mnetrose[0m         semaphore.h    thread_db.h
+argp.h       [01;34mfinclude[0m           link.h      [01;34mnfs[0m             setjmp.h       threads.h
+argz.h       fmtmsg.h           [01;34mlinux[0m       nl_types.h      sgtty.h        time.h
+[01;34marpa[0m         fnmatch.h          locale.h    nss.h           shadow.h       ttyent.h
+[01;34masm-generic[0m  fstab.h            malloc.h    obstack.h       signal.h       uchar.h
+assert.h     fts.h              math.h      paths.h         [01;34msound[0m          ucontext.h
+byteswap.h   ftw.h              mcheck.h    poll.h          spawn.h        ulimit.h
+complex.h    gawkapi.h          memory.h    printf.h        stab.h         unistd.h
+cpio.h       gconv.h            [01;34mmisc[0m        proc_service.h  stdbit.h       utime.h
+crypt.h      [01;34mgdb[0m                mntent.h    [01;34mprotocols[0m       stdc-predef.h  utmp.h
+ctype.h      getopt.h           monetary.h  pthread.h       stdint.h       utmpx.h
+dirent.h     glob.h             mqueue.h    pty.h           stdio.h        values.h
+dlfcn.h      gnu-versions.h     [01;34mmtd[0m         pwd.h           stdio_ext.h    [01;34mvideo[0m
+[01;34mdrm[0m          gnumake.h          [01;34mnet[0m         [01;34mrdma[0m            stdlib.h       wait.h
+elf.h        grp.h              [01;34mnetash[0m      re_comp.h       string.h       wchar.h
+endian.h     gshadow.h          [01;34mnetatalk[0m    regex.h         strings.h      wctype.h
+envz.h       iconv.h            [01;34mnetax25[0m     regexp.h        sudo_plugin.h  wordexp.h
+err.h        ifaddrs.h          netdb.h     [01;34mregulator[0m       syscall.h      [01;34mx86_64-linux-gnu[0m
+errno.h      inttypes.h         [01;34mneteconet[0m   resolv.h        sysexits.h     [01;34mxen[0m
+error.h      [01;34miproute2[0m           [01;34mnetinet[0m     [01;34mrpc[0m             syslog.h       [01;34mxfs[0m
+execinfo.h   langinfo.h         [01;34mnetipx[0m      [01;34mrpcsvc[0m          tar.h
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ls -a
+[?2004l[0m[01;34m.[0m            execinfo.h         lastlog.h   [01;34mnetpacket[0m       search.h       thread_db.h
+[01;34m..[0m           fcntl.h            libgen.h    [01;34mnetrom[0m          semaphore.h    threads.h
+aio.h        features-time64.h  libintl.h   [01;34mnetrose[0m         setjmp.h       time.h
+aliases.h    features.h         limits.h    [01;34mnfs[0m             sgtty.h        ttyent.h
+alloca.h     fenv.h             link.h      nl_types.h      shadow.h       uchar.h
+ar.h         [01;34mfinclude[0m           [01;34mlinux[0m       nss.h           signal.h       ucontext.h
+argp.h       fmtmsg.h           locale.h    obstack.h       [01;34msound[0m          ulimit.h
+argz.h       fnmatch.h          malloc.h    paths.h         spawn.h        unistd.h
+[01;34marpa[0m         fstab.h            math.h      poll.h          stab.h         utime.h
+[01;34masm-generic[0m  fts.h              mcheck.h    printf.h        stdbit.h       utmp.h
+assert.h     ftw.h              memory.h    proc_service.h  stdc-predef.h  utmpx.h
+byteswap.h   gawkapi.h          [01;34mmisc[0m        [01;34mprotocols[0m       stdint.h       values.h
+complex.h    gconv.h            mntent.h    pthread.h       stdio.h        [01;34mvideo[0m
+cpio.h       [01;34mgdb[0m                monetary.h  pty.h           stdio_ext.h    wait.h
+crypt.h      getopt.h           mqueue.h    pwd.h           stdlib.h       wchar.h
+ctype.h      glob.h             [01;34mmtd[0m         [01;34mrdma[0m            string.h       wctype.h
+dirent.h     gnu-versions.h     [01;34mnet[0m         re_comp.h       strings.h      wordexp.h
+dlfcn.h      gnumake.h          [01;34mnetash[0m      regex.h         sudo_plugin.h  [01;34mx86_64-linux-gnu[0m
+[01;34mdrm[0m          grp.h              [01;34mnetatalk[0m    regexp.h        syscall.h      [01;34mxen[0m
+elf.h        gshadow.h          [01;34mnetax25[0m     [01;34mregulator[0m       sysexits.h     [01;34mxfs[0m
+endian.h     iconv.h            netdb.h     resolv.h        syslog.h
+envz.h       ifaddrs.h          [01;34mneteconet[0m   [01;34mrpc[0m             tar.h
+err.h        inttypes.h         [01;34mnetinet[0m     [01;34mrpcsvc[0m          termio.h
+errno.h      [01;34miproute2[0m           [01;34mnetipx[0m      sched.h         termios.h
+error.h      langinfo.h         [01;34mnetiucv[0m     [01;34mscsi[0m            tgmath.h
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ll[Ks -l
+[?2004ltotal 1516
+-rw-r--r--  1 root root   7739 Aug  8 14:47 aio.h
+-rw-r--r--  1 root root   2028 Aug  8 14:47 aliases.h
+-rw-r--r--  1 root root   1203 Aug  8 14:47 alloca.h
+-rw-r--r--  1 root root   1731 Aug  8 14:47 ar.h
+-rw-r--r--  1 root root  25548 Aug  8 14:47 argp.h
+-rw-r--r--  1 root root   6051 Aug  8 14:47 argz.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [0m[01;34marpa[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34masm-generic[0m
+-rw-r--r--  1 root root   5086 Aug  8 14:47 assert.h
+-rw-r--r--  1 root root   1449 Aug  8 14:47 byteswap.h
+-rw-r--r--  1 root root   8140 Aug  8 14:47 complex.h
+-rw-r--r--  1 root root   2268 Aug  8 14:47 cpio.h
+-rw-r--r--  1 root root  11131 Apr  8 16:09 crypt.h
+-rw-r--r--  1 root root  10969 Aug  8 14:47 ctype.h
+-rw-r--r--  1 root root  12617 Aug  8 14:47 dirent.h
+-rw-r--r--  1 root root   8581 Aug  8 14:47 dlfcn.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mdrm[0m
+-rw-r--r--  1 root root 194903 Aug  8 14:47 elf.h
+-rw-r--r--  1 root root   2299 Aug  8 14:47 endian.h
+-rw-r--r--  1 root root   2867 Aug  8 14:47 envz.h
+-rw-r--r--  1 root root   2383 Aug  8 14:47 err.h
+-rw-r--r--  1 root root   1679 Aug  8 14:47 errno.h
+-rw-r--r--  1 root root   2430 Aug  8 14:47 error.h
+-rw-r--r--  1 root root   1523 Aug  8 14:47 execinfo.h
+-rw-r--r--  1 root root  11442 Aug  8 14:47 fcntl.h
+-rw-r--r--  1 root root   1409 Aug  8 14:47 features-time64.h
+-rw-r--r--  1 root root  18527 Aug  8 14:47 features.h
+-rw-r--r--  1 root root   5788 Aug  8 14:47 fenv.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mfinclude[0m
+-rw-r--r--  1 root root   3240 Aug  8 14:47 fmtmsg.h
+-rw-r--r--  1 root root   2296 Aug  8 14:47 fnmatch.h
+-rw-r--r--  1 root root   3111 Aug  8 14:47 fstab.h
+-rw-r--r--  1 root root   9579 Aug  8 14:47 fts.h
+-rw-r--r--  1 root root   6343 Aug  8 14:47 ftw.h
+-rw-r--r--  1 root root  41697 Mar 31 05:33 gawkapi.h
+-rw-r--r--  1 root root   4211 Aug  8 14:47 gconv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:01 [01;34mgdb[0m
+-rw-r--r--  1 root root   1469 Aug  8 14:47 getopt.h
+-rw-r--r--  1 root root   7299 Aug  8 14:47 glob.h
+-rw-r--r--  1 root root   2343 Aug  8 14:47 gnu-versions.h
+-rw-r--r--  1 root root   2912 Apr  8 16:12 gnumake.h
+-rw-r--r--  1 root root   6847 Aug  8 14:47 grp.h
+-rw-r--r--  1 root root   4689 Aug  8 14:47 gshadow.h
+-rw-r--r--  1 root root   1912 Aug  8 14:47 iconv.h
+-rw-r--r--  1 root root   2841 Aug  8 14:47 ifaddrs.h
+-rw-r--r--  1 root root  11309 Aug  8 14:47 inttypes.h
+drwxr-xr-x  2 root root   4096 Aug  1 08:35 [01;34miproute2[0m
+-rw-r--r--  1 root root  17849 Aug  8 14:47 langinfo.h
+-rw-r--r--  1 root root    126 Aug  8 14:47 lastlog.h
+-rw-r--r--  1 root root   1386 Aug  8 14:47 libgen.h
+-rw-r--r--  1 root root   4580 Aug  8 14:47 libintl.h
+-rw-r--r--  1 root root   5706 Aug  8 14:47 limits.h
+-rw-r--r--  1 root root   7801 Aug  8 14:47 link.h
+drwxr-xr-x 29 root root  28672 Aug 27 02:00 [01;34mlinux[0m
+-rw-r--r--  1 root root   7675 Aug  8 14:47 locale.h
+-rw-r--r--  1 root root   5984 Aug  8 14:47 malloc.h
+-rw-r--r--  1 root root  50939 Aug  8 14:47 math.h
+-rw-r--r--  1 root root   2435 Aug  8 14:47 mcheck.h
+-rw-r--r--  1 root root    956 Aug  8 14:47 memory.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mmisc[0m
+-rw-r--r--  1 root root   3359 Aug  8 14:47 mntent.h
+-rw-r--r--  1 root root   1966 Aug  8 14:47 monetary.h
+-rw-r--r--  1 root root   4603 Aug  8 14:47 mqueue.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mmtd[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetash[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetatalk[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetax25[0m
+-rw-r--r--  1 root root  28461 Aug  8 14:47 netdb.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mneteconet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetinet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetipx[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetiucv[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetpacket[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrom[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrose[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnfs[0m
+-rw-r--r--  1 root root   1753 Aug  8 14:47 nl_types.h
+-rw-r--r--  1 root root  14408 Aug  8 14:47 nss.h
+-rw-r--r--  1 root root  21307 Aug  8 14:47 obstack.h
+-rw-r--r--  1 root root   2983 Aug  8 14:47 paths.h
+-rw-r--r--  1 root root     22 Aug  8 14:47 poll.h
+-rw-r--r--  1 root root   6875 Aug  8 14:47 printf.h
+-rw-r--r--  1 root root   3477 Aug  8 14:47 proc_service.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mprotocols[0m
+-rw-r--r--  1 root root  48379 Aug  8 14:47 pthread.h
+-rw-r--r--  1 root root   1570 Aug  8 14:47 pty.h
+-rw-r--r--  1 root root   6317 Aug  8 14:47 pwd.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mrdma[0m
+-rw-r--r--  1 root root    963 Aug  8 14:47 re_comp.h
+-rw-r--r--  1 root root  25904 Aug  8 14:47 regex.h
+-rw-r--r--  1 root root   1387 Aug  8 14:47 regexp.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mregulator[0m
+-rw-r--r--  1 root root  12312 Aug  8 14:47 resolv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpc[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpcsvc[0m
+-rw-r--r--  1 root root   5038 Aug  8 14:47 sched.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mscsi[0m
+-rw-r--r--  1 root root   5450 Aug  8 14:47 search.h
+-rw-r--r--  1 root root   3464 Aug  8 14:47 semaphore.h
+-rw-r--r--  1 root root   3190 Aug  8 14:47 setjmp.h
+-rw-r--r--  1 root root   1344 Aug  8 14:47 sgtty.h
+-rw-r--r--  1 root root   5632 Aug  8 14:47 shadow.h
+-rw-r--r--  1 root root  13040 Aug  8 14:47 signal.h
+drwxr-xr-x  4 root root   4096 Aug 27 02:00 [01;34msound[0m
+-rw-r--r--  1 root root   8388 Aug  8 14:47 spawn.h
+-rw-r--r--  1 root root    264 Aug  8 14:47 stab.h
+-rw-r--r--  1 root root  26902 Aug  8 14:47 stdbit.h
+-rw-r--r--  1 root root   2462 Aug  8 14:47 stdc-predef.h
+-rw-r--r--  1 root root   8155 Aug  8 14:47 stdint.h
+-rw-r--r--  1 root root  34649 Aug  8 14:47 stdio.h
+-rw-r--r--  1 root root   2800 Aug  8 14:47 stdio_ext.h
+-rw-r--r--  1 root root  41032 Aug  8 14:47 stdlib.h
+-rw-r--r--  1 root root  19969 Aug  8 14:47 string.h
+-rw-r--r--  1 root root   4753 Aug  8 14:47 strings.h
+-rw-r--r--  1 root root  11959 Apr  8 14:50 sudo_plugin.h
+-rw-r--r--  1 root root     25 Aug  8 14:47 syscall.h
+-rw-r--r--  1 root root   5232 Aug  8 14:47 sysexits.h
+-rw-r--r--  1 root root     24 Aug  8 14:47 syslog.h
+-rw-r--r--  1 root root   3752 Aug  8 14:47 tar.h
+-rw-r--r--  1 root root    214 Aug  8 14:47 termio.h
+-rw-r--r--  1 root root   3599 Aug  8 14:47 termios.h
+-rw-r--r--  1 root root  47627 Aug  8 14:47 tgmath.h
+-rw-r--r--  1 root root  16024 Aug  8 14:47 thread_db.h
+-rw-r--r--  1 root root   7799 Aug  8 14:47 threads.h
+-rw-r--r--  1 root root  15124 Aug  8 14:47 time.h
+-rw-r--r--  1 root root   2494 Aug  8 14:47 ttyent.h
+-rw-r--r--  1 root root   3117 Aug  8 14:47 uchar.h
+-rw-r--r--  1 root root   2037 Aug  8 14:47 ucontext.h
+-rw-r--r--  1 root root   1584 Aug  8 14:47 ulimit.h
+-rw-r--r--  1 root root  45053 Aug  8 14:47 unistd.h
+-rw-r--r--  1 root root   1905 Aug  8 14:47 utime.h
+-rw-r--r--  1 root root   3223 Aug  8 14:47 utmp.h
+-rw-r--r--  1 root root   4100 Aug  8 14:47 utmpx.h
+-rw-r--r--  1 root root   1956 Aug  8 14:47 values.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mvideo[0m
+-rw-r--r--  1 root root     22 Aug  8 14:47 wait.h
+-rw-r--r--  1 root root  39102 Aug  8 14:47 wchar.h
+-rw-r--r--  1 root root   5549 Aug  8 14:47 wctype.h
+-rw-r--r--  1 root root   2502 Aug  8 14:47 wordexp.h
+drwxr-xr-x  6 root root   4096 Aug 27 02:00 [01;34mx86_64-linux-gnu[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mxen[0m
+drwxr-xr-x  2 root root   4096 Mar 31 17:31 [01;34mxfs[0m
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ls -al
+[?2004ltotal 1524
+drwxr-xr-x 34 root root   4096 Aug 27 02:03 [0m[01;34m.[0m
+drwxr-xr-x 12 root root   4096 Aug  1 08:35 [01;34m..[0m
+-rw-r--r--  1 root root   7739 Aug  8 14:47 aio.h
+-rw-r--r--  1 root root   2028 Aug  8 14:47 aliases.h
+-rw-r--r--  1 root root   1203 Aug  8 14:47 alloca.h
+-rw-r--r--  1 root root   1731 Aug  8 14:47 ar.h
+-rw-r--r--  1 root root  25548 Aug  8 14:47 argp.h
+-rw-r--r--  1 root root   6051 Aug  8 14:47 argz.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34marpa[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34masm-generic[0m
+-rw-r--r--  1 root root   5086 Aug  8 14:47 assert.h
+-rw-r--r--  1 root root   1449 Aug  8 14:47 byteswap.h
+-rw-r--r--  1 root root   8140 Aug  8 14:47 complex.h
+-rw-r--r--  1 root root   2268 Aug  8 14:47 cpio.h
+-rw-r--r--  1 root root  11131 Apr  8 16:09 crypt.h
+-rw-r--r--  1 root root  10969 Aug  8 14:47 ctype.h
+-rw-r--r--  1 root root  12617 Aug  8 14:47 dirent.h
+-rw-r--r--  1 root root   8581 Aug  8 14:47 dlfcn.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mdrm[0m
+-rw-r--r--  1 root root 194903 Aug  8 14:47 elf.h
+-rw-r--r--  1 root root   2299 Aug  8 14:47 endian.h
+-rw-r--r--  1 root root   2867 Aug  8 14:47 envz.h
+-rw-r--r--  1 root root   2383 Aug  8 14:47 err.h
+-rw-r--r--  1 root root   1679 Aug  8 14:47 errno.h
+-rw-r--r--  1 root root   2430 Aug  8 14:47 error.h
+-rw-r--r--  1 root root   1523 Aug  8 14:47 execinfo.h
+-rw-r--r--  1 root root  11442 Aug  8 14:47 fcntl.h
+-rw-r--r--  1 root root   1409 Aug  8 14:47 features-time64.h
+-rw-r--r--  1 root root  18527 Aug  8 14:47 features.h
+-rw-r--r--  1 root root   5788 Aug  8 14:47 fenv.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mfinclude[0m
+-rw-r--r--  1 root root   3240 Aug  8 14:47 fmtmsg.h
+-rw-r--r--  1 root root   2296 Aug  8 14:47 fnmatch.h
+-rw-r--r--  1 root root   3111 Aug  8 14:47 fstab.h
+-rw-r--r--  1 root root   9579 Aug  8 14:47 fts.h
+-rw-r--r--  1 root root   6343 Aug  8 14:47 ftw.h
+-rw-r--r--  1 root root  41697 Mar 31 05:33 gawkapi.h
+-rw-r--r--  1 root root   4211 Aug  8 14:47 gconv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:01 [01;34mgdb[0m
+-rw-r--r--  1 root root   1469 Aug  8 14:47 getopt.h
+-rw-r--r--  1 root root   7299 Aug  8 14:47 glob.h
+-rw-r--r--  1 root root   2343 Aug  8 14:47 gnu-versions.h
+-rw-r--r--  1 root root   2912 Apr  8 16:12 gnumake.h
+-rw-r--r--  1 root root   6847 Aug  8 14:47 grp.h
+-rw-r--r--  1 root root   4689 Aug  8 14:47 gshadow.h
+-rw-r--r--  1 root root   1912 Aug  8 14:47 iconv.h
+-rw-r--r--  1 root root   2841 Aug  8 14:47 ifaddrs.h
+-rw-r--r--  1 root root  11309 Aug  8 14:47 inttypes.h
+drwxr-xr-x  2 root root   4096 Aug  1 08:35 [01;34miproute2[0m
+-rw-r--r--  1 root root  17849 Aug  8 14:47 langinfo.h
+-rw-r--r--  1 root root    126 Aug  8 14:47 lastlog.h
+-rw-r--r--  1 root root   1386 Aug  8 14:47 libgen.h
+-rw-r--r--  1 root root   4580 Aug  8 14:47 libintl.h
+-rw-r--r--  1 root root   5706 Aug  8 14:47 limits.h
+-rw-r--r--  1 root root   7801 Aug  8 14:47 link.h
+drwxr-xr-x 29 root root  28672 Aug 27 02:00 [01;34mlinux[0m
+-rw-r--r--  1 root root   7675 Aug  8 14:47 locale.h
+-rw-r--r--  1 root root   5984 Aug  8 14:47 malloc.h
+-rw-r--r--  1 root root  50939 Aug  8 14:47 math.h
+-rw-r--r--  1 root root   2435 Aug  8 14:47 mcheck.h
+-rw-r--r--  1 root root    956 Aug  8 14:47 memory.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mmisc[0m
+-rw-r--r--  1 root root   3359 Aug  8 14:47 mntent.h
+-rw-r--r--  1 root root   1966 Aug  8 14:47 monetary.h
+-rw-r--r--  1 root root   4603 Aug  8 14:47 mqueue.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mmtd[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetash[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetatalk[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetax25[0m
+-rw-r--r--  1 root root  28461 Aug  8 14:47 netdb.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mneteconet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetinet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetipx[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetiucv[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetpacket[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrom[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrose[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnfs[0m
+-rw-r--r--  1 root root   1753 Aug  8 14:47 nl_types.h
+-rw-r--r--  1 root root  14408 Aug  8 14:47 nss.h
+-rw-r--r--  1 root root  21307 Aug  8 14:47 obstack.h
+-rw-r--r--  1 root root   2983 Aug  8 14:47 paths.h
+-rw-r--r--  1 root root     22 Aug  8 14:47 poll.h
+-rw-r--r--  1 root root   6875 Aug  8 14:47 printf.h
+-rw-r--r--  1 root root   3477 Aug  8 14:47 proc_service.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mprotocols[0m
+-rw-r--r--  1 root root  48379 Aug  8 14:47 pthread.h
+-rw-r--r--  1 root root   1570 Aug  8 14:47 pty.h
+-rw-r--r--  1 root root   6317 Aug  8 14:47 pwd.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mrdma[0m
+-rw-r--r--  1 root root    963 Aug  8 14:47 re_comp.h
+-rw-r--r--  1 root root  25904 Aug  8 14:47 regex.h
+-rw-r--r--  1 root root   1387 Aug  8 14:47 regexp.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mregulator[0m
+-rw-r--r--  1 root root  12312 Aug  8 14:47 resolv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpc[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpcsvc[0m
+-rw-r--r--  1 root root   5038 Aug  8 14:47 sched.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mscsi[0m
+-rw-r--r--  1 root root   5450 Aug  8 14:47 search.h
+-rw-r--r--  1 root root   3464 Aug  8 14:47 semaphore.h
+-rw-r--r--  1 root root   3190 Aug  8 14:47 setjmp.h
+-rw-r--r--  1 root root   1344 Aug  8 14:47 sgtty.h
+-rw-r--r--  1 root root   5632 Aug  8 14:47 shadow.h
+-rw-r--r--  1 root root  13040 Aug  8 14:47 signal.h
+drwxr-xr-x  4 root root   4096 Aug 27 02:00 [01;34msound[0m
+-rw-r--r--  1 root root   8388 Aug  8 14:47 spawn.h
+-rw-r--r--  1 root root    264 Aug  8 14:47 stab.h
+-rw-r--r--  1 root root  26902 Aug  8 14:47 stdbit.h
+-rw-r--r--  1 root root   2462 Aug  8 14:47 stdc-predef.h
+-rw-r--r--  1 root root   8155 Aug  8 14:47 stdint.h
+-rw-r--r--  1 root root  34649 Aug  8 14:47 stdio.h
+-rw-r--r--  1 root root   2800 Aug  8 14:47 stdio_ext.h
+-rw-r--r--  1 root root  41032 Aug  8 14:47 stdlib.h
+-rw-r--r--  1 root root  19969 Aug  8 14:47 string.h
+-rw-r--r--  1 root root   4753 Aug  8 14:47 strings.h
+-rw-r--r--  1 root root  11959 Apr  8 14:50 sudo_plugin.h
+-rw-r--r--  1 root root     25 Aug  8 14:47 syscall.h
+-rw-r--r--  1 root root   5232 Aug  8 14:47 sysexits.h
+-rw-r--r--  1 root root     24 Aug  8 14:47 syslog.h
+-rw-r--r--  1 root root   3752 Aug  8 14:47 tar.h
+-rw-r--r--  1 root root    214 Aug  8 14:47 termio.h
+-rw-r--r--  1 root root   3599 Aug  8 14:47 termios.h
+-rw-r--r--  1 root root  47627 Aug  8 14:47 tgmath.h
+-rw-r--r--  1 root root  16024 Aug  8 14:47 thread_db.h
+-rw-r--r--  1 root root   7799 Aug  8 14:47 threads.h
+-rw-r--r--  1 root root  15124 Aug  8 14:47 time.h
+-rw-r--r--  1 root root   2494 Aug  8 14:47 ttyent.h
+-rw-r--r--  1 root root   3117 Aug  8 14:47 uchar.h
+-rw-r--r--  1 root root   2037 Aug  8 14:47 ucontext.h
+-rw-r--r--  1 root root   1584 Aug  8 14:47 ulimit.h
+-rw-r--r--  1 root root  45053 Aug  8 14:47 unistd.h
+-rw-r--r--  1 root root   1905 Aug  8 14:47 utime.h
+-rw-r--r--  1 root root   3223 Aug  8 14:47 utmp.h
+-rw-r--r--  1 root root   4100 Aug  8 14:47 utmpx.h
+-rw-r--r--  1 root root   1956 Aug  8 14:47 values.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mvideo[0m
+-rw-r--r--  1 root root     22 Aug  8 14:47 wait.h
+-rw-r--r--  1 root root  39102 Aug  8 14:47 wchar.h
+-rw-r--r--  1 root root   5549 Aug  8 14:47 wctype.h
+-rw-r--r--  1 root root   2502 Aug  8 14:47 wordexp.h
+drwxr-xr-x  6 root root   4096 Aug 27 02:00 [01;34mx86_64-linux-gnu[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mxen[0m
+drwxr-xr-x  2 root root   4096 Mar 31 17:31 [01;34mxfs[0m
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ls -R
+[?2004l.:
+aio.h        fcntl.h            lastlog.h   [0m[01;34mnetiucv[0m         sched.h        termio.h
+aliases.h    features-time64.h  libgen.h    [01;34mnetpacket[0m       [01;34mscsi[0m           termios.h
+alloca.h     features.h         libintl.h   [01;34mnetrom[0m          search.h       tgmath.h
+ar.h         fenv.h             limits.h    [01;34mnetrose[0m         semaphore.h    thread_db.h
+argp.h       [01;34mfinclude[0m           link.h      [01;34mnfs[0m             setjmp.h       threads.h
+argz.h       fmtmsg.h           [01;34mlinux[0m       nl_types.h      sgtty.h        time.h
+[01;34marpa[0m         fnmatch.h          locale.h    nss.h           shadow.h       ttyent.h
+[01;34masm-generic[0m  fstab.h            malloc.h    obstack.h       signal.h       uchar.h
+assert.h     fts.h              math.h      paths.h         [01;34msound[0m          ucontext.h
+byteswap.h   ftw.h              mcheck.h    poll.h          spawn.h        ulimit.h
+complex.h    gawkapi.h          memory.h    printf.h        stab.h         unistd.h
+cpio.h       gconv.h            [01;34mmisc[0m        proc_service.h  stdbit.h       utime.h
+crypt.h      [01;34mgdb[0m                mntent.h    [01;34mprotocols[0m       stdc-predef.h  utmp.h
+ctype.h      getopt.h           monetary.h  pthread.h       stdint.h       utmpx.h
+dirent.h     glob.h             mqueue.h    pty.h           stdio.h        values.h
+dlfcn.h      gnu-versions.h     [01;34mmtd[0m         pwd.h           stdio_ext.h    [01;34mvideo[0m
+[01;34mdrm[0m          gnumake.h          [01;34mnet[0m         [01;34mrdma[0m            stdlib.h       wait.h
+elf.h        grp.h              [01;34mnetash[0m      re_comp.h       string.h       wchar.h
+endian.h     gshadow.h          [01;34mnetatalk[0m    regex.h         strings.h      wctype.h
+envz.h       iconv.h            [01;34mnetax25[0m     regexp.h        sudo_plugin.h  wordexp.h
+err.h        ifaddrs.h          netdb.h     [01;34mregulator[0m       syscall.h      [01;34mx86_64-linux-gnu[0m
+errno.h      inttypes.h         [01;34mneteconet[0m   resolv.h        sysexits.h     [01;34mxen[0m
+error.h      [01;34miproute2[0m           [01;34mnetinet[0m     [01;34mrpc[0m             syslog.h       [01;34mxfs[0m
+execinfo.h   langinfo.h         [01;34mnetipx[0m      [01;34mrpcsvc[0m          tar.h
+
+./arpa:
+ftp.h  inet.h  nameser.h  nameser_compat.h  telnet.h  tftp.h
+
+./asm-generic:
+auxvec.h          int-l64.h      mman.h         setup.h        stat.h             ucontext.h
+bitsperlong.h     int-ll64.h     msgbuf.h       shmbuf.h       statfs.h           unistd.h
+bpf_perf_event.h  ioctl.h        param.h        siginfo.h      swab.h
+errno-base.h      ioctls.h       poll.h         signal-defs.h  termbits-common.h
+errno.h           ipcbuf.h       posix_types.h  signal.h       termbits.h
+fcntl.h           kvm_para.h     resource.h     socket.h       termios.h
+hugetlb_encode.h  mman-common.h  sembuf.h       sockios.h      types.h
+
+./drm:
+amdgpu_drm.h  drm_sarea.h         ivpu_accel.h   panfrost_drm.h  tegra_drm.h    vmwgfx_drm.h
+armada_drm.h  etnaviv_drm.h       lima_drm.h     pvr_drm.h       v3d_drm.h      xe_drm.h
+drm.h         exynos_drm.h        msm_drm.h      qaic_accel.h    vc4_drm.h
+drm_fourcc.h  habanalabs_accel.h  nouveau_drm.h  qxl_drm.h       vgem_drm.h
+drm_mode.h    i915_drm.h          omap_drm.h     radeon_drm.h    virtgpu_drm.h
+
+./finclude:
+[01;34mx86_64-linux-gnu[0m
+
+./finclude/x86_64-linux-gnu:
+math-vector-fortran.h
+
+./gdb:
+jit-reader.h
+
+./iproute2:
+bpf_elf.h
+
+./linux:
+a.out.h               gen_stats.h          mpls_iptunnel.h      serial_reg.h
+acct.h                genetlink.h          mptcp.h              serio.h
+acrn.h                [01;34mgenwqe[0m               mptcp_pm.h           sev-guest.h
+adb.h                 gfs2_ondisk.h        mqueue.h             shm.h
+adfs_fs.h             gpio.h               mroute.h             signal.h
+affs_hardblocks.h     gsmmux.h             mroute6.h            signalfd.h
+agpgart.h             gtp.h                mrp_bridge.h         smc.h
+aio_abi.h             handshake.h          msdos_fs.h           smc_diag.h
+am437x-vpfe.h         hash_info.h          msg.h                smiapp.h
+amt.h                 [01;34mhdlc[0m                 mtio.h               snmp.h
+[01;34mandroid[0m               hdlc.h               nbd-netlink.h        sock_diag.h
+apm_bios.h            hdlcdrv.h            nbd.h                socket.h
+apparmor.h            hdreg.h              ncsi.h               sockios.h
+arcfb.h               hid.h                ndctl.h              sonet.h
+arm_sdei.h            hiddev.h             neighbour.h          sonypi.h
+aspeed-lpc-ctrl.h     hidraw.h             net.h                sound.h
+aspeed-p2a-ctrl.h     hpet.h               net_dropmon.h        soundcard.h
+aspeed-video.h        [01;34mhsi[0m                  net_namespace.h      [01;34mspi[0m
+atalk.h               hsr_netlink.h        net_tstamp.h         stat.h
+atm.h                 hw_breakpoint.h      netconf.h            stddef.h
+atm_eni.h             hyperv.h             netdev.h             stm.h
+atm_he.h              i2c-dev.h            netdevice.h          string.h
+atm_idt77105.h        i2c.h                [01;34mnetfilter[0m            [01;34msunrpc[0m
+atm_nicstar.h         i2o-dev.h            netfilter.h          [01;34msurface_aggregator[0m
+atm_tcp.h             i8k.h                [01;34mnetfilter_arp[0m        suspend_ioctls.h
+atm_zatm.h            icmp.h               netfilter_arp.h      swab.h
+atmapi.h              icmpv6.h             [01;34mnetfilter_bridge[0m     switchtec_ioctl.h
+atmarp.h              idxd.h               netfilter_bridge.h   sync_file.h
+atmbr2684.h           if.h                 [01;34mnetfilter_ipv4[0m       synclink.h
+atmclip.h             if_addr.h            netfilter_ipv4.h     sysctl.h
+atmdev.h              if_addrlabel.h       [01;34mnetfilter_ipv6[0m       sysinfo.h
+atmioc.h              if_alg.h             netfilter_ipv6.h     target_core_user.h
+atmlec.h              if_arcnet.h          netlink.h            taskstats.h
+atmmpc.h              if_arp.h             netlink_diag.h       [01;34mtc_act[0m
+atmppp.h              if_bonding.h         netrom.h             [01;34mtc_ematch[0m
+atmsap.h              if_bridge.h          nexthop.h            tcp.h
+atmsvc.h              if_cablemodem.h      nfc.h                tcp_metrics.h
+audit.h               if_eql.h             nfs.h                tdx-guest.h
+auto_dev-ioctl.h      if_ether.h           nfs2.h               tee.h
+auto_fs.h             if_fc.h              nfs3.h               termios.h
+auto_fs4.h            if_fddi.h            nfs4.h               thermal.h
+auxvec.h              if_hippi.h           nfs4_mount.h         thp7312.h
+ax25.h                if_infiniband.h      nfs_fs.h             time.h
+batadv_packet.h       if_link.h            nfs_idmap.h          time_types.h
+batman_adv.h          if_ltalk.h           nfs_mount.h          timerfd.h
+baycom.h              if_macsec.h          nfsacl.h             times.h
+bcm933xx_hcs.h        if_packet.h          [01;34mnfsd[0m                 timex.h
+bfs_fs.h              if_phonet.h          nfsd_netlink.h       tiocl.h
+binfmts.h             if_plip.h            nilfs2_api.h         tipc.h
+blkpg.h               if_ppp.h             nilfs2_ondisk.h      tipc_config.h
+blktrace_api.h        if_pppol2tp.h        nitro_enclaves.h     tipc_netlink.h
+blkzoned.h            if_pppox.h           nl80211-vnd-intel.h  tipc_sockets_diag.h
+bpf.h                 if_slip.h            nl80211.h            tls.h
+bpf_common.h          if_team.h            npcm-video.h         toshiba.h
+bpf_perf_event.h      if_tun.h             nsfs.h               tps6594_pfsm.h
+bpqether.h            if_tunnel.h          nsm.h                tty.h
+bsg.h                 if_vlan.h            nubus.h              tty_flags.h
+bt-bmc.h              if_x25.h             nvme_ioctl.h         types.h
+btf.h                 if_xdp.h             nvram.h              ublk_cmd.h
+btrfs.h               ife.h                omap3isp.h           udf_fs_i.h
+btrfs_tree.h          igmp.h               omapfb.h             udmabuf.h
+[01;34mbyteorder[0m             [01;34miio[0m                  oom.h                udp.h
+cachefiles.h          ila.h                openat2.h            uhid.h
+[01;34mcaif[0m                  in.h                 openvswitch.h        uinput.h
+[01;34mcan[0m                   in6.h                packet_diag.h        uio.h
+can.h                 in_route.h           param.h              uleds.h
+capability.h          inet_diag.h          parport.h            ultrasound.h
+capi.h                inotify.h            patchkey.h           um_timetravel.h
+cciss_defs.h          input-event-codes.h  pci.h                un.h
+cciss_ioctl.h         input.h              pci_regs.h           unistd.h
+ccs.h                 io_uring.h           pcitest.h            unix_diag.h
+cdrom.h               ioam6.h              perf_event.h         [01;34musb[0m
+cec-funcs.h           ioam6_genl.h         personality.h        usbdevice_fs.h
+cec.h                 ioam6_iptunnel.h     pfkeyv2.h            usbip.h
+cfm_bridge.h          ioctl.h              pfrut.h              user_events.h
+cgroupstats.h         iommu.h              pg.h                 userfaultfd.h
+chio.h                iommufd.h            phantom.h            userio.h
+[01;34mcifs[0m                  ioprio.h             phonet.h             utime.h
+close_range.h         ip.h                 pidfd.h              utsname.h
+cn_proc.h             ip6_tunnel.h         pkt_cls.h            uuid.h
+coda.h                ip_vs.h              pkt_sched.h          uvcvideo.h
+coff.h                ipc.h                pktcdvd.h            v4l2-common.h
+comedi.h              ipmi.h               pmu.h                v4l2-controls.h
+connector.h           ipmi_bmc.h           poll.h               v4l2-dv-timings.h
+const.h               ipmi_msgdefs.h       posix_acl.h          v4l2-mediabus.h
+coresight-stm.h       ipmi_ssif_bmc.h      posix_acl_xattr.h    v4l2-subdev.h
+counter.h             ipsec.h              posix_types.h        vbox_err.h
+cramfs_fs.h           ipv6.h               ppdev.h              vbox_vmmdev_types.h
+cryptouser.h          ipv6_route.h         ppp-comp.h           vboxguest.h
+cuda.h                irqnr.h              ppp-ioctl.h          vdpa.h
+cxl_mem.h             [01;34misdn[0m                 ppp_defs.h           vduse.h
+cyclades.h            iso_fs.h             pps.h                version.h
+cycx_cfm.h            isst_if.h            pr.h                 veth.h
+dcbnl.h               ivtv.h               prctl.h              vfio.h
+dccp.h                ivtvfb.h             psample.h            vfio_ccw.h
+devlink.h             jffs2.h              psci.h               vfio_zdev.h
+dlm.h                 joystick.h           psp-dbc.h            vhost.h
+dlm_device.h          kcm.h                psp-sev.h            vhost_types.h
+dlm_plock.h           kcmp.h               ptp_clock.h          videodev2.h
+dlmconstants.h        kcov.h               ptrace.h             virtio_9p.h
+dm-ioctl.h            kd.h                 qemu_fw_cfg.h        virtio_balloon.h
+dm-log-userspace.h    kdev_t.h             qnx4_fs.h            virtio_blk.h
+dma-buf.h             kernel-page-flags.h  qnxtypes.h           virtio_bt.h
+dma-heap.h            kernel.h             qrtr.h               virtio_config.h
+dns_resolver.h        kernelcapi.h         quota.h              virtio_console.h
+dpll.h                kexec.h              radeonfb.h           virtio_crypto.h
+dqblk_xfs.h           keyboard.h           [01;34mraid[0m                 virtio_fs.h
+[01;34mdvb[0m                   keyctl.h             random.h             virtio_gpio.h
+dw100.h               kfd_ioctl.h          rds.h                virtio_gpu.h
+edd.h                 kfd_sysfs.h          reboot.h             virtio_i2c.h
+efs_fs_sb.h           kvm.h                reiserfs_fs.h        virtio_ids.h
+elf-em.h              kvm_para.h           reiserfs_xattr.h     virtio_input.h
+elf-fdpic.h           l2tp.h               remoteproc_cdev.h    virtio_iommu.h
+elf.h                 landlock.h           resource.h           virtio_mem.h
+errno.h               libc-compat.h        rfkill.h             virtio_mmio.h
+errqueue.h            limits.h             rio_cm_cdev.h        virtio_net.h
+erspan.h              lirc.h               rio_mport_cdev.h     virtio_pci.h
+ethtool.h             llc.h                rkisp1-config.h      virtio_pcidev.h
+ethtool_netlink.h     loadpin.h            romfs_fs.h           virtio_pmem.h
+eventfd.h             loop.h               rose.h               virtio_ring.h
+eventpoll.h           lp.h                 route.h              virtio_rng.h
+ext4.h                lsm.h                rpl.h                virtio_scmi.h
+f2fs.h                lwtunnel.h           rpl_iptunnel.h       virtio_scsi.h
+fadvise.h             magic.h              rpmsg.h              virtio_snd.h
+falloc.h              major.h              rpmsg_types.h        virtio_types.h
+fanotify.h            map_to_14segment.h   rseq.h               virtio_vsock.h
+fb.h                  map_to_7segment.h    rtc.h                vm_sockets.h
+fcntl.h               matroxfb.h           rtnetlink.h          vm_sockets_diag.h
+fd.h                  max2175.h            rxrpc.h              vmcore.h
+fdreg.h               mctp.h               scc.h                vsockmon.h
+fib_rules.h           mdio.h               [01;34msched[0m                vt.h
+fiemap.h              media-bus-format.h   sched.h              vtpm_proxy.h
+filter.h              media.h              scif_ioctl.h         wait.h
+firewire-cdev.h       mei.h                screen_info.h        watch_queue.h
+firewire-constants.h  mei_uuid.h           sctp.h               watchdog.h
+fou.h                 membarrier.h         seccomp.h            wireguard.h
+fpga-dfl.h            memfd.h              securebits.h         wireless.h
+fs.h                  mempolicy.h          sed-opal.h           wmi.h
+fscrypt.h             mii.h                seg6.h               wwan.h
+fsi.h                 minix_fs.h           seg6_genl.h          x25.h
+fsl_hypervisor.h      [01;34mmisc[0m                 seg6_hmac.h          xattr.h
+fsl_mc.h              mman.h               seg6_iptunnel.h      xdp_diag.h
+fsmap.h               [01;34mmmc[0m                  seg6_local.h         xfrm.h
+fsverity.h            mmtimer.h            selinux_netlink.h    xilinx-v4l2-controls.h
+fuse.h                module.h             sem.h                zorro.h
+futex.h               mount.h              serial.h             zorro_ids.h
+gameport.h            mpls.h               serial_core.h
+
+./linux/android:
+binder.h  binderfs.h
+
+./linux/byteorder:
+big_endian.h  little_endian.h
+
+./linux/caif:
+caif_socket.h  if_caif.h
+
+./linux/can:
+bcm.h  error.h  gw.h  isotp.h  j1939.h  netlink.h  raw.h  vxcan.h
+
+./linux/cifs:
+cifs_mount.h  cifs_netlink.h
+
+./linux/dvb:
+audio.h  ca.h  dmx.h  frontend.h  net.h  osd.h  version.h  video.h
+
+./linux/genwqe:
+genwqe_card.h
+
+./linux/hdlc:
+ioctl.h
+
+./linux/hsi:
+cs-protocol.h  hsi_char.h
+
+./linux/iio:
+buffer.h  events.h  types.h
+
+./linux/isdn:
+capicmd.h
+
+./linux/misc:
+bcm_vk.h
+
+./linux/mmc:
+ioctl.h
+
+./linux/netfilter:
+[01;34mipset[0m                        xt_CHECKSUM.h     xt_cluster.h    xt_multiport.h
+nf_conntrack_common.h        xt_CLASSIFY.h     xt_comment.h    xt_nfacct.h
+nf_conntrack_ftp.h           xt_CONNMARK.h     xt_connbytes.h  xt_osf.h
+nf_conntrack_sctp.h          xt_CONNSECMARK.h  xt_connlabel.h  xt_owner.h
+nf_conntrack_tcp.h           xt_CT.h           xt_connlimit.h  xt_physdev.h
+nf_conntrack_tuple_common.h  xt_DSCP.h         xt_connmark.h   xt_pkttype.h
+nf_log.h                     xt_HMARK.h        xt_conntrack.h  xt_policy.h
+nf_nat.h                     xt_IDLETIMER.h    xt_cpu.h        xt_quota.h
+nf_synproxy.h                xt_LED.h          xt_dccp.h       xt_rateest.h
+nf_tables.h                  xt_LOG.h          xt_devgroup.h   xt_realm.h
+nf_tables_compat.h           xt_MARK.h         xt_dscp.h       xt_recent.h
+nfnetlink.h                  xt_NFLOG.h        xt_ecn.h        xt_rpfilter.h
+nfnetlink_acct.h             xt_NFQUEUE.h      xt_esp.h        xt_sctp.h
+nfnetlink_compat.h           xt_RATEEST.h      xt_hashlimit.h  xt_set.h
+nfnetlink_conntrack.h        xt_SECMARK.h      xt_helper.h     xt_socket.h
+nfnetlink_cthelper.h         xt_SYNPROXY.h     xt_ipcomp.h     xt_state.h
+nfnetlink_cttimeout.h        xt_TCPMSS.h       xt_iprange.h    xt_statistic.h
+nfnetlink_hook.h             xt_TCPOPTSTRIP.h  xt_ipvs.h       xt_string.h
+nfnetlink_log.h              xt_TEE.h          xt_l2tp.h       xt_tcpmss.h
+nfnetlink_osf.h              xt_TPROXY.h       xt_length.h     xt_tcpudp.h
+nfnetlink_queue.h            xt_addrtype.h     xt_limit.h      xt_time.h
+x_tables.h                   xt_bpf.h          xt_mac.h        xt_u32.h
+xt_AUDIT.h                   xt_cgroup.h       xt_mark.h
+
+./linux/netfilter/ipset:
+ip_set.h  ip_set_bitmap.h  ip_set_hash.h  ip_set_list.h
+
+./linux/netfilter_arp:
+arp_tables.h  arpt_mangle.h
+
+./linux/netfilter_bridge:
+ebt_802_3.h  ebt_arpreply.h  ebt_limit.h   ebt_mark_t.h  ebt_pkttype.h   ebt_vlan.h
+ebt_among.h  ebt_ip.h        ebt_log.h     ebt_nat.h     ebt_redirect.h  ebtables.h
+ebt_arp.h    ebt_ip6.h       ebt_mark_m.h  ebt_nflog.h   ebt_stp.h
+
+./linux/netfilter_ipv4:
+ip_tables.h      ipt_ECN.h  ipt_REJECT.h  ipt_ah.h   ipt_ttl.h
+ipt_CLUSTERIP.h  ipt_LOG.h  ipt_TTL.h     ipt_ecn.h
+
+./linux/netfilter_ipv6:
+ip6_tables.h  ip6t_NPT.h     ip6t_frag.h        ip6t_mh.h    ip6t_srh.h
+ip6t_HL.h     ip6t_REJECT.h  ip6t_hl.h          ip6t_opts.h
+ip6t_LOG.h    ip6t_ah.h      ip6t_ipv6header.h  ip6t_rt.h
+
+./linux/nfsd:
+cld.h  debug.h  export.h  stats.h
+
+./linux/raid:
+md_p.h  md_u.h
+
+./linux/sched:
+types.h
+
+./linux/spi:
+spi.h  spidev.h
+
+./linux/sunrpc:
+debug.h
+
+./linux/surface_aggregator:
+cdev.h  dtx.h
+
+./linux/tc_act:
+tc_bpf.h       tc_ct.h      tc_gact.h  tc_mirred.h  tc_pedit.h    tc_skbmod.h
+tc_connmark.h  tc_ctinfo.h  tc_gate.h  tc_mpls.h    tc_sample.h   tc_tunnel_key.h
+tc_csum.h      tc_defact.h  tc_ife.h   tc_nat.h     tc_skbedit.h  tc_vlan.h
+
+./linux/tc_ematch:
+tc_em_cmp.h  tc_em_ipt.h  tc_em_meta.h  tc_em_nbyte.h  tc_em_text.h
+
+./linux/usb:
+audio.h    cdc.h   ch9.h      functionfs.h  g_uvc.h     midi.h        tmc.h
+cdc-wdm.h  ch11.h  charger.h  g_printer.h   gadgetfs.h  raw_gadget.h  video.h
+
+./misc:
+cxl.h  fastrpc.h  ocxl.h  pvpanic.h  [01;34muacce[0m  xilinx_sdfec.h
+
+./misc/uacce:
+hisi_qm.h  uacce.h
+
+./mtd:
+inftl-user.h  mtd-abi.h  mtd-user.h  nftl-user.h  ubi-user.h
+
+./net:
+ethernet.h  if_arp.h     if_ppp.h     if_slip.h   ppp_defs.h
+if.h        if_packet.h  if_shaper.h  ppp-comp.h  route.h
+
+./netash:
+ash.h
+
+./netatalk:
+at.h
+
+./netax25:
+ax25.h
+
+./neteconet:
+ec.h
+
+./netinet:
+ether.h  if_ether.h  if_tr.h  in.h        ip.h   ip_icmp.h  udp.h
+icmp6.h  if_fddi.h   igmp.h   in_systm.h  ip6.h  tcp.h
+
+./netipx:
+ipx.h
+
+./netiucv:
+iucv.h
+
+./netpacket:
+packet.h
+
+./netrom:
+netrom.h
+
+./netrose:
+rose.h
+
+./nfs:
+nfs.h
+
+./protocols:
+routed.h  rwhod.h  talkd.h  timed.h
+
+./rdma:
+bnxt_re-abi.h         ib_user_ioctl_verbs.h  mlx5-abi.h               rdma_user_cm.h
+cxgb4-abi.h           ib_user_mad.h          mlx5_user_ioctl_cmds.h   rdma_user_ioctl.h
+efa-abi.h             ib_user_sa.h           mlx5_user_ioctl_verbs.h  rdma_user_ioctl_cmds.h
+erdma-abi.h           ib_user_verbs.h        mthca-abi.h              rdma_user_rxe.h
+[01;34mhfi[0m                   irdma-abi.h            ocrdma-abi.h             rvt-abi.h
+hns-abi.h             mana-abi.h             qedr-abi.h               siw-abi.h
+ib_user_ioctl_cmds.h  mlx4-abi.h             rdma_netlink.h           vmw_pvrdma-abi.h
+
+./rdma/hfi:
+hfi1_ioctl.h  hfi1_user.h
+
+./regulator:
+regulator.h
+
+./rpc:
+netdb.h
+
+./rpcsvc:
+bootparam_prot.h  klm_prot.h  nfs_prot.h  rex.h     rstat.h   sm_inter.h
+bootparam_prot.x  klm_prot.x  nfs_prot.x  rex.x     rstat.x   sm_inter.x
+key_prot.h        mount.h     nlm_prot.h  rquota.h  rusers.h  spray.h
+key_prot.x        mount.x     nlm_prot.x  rquota.x  rusers.x  spray.x
+
+./scsi:
+cxlflash_ioctl.h  scsi.h         scsi_bsg_mpi3mr.h  scsi_ioctl.h    scsi_netlink_fc.h
+[01;34mfc[0m                scsi_bsg_fc.h  scsi_bsg_ufs.h     scsi_netlink.h  sg.h
+
+./scsi/fc:
+fc_els.h  fc_fs.h  fc_gs.h  fc_ns.h
+
+./sound:
+asequencer.h  compress_offload.h  hdsp.h      scarlett2.h           snd_sst_tokens.h
+asoc.h        compress_params.h   hdspm.h     sfnt_info.h           [01;34msof[0m
+asound.h      emu10k1.h           [01;34mintel[0m       skl-tplg-interface.h  tlv.h
+asound_fm.h   firewire.h          sb16_csp.h  snd_ar_tokens.h       usb_stream.h
+
+./sound/intel:
+[01;34mavs[0m
+
+./sound/intel/avs:
+tokens.h
+
+./sound/sof:
+abi.h  fw.h  header.h  tokens.h
+
+./video:
+edid.h  sisfb.h  uvesafb.h
+
+./x86_64-linux-gnu:
+a.out.h  [01;34masm[0m  [01;34mbits[0m  fpu_control.h  [01;34mgnu[0m  ieee754.h  [01;34msys[0m
+
+./x86_64-linux-gnu/asm:
+a.out.h           hwcap2.h    mtrr.h             sembuf.h        swab.h
+amd_hsmp.h        ioctl.h     param.h            setup.h         termbits.h
+auxvec.h          ioctls.h    perf_regs.h        sgx.h           termios.h
+bitsperlong.h     ipcbuf.h    poll.h             shmbuf.h        types.h
+boot.h            ist.h       posix_types.h      sigcontext.h    ucontext.h
+bootparam.h       kvm.h       posix_types_32.h   sigcontext32.h  unistd.h
+bpf_perf_event.h  kvm_para.h  posix_types_64.h   siginfo.h       unistd_32.h
+byteorder.h       kvm_perf.h  posix_types_x32.h  signal.h        unistd_64.h
+debugreg.h        ldt.h       prctl.h            socket.h        unistd_x32.h
+e820.h            mce.h       processor-flags.h  sockios.h       vm86.h
+errno.h           mman.h      ptrace-abi.h       stat.h          vmx.h
+fcntl.h           msgbuf.h    ptrace.h           statfs.h        vsyscall.h
+hw_breakpoint.h   msr.h       resource.h         svm.h
+
+./x86_64-linux-gnu/bits:
+a.out.h                       monetary-ldbl.h              stdint-least.h
+argp-ldbl.h                   mqueue.h                     stdint-uintn.h
+atomic_wide_counter.h         mqueue2.h                    stdio-ldbl.h
+byteswap.h                    msq.h                        stdio.h
+cmathcalls.h                  netdb.h                      stdio2-decl.h
+confname.h                    param.h                      stdio2.h
+cpu-set.h                     [01;34mplatform[0m                     stdio_lim.h
+dirent.h                      poll.h                       stdlib-bsearch.h
+dirent_ext.h                  poll2.h                      stdlib-float.h
+dl_find_object.h              posix1_lim.h                 stdlib-ldbl.h
+dlfcn.h                       posix2_lim.h                 stdlib.h
+elfclass.h                    posix_opt.h                  string_fortified.h
+endian.h                      printf-ldbl.h                strings_fortified.h
+endianness.h                  procfs-extra.h               struct_mutex.h
+environments.h                procfs-id.h                  struct_rwlock.h
+epoll.h                       procfs-prregset.h            struct_stat.h
+err-ldbl.h                    procfs.h                     struct_stat_time64_helper.h
+errno.h                       pthread_stack_min-dynamic.h  syscall.h
+error-ldbl.h                  pthread_stack_min.h          syslog-decl.h
+error.h                       pthreadtypes-arch.h          syslog-ldbl.h
+eventfd.h                     pthreadtypes.h               syslog-path.h
+fcntl-linux.h                 ptrace-shared.h              syslog.h
+fcntl.h                       resource.h                   sysmacros.h
+fcntl2.h                      rseq.h                       termios-baud.h
+fenv.h                        sched.h                      termios-c_cc.h
+floatn-common.h               select-decl.h                termios-c_cflag.h
+floatn.h                      select.h                     termios-c_iflag.h
+flt-eval-method.h             select2.h                    termios-c_lflag.h
+fp-fast.h                     sem.h                        termios-c_oflag.h
+fp-logb.h                     semaphore.h                  termios-misc.h
+getopt_core.h                 setjmp.h                     termios-struct.h
+getopt_ext.h                  setjmp2.h                    termios-tcflow.h
+getopt_posix.h                shm.h                        termios.h
+hwcap.h                       shmlba.h                     thread-shared-types.h
+in.h                          sigaction.h                  time.h
+indirect-return.h             sigcontext.h                 time64.h
+initspin.h                    sigevent-consts.h            timerfd.h
+inotify.h                     siginfo-arch.h               timesize.h
+ioctl-types.h                 siginfo-consts-arch.h        timex.h
+ioctls.h                      siginfo-consts.h             [01;34mtypes[0m
+ipc-perm.h                    signal_ext.h                 types.h
+ipc.h                         signalfd.h                   typesizes.h
+ipctypes.h                    signum-arch.h                uintn-identity.h
+iscanonical.h                 signum-generic.h             uio-ext.h
+libc-header-start.h           sigstack.h                   uio_lim.h
+libm-simd-decl-stubs.h        sigstksz.h                   unistd-decl.h
+link.h                        sigthread.h                  unistd.h
+link_lavcurrent.h             sockaddr.h                   unistd_ext.h
+local_lim.h                   socket-constants.h           utmp.h
+locale.h                      socket.h                     utmpx.h
+long-double.h                 socket2.h                    utsname.h
+math-vector.h                 socket_type.h                waitflags.h
+mathcalls-helper-functions.h  spawn_ext.h                  waitstatus.h
+mathcalls-narrow.h            ss_flags.h                   wchar-ldbl.h
+mathcalls.h                   stab.def                     wchar.h
+mathdef.h                     stat.h                       wchar2-decl.h
+mman-linux.h                  statfs.h                     wchar2.h
+mman-map-flags-generic.h      statvfs.h                    wctype-wchar.h
+mman-shared.h                 statx-generic.h              wordsize.h
+mman.h                        statx.h                      xopen_lim.h
+mman_ext.h                    stdint-intn.h
+
+./x86_64-linux-gnu/bits/platform:
+features.h  x86.h
+
+./x86_64-linux-gnu/bits/types:
+FILE.h                   sig_atomic_t.h              struct_semid64_ds.h
+__FILE.h                 sigevent_t.h                struct_semid64_ds_helper.h
+__fpos64_t.h             siginfo_t.h                 struct_semid_ds.h
+__fpos_t.h               sigset_t.h                  struct_shmid64_ds.h
+__locale_t.h             sigval_t.h                  struct_shmid64_ds_helper.h
+__mbstate_t.h            stack_t.h                   struct_shmid_ds.h
+__sigset_t.h             struct_FILE.h               struct_sigstack.h
+__sigval_t.h             struct___jmp_buf_tag.h      struct_statx.h
+clock_t.h                struct_iovec.h              struct_statx_timestamp.h
+clockid_t.h              struct_itimerspec.h         struct_timeb.h
+cookie_io_functions_t.h  struct_msqid64_ds.h         struct_timespec.h
+error_t.h                struct_msqid64_ds_helper.h  struct_timeval.h
+idtype_t.h               struct_msqid_ds.h           struct_tm.h
+locale_t.h               struct_osockaddr.h          time_t.h
+mbstate_t.h              struct_rusage.h             timer_t.h
+res_state.h              struct_sched_param.h        wint_t.h
+
+./x86_64-linux-gnu/gnu:
+lib-names-64.h  lib-names.h  libc-version.h  stubs-64.h  stubs.h
+
+./x86_64-linux-gnu/sys:
+acct.h      gmon.h      perm.h         reg.h              statfs.h     ttydefaults.h
+auxv.h      gmon_out.h  personality.h  resource.h         statvfs.h    types.h
+bitypes.h   inotify.h   pidfd.h        rseq.h             swap.h       ucontext.h
+cdefs.h     io.h        [01;34mplatform[0m       select.h           syscall.h    uio.h
+debugreg.h  ioctl.h     poll.h         sem.h              sysinfo.h    un.h
+dir.h       ipc.h       prctl.h        sendfile.h         syslog.h     unistd.h
+elf.h       kd.h        procfs.h       shm.h              sysmacros.h  user.h
+epoll.h     klog.h      profil.h       signal.h           termios.h    utsname.h
+errno.h     mman.h      ptrace.h       signalfd.h         time.h       vfs.h
+eventfd.h   mount.h     queue.h        single_threaded.h  timeb.h      vlimit.h
+fanotify.h  msg.h       quota.h        socket.h           timerfd.h    vm86.h
+fcntl.h     mtio.h      random.h       socketvar.h        times.h      vt.h
+file.h      param.h     raw.h          soundcard.h        timex.h      wait.h
+fsuid.h     pci.h       reboot.h       stat.h             ttychars.h   xattr.h
+
+./x86_64-linux-gnu/sys/platform:
+x86.h
+
+./xen:
+evtchn.h  gntalloc.h  gntdev.h  privcmd.h
+
+./xfs:
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ ls -Ral
+[?2004l.:
+total 1524
+drwxr-xr-x 34 root root   4096 Aug 27 02:03 [0m[01;34m.[0m
+drwxr-xr-x 12 root root   4096 Aug  1 08:35 [01;34m..[0m
+-rw-r--r--  1 root root   7739 Aug  8 14:47 aio.h
+-rw-r--r--  1 root root   2028 Aug  8 14:47 aliases.h
+-rw-r--r--  1 root root   1203 Aug  8 14:47 alloca.h
+-rw-r--r--  1 root root   1731 Aug  8 14:47 ar.h
+-rw-r--r--  1 root root  25548 Aug  8 14:47 argp.h
+-rw-r--r--  1 root root   6051 Aug  8 14:47 argz.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34marpa[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34masm-generic[0m
+-rw-r--r--  1 root root   5086 Aug  8 14:47 assert.h
+-rw-r--r--  1 root root   1449 Aug  8 14:47 byteswap.h
+-rw-r--r--  1 root root   8140 Aug  8 14:47 complex.h
+-rw-r--r--  1 root root   2268 Aug  8 14:47 cpio.h
+-rw-r--r--  1 root root  11131 Apr  8 16:09 crypt.h
+-rw-r--r--  1 root root  10969 Aug  8 14:47 ctype.h
+-rw-r--r--  1 root root  12617 Aug  8 14:47 dirent.h
+-rw-r--r--  1 root root   8581 Aug  8 14:47 dlfcn.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mdrm[0m
+-rw-r--r--  1 root root 194903 Aug  8 14:47 elf.h
+-rw-r--r--  1 root root   2299 Aug  8 14:47 endian.h
+-rw-r--r--  1 root root   2867 Aug  8 14:47 envz.h
+-rw-r--r--  1 root root   2383 Aug  8 14:47 err.h
+-rw-r--r--  1 root root   1679 Aug  8 14:47 errno.h
+-rw-r--r--  1 root root   2430 Aug  8 14:47 error.h
+-rw-r--r--  1 root root   1523 Aug  8 14:47 execinfo.h
+-rw-r--r--  1 root root  11442 Aug  8 14:47 fcntl.h
+-rw-r--r--  1 root root   1409 Aug  8 14:47 features-time64.h
+-rw-r--r--  1 root root  18527 Aug  8 14:47 features.h
+-rw-r--r--  1 root root   5788 Aug  8 14:47 fenv.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mfinclude[0m
+-rw-r--r--  1 root root   3240 Aug  8 14:47 fmtmsg.h
+-rw-r--r--  1 root root   2296 Aug  8 14:47 fnmatch.h
+-rw-r--r--  1 root root   3111 Aug  8 14:47 fstab.h
+-rw-r--r--  1 root root   9579 Aug  8 14:47 fts.h
+-rw-r--r--  1 root root   6343 Aug  8 14:47 ftw.h
+-rw-r--r--  1 root root  41697 Mar 31 05:33 gawkapi.h
+-rw-r--r--  1 root root   4211 Aug  8 14:47 gconv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:01 [01;34mgdb[0m
+-rw-r--r--  1 root root   1469 Aug  8 14:47 getopt.h
+-rw-r--r--  1 root root   7299 Aug  8 14:47 glob.h
+-rw-r--r--  1 root root   2343 Aug  8 14:47 gnu-versions.h
+-rw-r--r--  1 root root   2912 Apr  8 16:12 gnumake.h
+-rw-r--r--  1 root root   6847 Aug  8 14:47 grp.h
+-rw-r--r--  1 root root   4689 Aug  8 14:47 gshadow.h
+-rw-r--r--  1 root root   1912 Aug  8 14:47 iconv.h
+-rw-r--r--  1 root root   2841 Aug  8 14:47 ifaddrs.h
+-rw-r--r--  1 root root  11309 Aug  8 14:47 inttypes.h
+drwxr-xr-x  2 root root   4096 Aug  1 08:35 [01;34miproute2[0m
+-rw-r--r--  1 root root  17849 Aug  8 14:47 langinfo.h
+-rw-r--r--  1 root root    126 Aug  8 14:47 lastlog.h
+-rw-r--r--  1 root root   1386 Aug  8 14:47 libgen.h
+-rw-r--r--  1 root root   4580 Aug  8 14:47 libintl.h
+-rw-r--r--  1 root root   5706 Aug  8 14:47 limits.h
+-rw-r--r--  1 root root   7801 Aug  8 14:47 link.h
+drwxr-xr-x 29 root root  28672 Aug 27 02:00 [01;34mlinux[0m
+-rw-r--r--  1 root root   7675 Aug  8 14:47 locale.h
+-rw-r--r--  1 root root   5984 Aug  8 14:47 malloc.h
+-rw-r--r--  1 root root  50939 Aug  8 14:47 math.h
+-rw-r--r--  1 root root   2435 Aug  8 14:47 mcheck.h
+-rw-r--r--  1 root root    956 Aug  8 14:47 memory.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mmisc[0m
+-rw-r--r--  1 root root   3359 Aug  8 14:47 mntent.h
+-rw-r--r--  1 root root   1966 Aug  8 14:47 monetary.h
+-rw-r--r--  1 root root   4603 Aug  8 14:47 mqueue.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mmtd[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetash[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetatalk[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetax25[0m
+-rw-r--r--  1 root root  28461 Aug  8 14:47 netdb.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mneteconet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetinet[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetipx[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetiucv[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetpacket[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrom[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetrose[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnfs[0m
+-rw-r--r--  1 root root   1753 Aug  8 14:47 nl_types.h
+-rw-r--r--  1 root root  14408 Aug  8 14:47 nss.h
+-rw-r--r--  1 root root  21307 Aug  8 14:47 obstack.h
+-rw-r--r--  1 root root   2983 Aug  8 14:47 paths.h
+-rw-r--r--  1 root root     22 Aug  8 14:47 poll.h
+-rw-r--r--  1 root root   6875 Aug  8 14:47 printf.h
+-rw-r--r--  1 root root   3477 Aug  8 14:47 proc_service.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mprotocols[0m
+-rw-r--r--  1 root root  48379 Aug  8 14:47 pthread.h
+-rw-r--r--  1 root root   1570 Aug  8 14:47 pty.h
+-rw-r--r--  1 root root   6317 Aug  8 14:47 pwd.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mrdma[0m
+-rw-r--r--  1 root root    963 Aug  8 14:47 re_comp.h
+-rw-r--r--  1 root root  25904 Aug  8 14:47 regex.h
+-rw-r--r--  1 root root   1387 Aug  8 14:47 regexp.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mregulator[0m
+-rw-r--r--  1 root root  12312 Aug  8 14:47 resolv.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpc[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mrpcsvc[0m
+-rw-r--r--  1 root root   5038 Aug  8 14:47 sched.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mscsi[0m
+-rw-r--r--  1 root root   5450 Aug  8 14:47 search.h
+-rw-r--r--  1 root root   3464 Aug  8 14:47 semaphore.h
+-rw-r--r--  1 root root   3190 Aug  8 14:47 setjmp.h
+-rw-r--r--  1 root root   1344 Aug  8 14:47 sgtty.h
+-rw-r--r--  1 root root   5632 Aug  8 14:47 shadow.h
+-rw-r--r--  1 root root  13040 Aug  8 14:47 signal.h
+drwxr-xr-x  4 root root   4096 Aug 27 02:00 [01;34msound[0m
+-rw-r--r--  1 root root   8388 Aug  8 14:47 spawn.h
+-rw-r--r--  1 root root    264 Aug  8 14:47 stab.h
+-rw-r--r--  1 root root  26902 Aug  8 14:47 stdbit.h
+-rw-r--r--  1 root root   2462 Aug  8 14:47 stdc-predef.h
+-rw-r--r--  1 root root   8155 Aug  8 14:47 stdint.h
+-rw-r--r--  1 root root  34649 Aug  8 14:47 stdio.h
+-rw-r--r--  1 root root   2800 Aug  8 14:47 stdio_ext.h
+-rw-r--r--  1 root root  41032 Aug  8 14:47 stdlib.h
+-rw-r--r--  1 root root  19969 Aug  8 14:47 string.h
+-rw-r--r--  1 root root   4753 Aug  8 14:47 strings.h
+-rw-r--r--  1 root root  11959 Apr  8 14:50 sudo_plugin.h
+-rw-r--r--  1 root root     25 Aug  8 14:47 syscall.h
+-rw-r--r--  1 root root   5232 Aug  8 14:47 sysexits.h
+-rw-r--r--  1 root root     24 Aug  8 14:47 syslog.h
+-rw-r--r--  1 root root   3752 Aug  8 14:47 tar.h
+-rw-r--r--  1 root root    214 Aug  8 14:47 termio.h
+-rw-r--r--  1 root root   3599 Aug  8 14:47 termios.h
+-rw-r--r--  1 root root  47627 Aug  8 14:47 tgmath.h
+-rw-r--r--  1 root root  16024 Aug  8 14:47 thread_db.h
+-rw-r--r--  1 root root   7799 Aug  8 14:47 threads.h
+-rw-r--r--  1 root root  15124 Aug  8 14:47 time.h
+-rw-r--r--  1 root root   2494 Aug  8 14:47 ttyent.h
+-rw-r--r--  1 root root   3117 Aug  8 14:47 uchar.h
+-rw-r--r--  1 root root   2037 Aug  8 14:47 ucontext.h
+-rw-r--r--  1 root root   1584 Aug  8 14:47 ulimit.h
+-rw-r--r--  1 root root  45053 Aug  8 14:47 unistd.h
+-rw-r--r--  1 root root   1905 Aug  8 14:47 utime.h
+-rw-r--r--  1 root root   3223 Aug  8 14:47 utmp.h
+-rw-r--r--  1 root root   4100 Aug  8 14:47 utmpx.h
+-rw-r--r--  1 root root   1956 Aug  8 14:47 values.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mvideo[0m
+-rw-r--r--  1 root root     22 Aug  8 14:47 wait.h
+-rw-r--r--  1 root root  39102 Aug  8 14:47 wchar.h
+-rw-r--r--  1 root root   5549 Aug  8 14:47 wctype.h
+-rw-r--r--  1 root root   2502 Aug  8 14:47 wordexp.h
+drwxr-xr-x  6 root root   4096 Aug 27 02:00 [01;34mx86_64-linux-gnu[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mxen[0m
+drwxr-xr-x  2 root root   4096 Mar 31 17:31 [01;34mxfs[0m
+
+./arpa:
+total 60
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  3432 Aug  8 14:47 ftp.h
+-rw-r--r--  1 root root  4333 Aug  8 14:47 inet.h
+-rw-r--r--  1 root root 14510 Aug  8 14:47 nameser.h
+-rw-r--r--  1 root root  7045 Aug  8 14:47 nameser_compat.h
+-rw-r--r--  1 root root 10263 Aug  8 14:47 telnet.h
+-rw-r--r--  1 root root  3051 Aug  8 14:47 tftp.h
+
+./asm-generic:
+total 200
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root   218 Aug  2 14:15 auxvec.h
+-rw-r--r--  1 root root  1023 Aug  2 14:15 bitsperlong.h
+-rw-r--r--  1 root root   238 Aug  2 14:15 bpf_perf_event.h
+-rw-r--r--  1 root root  1612 Aug  2 14:15 errno-base.h
+-rw-r--r--  1 root root  5648 Aug  2 14:15 errno.h
+-rw-r--r--  1 root root  5487 Aug  2 14:15 fcntl.h
+-rw-r--r--  1 root root  1820 Aug  2 14:15 hugetlb_encode.h
+-rw-r--r--  1 root root   718 Aug  2 14:15 int-l64.h
+-rw-r--r--  1 root root   864 Aug  2 14:15 int-ll64.h
+-rw-r--r--  1 root root  3478 Aug  2 14:15 ioctl.h
+-rw-r--r--  1 root root  3987 Aug  2 14:15 ioctls.h
+-rw-r--r--  1 root root  1035 Aug  2 14:15 ipcbuf.h
+-rw-r--r--  1 root root    96 Aug  2 14:15 kvm_para.h
+-rw-r--r--  1 root root  3812 Aug  2 14:15 mman-common.h
+-rw-r--r--  1 root root   740 Aug  2 14:15 mman.h
+-rw-r--r--  1 root root  1624 Aug  2 14:15 msgbuf.h
+-rw-r--r--  1 root root   353 Aug  2 14:15 param.h
+-rw-r--r--  1 root root   847 Aug  2 14:15 poll.h
+-rw-r--r--  1 root root  2376 Aug  2 14:15 posix_types.h
+-rw-r--r--  1 root root  1872 Aug  2 14:15 resource.h
+-rw-r--r--  1 root root  1544 Aug  2 14:15 sembuf.h
+-rw-r--r--  1 root root   190 Aug  2 14:15 setup.h
+-rw-r--r--  1 root root  1878 Aug  2 14:15 shmbuf.h
+-rw-r--r--  1 root root 10678 Aug  2 14:15 siginfo.h
+-rw-r--r--  1 root root  2923 Aug  2 14:15 signal-defs.h
+-rw-r--r--  1 root root  1799 Aug  2 14:15 signal.h
+-rw-r--r--  1 root root  3783 Aug  2 14:15 socket.h
+-rw-r--r--  1 root root   447 Aug  2 14:15 sockios.h
+-rw-r--r--  1 root root  2633 Aug  2 14:15 stat.h
+-rw-r--r--  1 root root  1839 Aug  2 14:15 statfs.h
+-rw-r--r--  1 root root   502 Aug  2 14:15 swab.h
+-rw-r--r--  1 root root  2214 Aug  2 14:15 termbits-common.h
+-rw-r--r--  1 root root  3654 Aug  2 14:15 termbits.h
+-rw-r--r--  1 root root  1377 Aug  2 14:15 termios.h
+-rw-r--r--  1 root root   233 Aug  2 14:15 types.h
+-rw-r--r--  1 root root   357 Aug  2 14:15 ucontext.h
+-rw-r--r--  1 root root 31189 Aug  2 14:15 unistd.h
+
+./drm:
+total 788
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root   4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  39283 Aug  2 14:15 amdgpu_drm.h
+-rw-r--r--  1 root root   1212 Aug  2 14:15 armada_drm.h
+-rw-r--r--  1 root root  45668 Aug  2 14:15 drm.h
+-rw-r--r--  1 root root  68980 Aug  2 14:15 drm_fourcc.h
+-rw-r--r--  1 root root  41191 Aug  2 14:15 drm_mode.h
+-rw-r--r--  1 root root   2782 Aug  2 14:15 drm_sarea.h
+-rw-r--r--  1 root root  11993 Aug  2 14:15 etnaviv_drm.h
+-rw-r--r--  1 root root  11133 Aug  2 14:15 exynos_drm.h
+-rw-r--r--  1 root root  81516 Aug  2 14:15 habanalabs_accel.h
+-rw-r--r--  1 root root 129689 Aug  2 14:15 i915_drm.h
+-rw-r--r--  1 root root   9469 Aug  2 14:15 ivpu_accel.h
+-rw-r--r--  1 root root   5052 Aug  2 14:15 lima_drm.h
+-rw-r--r--  1 root root  16482 Aug  2 14:15 msm_drm.h
+-rw-r--r--  1 root root  14342 Aug  2 14:15 nouveau_drm.h
+-rw-r--r--  1 root root   4027 Aug  2 14:15 omap_drm.h
+-rw-r--r--  1 root root   8448 Aug  2 14:15 panfrost_drm.h
+-rw-r--r--  1 root root  40166 Aug  2 14:15 pvr_drm.h
+-rw-r--r--  1 root root  12683 Aug  2 14:15 qaic_accel.h
+-rw-r--r--  1 root root   4131 Aug  2 14:15 qxl_drm.h
+-rw-r--r--  1 root root  38236 Aug  2 14:15 radeon_drm.h
+-rw-r--r--  1 root root  21641 Aug  2 14:15 tegra_drm.h
+-rw-r--r--  1 root root  22082 Aug  2 14:15 v3d_drm.h
+-rw-r--r--  1 root root  14457 Aug  2 14:15 vc4_drm.h
+-rw-r--r--  1 root root   1971 Aug  2 14:15 vgem_drm.h
+-rw-r--r--  1 root root   7845 Aug  2 14:15 virtgpu_drm.h
+-rw-r--r--  1 root root  37479 Aug  2 14:15 vmwgfx_drm.h
+-rw-r--r--  1 root root  45282 Aug  2 14:15 xe_drm.h
+
+./finclude:
+total 12
+drwxr-xr-x  3 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34mx86_64-linux-gnu[0m
+
+./finclude/x86_64-linux-gnu:
+total 16
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 7704 Aug  8 14:47 math-vector-fortran.h
+
+./gdb:
+total 20
+drwxr-xr-x  2 root root  4096 Aug 27 02:01 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 12080 Apr  3 10:51 jit-reader.h
+
+./iproute2:
+total 12
+drwxr-xr-x  2 root root 4096 Aug  1 08:35 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 1271 Mar 31 09:00 bpf_elf.h
+
+./linux:
+total 5724
+drwxr-xr-x 29 root root  28672 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root   4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root   6892 Aug  2 14:15 a.out.h
+-rw-r--r--  1 root root   3913 Aug  2 14:15 acct.h
+-rw-r--r--  1 root root  18956 Aug  2 14:15 acrn.h
+-rw-r--r--  1 root root   1140 Aug  2 14:15 adb.h
+-rw-r--r--  1 root root    993 Aug  2 14:15 adfs_fs.h
+-rw-r--r--  1 root root   1578 Aug  2 14:15 affs_hardblocks.h
+-rw-r--r--  1 root root   3955 Aug  2 14:15 agpgart.h
+-rw-r--r--  1 root root   3398 Aug  2 14:15 aio_abi.h
+-rw-r--r--  1 root root   3681 Aug  2 14:15 am437x-vpfe.h
+-rw-r--r--  1 root root   1747 Aug  2 14:15 amt.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mandroid[0m
+-rw-r--r--  1 root root   3683 Aug  2 14:15 apm_bios.h
+-rw-r--r--  1 root root   3477 Aug  2 14:15 apparmor.h
+-rw-r--r--  1 root root    213 Aug  2 14:15 arcfb.h
+-rw-r--r--  1 root root   2751 Aug  2 14:15 arm_sdei.h
+-rw-r--r--  1 root root   1780 Aug  2 14:15 aspeed-lpc-ctrl.h
+-rw-r--r--  1 root root   1906 Aug  2 14:15 aspeed-p2a-ctrl.h
+-rw-r--r--  1 root root    389 Aug  2 14:15 aspeed-video.h
+-rw-r--r--  1 root root   1023 Aug  2 14:15 atalk.h
+-rw-r--r--  1 root root   7888 Aug  2 14:15 atm.h
+-rw-r--r--  1 root root    648 Aug  2 14:15 atm_eni.h
+-rw-r--r--  1 root root    406 Aug  2 14:15 atm_he.h
+-rw-r--r--  1 root root    955 Aug  2 14:15 atm_idt77105.h
+-rw-r--r--  1 root root   1278 Aug  2 14:15 atm_nicstar.h
+-rw-r--r--  1 root root   1622 Aug  2 14:15 atm_tcp.h
+-rw-r--r--  1 root root   1540 Aug  2 14:15 atm_zatm.h
+-rw-r--r--  1 root root    952 Aug  2 14:15 atmapi.h
+-rw-r--r--  1 root root   1296 Aug  2 14:15 atmarp.h
+-rw-r--r--  1 root root   3272 Aug  2 14:15 atmbr2684.h
+-rw-r--r--  1 root root    576 Aug  2 14:15 atmclip.h
+-rw-r--r--  1 root root   7498 Aug  2 14:15 atmdev.h
+-rw-r--r--  1 root root   1647 Aug  2 14:15 atmioc.h
+-rw-r--r--  1 root root   2381 Aug  2 14:15 atmlec.h
+-rw-r--r--  1 root root   4226 Aug  2 14:15 atmmpc.h
+-rw-r--r--  1 root root    639 Aug  2 14:15 atmppp.h
+-rw-r--r--  1 root root   4970 Aug  2 14:15 atmsap.h
+-rw-r--r--  1 root root   1853 Aug  2 14:15 atmsvc.h
+-rw-r--r--  1 root root  21711 Aug  2 14:15 audit.h
+-rw-r--r--  1 root root   4985 Aug  2 14:15 auto_dev-ioctl.h
+-rw-r--r--  1 root root   6428 Aug  2 14:15 auto_fs.h
+-rw-r--r--  1 root root    451 Aug  2 14:15 auto_fs4.h
+-rw-r--r--  1 root root   1721 Aug  2 14:15 auxvec.h
+-rw-r--r--  1 root root   2824 Aug  2 14:15 ax25.h
+-rw-r--r--  1 root root  21632 Aug  2 14:15 batadv_packet.h
+-rw-r--r--  1 root root  16887 Aug  2 14:15 batman_adv.h
+-rw-r--r--  1 root root    883 Aug  2 14:15 baycom.h
+-rw-r--r--  1 root root    419 Aug  2 14:15 bcm933xx_hcs.h
+-rw-r--r--  1 root root   1905 Aug  2 14:15 bfs_fs.h
+-rw-r--r--  1 root root    776 Aug  2 14:15 binfmts.h
+-rw-r--r--  1 root root    904 Aug  2 14:15 blkpg.h
+-rw-r--r--  1 root root   4701 Aug  2 14:15 blktrace_api.h
+-rw-r--r--  1 root root   6492 Aug  2 14:15 blkzoned.h
+-rw-r--r--  1 root root 274808 Aug  2 14:15 bpf.h
+-rw-r--r--  1 root root   1367 Aug  2 14:15 bpf_common.h
+-rw-r--r--  1 root root    529 Aug  2 14:15 bpf_perf_event.h
+-rw-r--r--  1 root root    981 Aug  2 14:15 bpqether.h
+-rw-r--r--  1 root root   2494 Aug  2 14:15 bsg.h
+-rw-r--r--  1 root root    572 Aug  2 14:15 bt-bmc.h
+-rw-r--r--  1 root root   5591 Aug  2 14:15 btf.h
+-rw-r--r--  1 root root  37150 Aug  2 14:15 btrfs.h
+-rw-r--r--  1 root root  35606 Aug  2 14:15 btrfs_tree.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mbyteorder[0m
+-rw-r--r--  1 root root   1650 Aug  2 14:15 cachefiles.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mcaif[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mcan[0m
+-rw-r--r--  1 root root  11210 Aug  2 14:15 can.h
+-rw-r--r--  1 root root  13523 Aug  2 14:15 capability.h
+-rw-r--r--  1 root root   3124 Aug  2 14:15 capi.h
+-rw-r--r--  1 root root   3281 Aug  2 14:15 cciss_defs.h
+-rw-r--r--  1 root root   2761 Aug  2 14:15 cciss_ioctl.h
+-rw-r--r--  1 root root    767 Aug  2 14:15 ccs.h
+-rw-r--r--  1 root root  29561 Aug  2 14:15 cdrom.h
+-rw-r--r--  1 root root  54419 Aug  2 14:15 cec-funcs.h
+-rw-r--r--  1 root root  42082 Aug  2 14:15 cec.h
+-rw-r--r--  1 root root   1456 Aug  2 14:15 cfm_bridge.h
+-rw-r--r--  1 root root   2105 Aug  2 14:15 cgroupstats.h
+-rw-r--r--  1 root root   5282 Aug  2 14:15 chio.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mcifs[0m
+-rw-r--r--  1 root root    377 Aug  2 14:15 close_range.h
+-rw-r--r--  1 root root   4149 Aug  2 14:15 cn_proc.h
+-rw-r--r--  1 root root  18216 Aug  2 14:15 coda.h
+-rw-r--r--  1 root root  12549 Aug  2 14:15 coff.h
+-rw-r--r--  1 root root  55481 Aug  2 14:15 comedi.h
+-rw-r--r--  1 root root   2252 Aug  2 14:15 connector.h
+-rw-r--r--  1 root root    991 Aug  2 14:15 const.h
+-rw-r--r--  1 root root    747 Aug  2 14:15 coresight-stm.h
+-rw-r--r--  1 root root   4889 Aug  2 14:15 counter.h
+-rw-r--r--  1 root root   3555 Aug  2 14:15 cramfs_fs.h
+-rw-r--r--  1 root root   5321 Aug  2 14:15 cryptouser.h
+-rw-r--r--  1 root root    905 Aug  2 14:15 cuda.h
+-rw-r--r--  1 root root   7990 Aug  2 14:15 cxl_mem.h
+-rw-r--r--  1 root root    969 Aug  2 14:15 cyclades.h
+-rw-r--r--  1 root root   2989 Aug  2 14:15 cycx_cfm.h
+-rw-r--r--  1 root root  25571 Aug  2 14:15 dcbnl.h
+-rw-r--r--  1 root root   6436 Aug  2 14:15 dccp.h
+-rw-r--r--  1 root root  22706 Aug  2 14:15 devlink.h
+-rw-r--r--  1 root root   2581 Aug  2 14:15 dlm.h
+-rw-r--r--  1 root root   2541 Aug  2 14:15 dlm_device.h
+-rw-r--r--  1 root root    916 Aug  2 14:15 dlm_plock.h
+-rw-r--r--  1 root root   5091 Aug  2 14:15 dlmconstants.h
+-rw-r--r--  1 root root  11598 Aug  2 14:15 dm-ioctl.h
+-rw-r--r--  1 root root  15190 Aug  2 14:15 dm-log-userspace.h
+-rw-r--r--  1 root root   7322 Aug  2 14:15 dma-buf.h
+-rw-r--r--  1 root root   1394 Aug  2 14:15 dma-heap.h
+-rw-r--r--  1 root root   3949 Aug  2 14:15 dns_resolver.h
+-rw-r--r--  1 root root   5887 Aug  2 14:15 dpll.h
+-rw-r--r--  1 root root   9388 Aug  2 14:15 dqblk_xfs.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mdvb[0m
+-rw-r--r--  1 root root    357 Aug  2 14:15 dw100.h
+-rw-r--r--  1 root root   5604 Aug  2 14:15 edd.h
+-rw-r--r--  1 root root   2227 Aug  2 14:15 efs_fs_sb.h
+-rw-r--r--  1 root root   2627 Aug  2 14:15 elf-em.h
+-rw-r--r--  1 root root   1621 Aug  2 14:15 elf-fdpic.h
+-rw-r--r--  1 root root  15496 Aug  2 14:15 elf.h
+-rw-r--r--  1 root root     23 Aug  2 14:15 errno.h
+-rw-r--r--  1 root root   1983 Aug  2 14:15 errqueue.h
+-rw-r--r--  1 root root   1059 Aug  2 14:15 erspan.h
+-rw-r--r--  1 root root  88809 Aug  2 14:15 ethtool.h
+-rw-r--r--  1 root root  27017 Aug  2 14:15 ethtool_netlink.h
+-rw-r--r--  1 root root    264 Aug  2 14:15 eventfd.h
+-rw-r--r--  1 root root   2586 Aug  2 14:15 eventpoll.h
+-rw-r--r--  1 root root   4122 Aug  2 14:15 ext4.h
+-rw-r--r--  1 root root   3363 Aug  2 14:15 f2fs.h
+-rw-r--r--  1 root root    842 Aug  2 14:15 fadvise.h
+-rw-r--r--  1 root root   3584 Aug  2 14:15 falloc.h
+-rw-r--r--  1 root root   8298 Aug  2 14:15 fanotify.h
+-rw-r--r--  1 root root  16476 Aug  2 14:15 fb.h
+-rw-r--r--  1 root root   4545 Aug  2 14:15 fcntl.h
+-rw-r--r--  1 root root  12117 Aug  2 14:15 fd.h
+-rw-r--r--  1 root root   5364 Aug  2 14:15 fdreg.h
+-rw-r--r--  1 root root   2036 Aug  2 14:15 fib_rules.h
+-rw-r--r--  1 root root   2774 Aug  2 14:15 fiemap.h
+-rw-r--r--  1 root root   2216 Aug  2 14:15 filter.h
+-rw-r--r--  1 root root  50720 Aug  2 14:15 firewire-cdev.h
+-rw-r--r--  1 root root   3231 Aug  2 14:15 firewire-constants.h
+-rw-r--r--  1 root root    819 Aug  2 14:15 fou.h
+-rw-r--r--  1 root root   8728 Aug  2 14:15 fpga-dfl.h
+-rw-r--r--  1 root root  14276 Aug  2 14:15 fs.h
+-rw-r--r--  1 root root   6592 Aug  2 14:15 fscrypt.h
+-rw-r--r--  1 root root   3088 Aug  2 14:15 fsi.h
+-rw-r--r--  1 root root   7301 Aug  2 14:15 fsl_hypervisor.h
+-rw-r--r--  1 root root    734 Aug  2 14:15 fsl_mc.h
+-rw-r--r--  1 root root   4402 Aug  2 14:15 fsmap.h
+-rw-r--r--  1 root root   3185 Aug  2 14:15 fsverity.h
+-rw-r--r--  1 root root  27686 Aug  2 14:15 fuse.h
+-rw-r--r--  1 root root   6127 Aug  2 14:15 futex.h
+-rw-r--r--  1 root root    897 Aug  2 14:15 gameport.h
+-rw-r--r--  1 root root   1526 Aug  2 14:15 gen_stats.h
+-rw-r--r--  1 root root   2238 Aug  2 14:15 genetlink.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mgenwqe[0m
+-rw-r--r--  1 root root  14773 Aug  2 14:15 gfs2_ondisk.h
+-rw-r--r--  1 root root  19922 Aug  2 14:15 gpio.h
+-rw-r--r--  1 root root   4509 Aug  2 14:15 gsmmux.h
+-rw-r--r--  1 root root    734 Aug  2 14:15 gtp.h
+-rw-r--r--  1 root root   1646 Aug  2 14:15 handshake.h
+-rw-r--r--  1 root root   1034 Aug  2 14:15 hash_info.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mhdlc[0m
+-rw-r--r--  1 root root    637 Aug  2 14:15 hdlc.h
+-rw-r--r--  1 root root   2908 Aug  2 14:15 hdlcdrv.h
+-rw-r--r--  1 root root  22703 Aug  2 14:15 hdreg.h
+-rw-r--r--  1 root root   2086 Aug  2 14:15 hid.h
+-rw-r--r--  1 root root   6345 Aug  2 14:15 hiddev.h
+-rw-r--r--  1 root root   1993 Aug  2 14:15 hidraw.h
+-rw-r--r--  1 root root    743 Aug  2 14:15 hpet.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mhsi[0m
+-rw-r--r--  1 root root   1101 Aug  2 14:15 hsr_netlink.h
+-rw-r--r--  1 root root    605 Aug  2 14:15 hw_breakpoint.h
+-rw-r--r--  1 root root  11152 Aug  2 14:15 hyperv.h
+-rw-r--r--  1 root root   1875 Aug  2 14:15 i2c-dev.h
+-rw-r--r--  1 root root   6890 Aug  2 14:15 i2c.h
+-rw-r--r--  1 root root  11555 Aug  2 14:15 i2o-dev.h
+-rw-r--r--  1 root root   1528 Aug  2 14:15 i8k.h
+-rw-r--r--  1 root root   4785 Aug  2 14:15 icmp.h
+-rw-r--r--  1 root root   4269 Aug  2 14:15 icmpv6.h
+-rw-r--r--  1 root root   9328 Aug  2 14:15 idxd.h
+-rw-r--r--  1 root root  10925 Aug  2 14:15 if.h
+-rw-r--r--  1 root root   2143 Aug  2 14:15 if_addr.h
+-rw-r--r--  1 root root    721 Aug  2 14:15 if_addrlabel.h
+-rw-r--r--  1 root root   1601 Aug  2 14:15 if_alg.h
+-rw-r--r--  1 root root   3714 Aug  2 14:15 if_arcnet.h
+-rw-r--r--  1 root root   6589 Aug  2 14:15 if_arp.h
+-rw-r--r--  1 root root   5145 Aug  2 14:15 if_bonding.h
+-rw-r--r--  1 root root  20666 Aug  2 14:15 if_bridge.h
+-rw-r--r--  1 root root    986 Aug  2 14:15 if_cablemodem.h
+-rw-r--r--  1 root root   1349 Aug  2 14:15 if_eql.h
+-rw-r--r--  1 root root   8766 Aug  2 14:15 if_ether.h
+-rw-r--r--  1 root root   1738 Aug  2 14:15 if_fc.h
+-rw-r--r--  1 root root   4369 Aug  2 14:15 if_fddi.h
+-rw-r--r--  1 root root   4235 Aug  2 14:15 if_hippi.h
+-rw-r--r--  1 root root   1245 Aug  2 14:15 if_infiniband.h
+-rw-r--r--  1 root root  55294 Aug  2 14:15 if_link.h
+-rw-r--r--  1 root root    210 Aug  2 14:15 if_ltalk.h
+-rw-r--r--  1 root root   6503 Aug  2 14:15 if_macsec.h
+-rw-r--r--  1 root root   8268 Aug  2 14:15 if_packet.h
+-rw-r--r--  1 root root    424 Aug  2 14:15 if_phonet.h
+-rw-r--r--  1 root root    660 Aug  2 14:15 if_plip.h
+-rw-r--r--  1 root root     29 Aug  2 14:15 if_ppp.h
+-rw-r--r--  1 root root   3303 Aug  2 14:15 if_pppol2tp.h
+-rw-r--r--  1 root root   4877 Aug  2 14:15 if_pppox.h
+-rw-r--r--  1 root root    872 Aug  2 14:15 if_slip.h
+-rw-r--r--  1 root root   2600 Aug  2 14:15 if_team.h
+-rw-r--r--  1 root root   4315 Aug  2 14:15 if_tun.h
+-rw-r--r--  1 root root   4902 Aug  2 14:15 if_tunnel.h
+-rw-r--r--  1 root root   1831 Aug  2 14:15 if_vlan.h
+-rw-r--r--  1 root root    881 Aug  2 14:15 if_x25.h
+-rw-r--r--  1 root root   4896 Aug  2 14:15 if_xdp.h
+-rw-r--r--  1 root root    351 Aug  2 14:15 ife.h
+-rw-r--r--  1 root root   3061 Aug  2 14:15 igmp.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34miio[0m
+-rw-r--r--  1 root root   1246 Aug  2 14:15 ila.h
+-rw-r--r--  1 root root  10864 Aug  2 14:15 in.h
+-rw-r--r--  1 root root   7578 Aug  2 14:15 in6.h
+-rw-r--r--  1 root root    936 Aug  2 14:15 in_route.h
+-rw-r--r--  1 root root   5016 Aug  2 14:15 inet_diag.h
+-rw-r--r--  1 root root   3291 Aug  2 14:15 inotify.h
+-rw-r--r--  1 root root  30005 Aug  2 14:15 input-event-codes.h
+-rw-r--r--  1 root root  16217 Aug  2 14:15 input.h
+-rw-r--r--  1 root root  19724 Aug  2 14:15 io_uring.h
+-rw-r--r--  1 root root   2383 Aug  2 14:15 ioam6.h
+-rw-r--r--  1 root root    945 Aug  2 14:15 ioam6_genl.h
+-rw-r--r--  1 root root   1286 Aug  2 14:15 ioam6_iptunnel.h
+-rw-r--r--  1 root root    163 Aug  2 14:15 ioctl.h
+-rw-r--r--  1 root root   4904 Aug  2 14:15 iommu.h
+-rw-r--r--  1 root root  25113 Aug  2 14:15 iommufd.h
+-rw-r--r--  1 root root   4175 Aug  2 14:15 ioprio.h
+-rw-r--r--  1 root root   4846 Aug  2 14:15 ip.h
+-rw-r--r--  1 root root   1953 Aug  2 14:15 ip6_tunnel.h
+-rw-r--r--  1 root root  14133 Aug  2 14:15 ip_vs.h
+-rw-r--r--  1 root root   2101 Aug  2 14:15 ipc.h
+-rw-r--r--  1 root root  15442 Aug  2 14:15 ipmi.h
+-rw-r--r--  1 root root    488 Aug  2 14:15 ipmi_bmc.h
+-rw-r--r--  1 root root   3430 Aug  2 14:15 ipmi_msgdefs.h
+-rw-r--r--  1 root root    441 Aug  2 14:15 ipmi_ssif_bmc.h
+-rw-r--r--  1 root root    947 Aug  2 14:15 ipsec.h
+-rw-r--r--  1 root root   4325 Aug  2 14:15 ipv6.h
+-rw-r--r--  1 root root   1908 Aug  2 14:15 ipv6_route.h
+-rw-r--r--  1 root root    104 Aug  2 14:15 irqnr.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34misdn[0m
+-rw-r--r--  1 root root   6483 Aug  2 14:15 iso_fs.h
+-rw-r--r--  1 root root  15281 Aug  2 14:15 isst_if.h
+-rw-r--r--  1 root root   3022 Aug  2 14:15 ivtv.h
+-rw-r--r--  1 root root   1207 Aug  2 14:15 ivtvfb.h
+-rw-r--r--  1 root root   6811 Aug  2 14:15 jffs2.h
+-rw-r--r--  1 root root   3434 Aug  2 14:15 joystick.h
+-rw-r--r--  1 root root    822 Aug  2 14:15 kcm.h
+-rw-r--r--  1 root root    522 Aug  2 14:15 kcmp.h
+-rw-r--r--  1 root root   1962 Aug  2 14:15 kcov.h
+-rw-r--r--  1 root root   6452 Aug  2 14:15 kd.h
+-rw-r--r--  1 root root    383 Aug  2 14:15 kdev_t.h
+-rw-r--r--  1 root root    900 Aug  2 14:15 kernel-page-flags.h
+-rw-r--r--  1 root root    194 Aug  2 14:15 kernel.h
+-rw-r--r--  1 root root   1019 Aug  2 14:15 kernelcapi.h
+-rw-r--r--  1 root root   2050 Aug  2 14:15 kexec.h
+-rw-r--r--  1 root root  13459 Aug  2 14:15 keyboard.h
+-rw-r--r--  1 root root   5996 Aug  2 14:15 keyctl.h
+-rw-r--r--  1 root root  53956 Aug  2 14:15 kfd_ioctl.h
+-rw-r--r--  1 root root   5134 Aug  2 14:15 kfd_sysfs.h
+-rw-r--r--  1 root root  63643 Aug  2 14:15 kvm.h
+-rw-r--r--  1 root root   1001 Aug  2 14:15 kvm_para.h
+-rw-r--r--  1 root root   5746 Aug  2 14:15 l2tp.h
+-rw-r--r--  1 root root   9294 Aug  2 14:15 landlock.h
+-rw-r--r--  1 root root   8289 Aug  2 14:15 libc-compat.h
+-rw-r--r--  1 root root    937 Aug  2 14:15 limits.h
+-rw-r--r--  1 root root   8327 Aug  2 14:15 lirc.h
+-rw-r--r--  1 root root   3164 Aug  2 14:15 llc.h
+-rw-r--r--  1 root root    834 Aug  2 14:15 loadpin.h
+-rw-r--r--  1 root root   3396 Aug  2 14:15 loop.h
+-rw-r--r--  1 root root   4190 Aug  2 14:15 lp.h
+-rw-r--r--  1 root root   2559 Aug  2 14:15 lsm.h
+-rw-r--r--  1 root root   2367 Aug  2 14:15 lwtunnel.h
+-rw-r--r--  1 root root   3860 Aug  2 14:15 magic.h
+-rw-r--r--  1 root root   4657 Aug  2 14:15 major.h
+-rw-r--r--  1 root root   9505 Aug  2 14:15 map_to_14segment.h
+-rw-r--r--  1 root root   6608 Aug  2 14:15 map_to_7segment.h
+-rw-r--r--  1 root root   1464 Aug  2 14:15 matroxfb.h
+-rw-r--r--  1 root root   1035 Aug  2 14:15 max2175.h
+-rw-r--r--  1 root root   1488 Aug  2 14:15 mctp.h
+-rw-r--r--  1 root root  24109 Aug  2 14:15 mdio.h
+-rw-r--r--  1 root root   7323 Aug  2 14:15 media-bus-format.h
+-rw-r--r--  1 root root  12754 Aug  2 14:15 media.h
+-rw-r--r--  1 root root   3474 Aug  2 14:15 mei.h
+-rw-r--r--  1 root root    738 Aug  2 14:15 mei_uuid.h
+-rw-r--r--  1 root root   9566 Aug  2 14:15 membarrier.h
+-rw-r--r--  1 root root   1467 Aug  2 14:15 memfd.h
+-rw-r--r--  1 root root   2568 Aug  2 14:15 mempolicy.h
+-rw-r--r--  1 root root   9496 Aug  2 14:15 mii.h
+-rw-r--r--  1 root root   2120 Aug  2 14:15 minix_fs.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mmisc[0m
+-rw-r--r--  1 root root   1787 Aug  2 14:15 mman.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mmmc[0m
+-rw-r--r--  1 root root   2117 Aug  2 14:15 mmtimer.h
+-rw-r--r--  1 root root    293 Aug  2 14:15 module.h
+-rw-r--r--  1 root root   7938 Aug  2 14:15 mount.h
+-rw-r--r--  1 root root   2302 Aug  2 14:15 mpls.h
+-rw-r--r--  1 root root    761 Aug  2 14:15 mpls_iptunnel.h
+-rw-r--r--  1 root root   3763 Aug  2 14:15 mptcp.h
+-rw-r--r--  1 root root   4407 Aug  2 14:15 mptcp_pm.h
+-rw-r--r--  1 root root   2201 Aug  2 14:15 mqueue.h
+-rw-r--r--  1 root root   5922 Aug  2 14:15 mroute.h
+-rw-r--r--  1 root root   5005 Aug  2 14:15 mroute6.h
+-rw-r--r--  1 root root   1708 Aug  2 14:15 mrp_bridge.h
+-rw-r--r--  1 root root   6731 Aug  2 14:15 msdos_fs.h
+-rw-r--r--  1 root root   3386 Aug  2 14:15 msg.h
+-rw-r--r--  1 root root   8175 Aug  2 14:15 mtio.h
+-rw-r--r--  1 root root   2408 Aug  2 14:15 nbd-netlink.h
+-rw-r--r--  1 root root   3616 Aug  2 14:15 nbd.h
+-rw-r--r--  1 root root   4828 Aug  2 14:15 ncsi.h
+-rw-r--r--  1 root root   6824 Aug  2 14:15 ndctl.h
+-rw-r--r--  1 root root   6102 Aug  2 14:15 neighbour.h
+-rw-r--r--  1 root root   2085 Aug  2 14:15 net.h
+-rw-r--r--  1 root root   2920 Aug  2 14:15 net_dropmon.h
+-rw-r--r--  1 root root    715 Aug  2 14:15 net_namespace.h
+-rw-r--r--  1 root root   6115 Aug  2 14:15 net_tstamp.h
+-rw-r--r--  1 root root    614 Aug  2 14:15 netconf.h
+-rw-r--r--  1 root root   4327 Aug  2 14:15 netdev.h
+-rw-r--r--  1 root root   2253 Aug  2 14:15 netdevice.h
+drwxr-xr-x  3 root root   4096 Aug 27 02:00 [01;34mnetfilter[0m
+-rw-r--r--  1 root root   1731 Aug  2 14:15 netfilter.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetfilter_arp[0m
+-rw-r--r--  1 root root    445 Aug  2 14:15 netfilter_arp.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetfilter_bridge[0m
+-rw-r--r--  1 root root   1168 Aug  2 14:15 netfilter_bridge.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetfilter_ipv4[0m
+-rw-r--r--  1 root root   1488 Aug  2 14:15 netfilter_ipv4.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnetfilter_ipv6[0m
+-rw-r--r--  1 root root   1383 Aug  2 14:15 netfilter_ipv6.h
+-rw-r--r--  1 root root  12392 Aug  2 14:15 netlink.h
+-rw-r--r--  1 root root   1524 Aug  2 14:15 netlink_diag.h
+-rw-r--r--  1 root root    807 Aug  2 14:15 netrom.h
+-rw-r--r--  1 root root   2825 Aug  2 14:15 nexthop.h
+-rw-r--r--  1 root root  11236 Aug  2 14:15 nfc.h
+-rw-r--r--  1 root root   4500 Aug  2 14:15 nfs.h
+-rw-r--r--  1 root root   1468 Aug  2 14:15 nfs2.h
+-rw-r--r--  1 root root   2453 Aug  2 14:15 nfs3.h
+-rw-r--r--  1 root root   6541 Aug  2 14:15 nfs4.h
+-rw-r--r--  1 root root   1932 Aug  2 14:15 nfs4_mount.h
+-rw-r--r--  1 root root   1654 Aug  2 14:15 nfs_fs.h
+-rw-r--r--  1 root root   2243 Aug  2 14:15 nfs_idmap.h
+-rw-r--r--  1 root root   2142 Aug  2 14:15 nfs_mount.h
+-rw-r--r--  1 root root    718 Aug  2 14:15 nfsacl.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mnfsd[0m
+-rw-r--r--  1 root root    933 Aug  2 14:15 nfsd_netlink.h
+-rw-r--r--  1 root root   7589 Aug  2 14:15 nilfs2_api.h
+-rw-r--r--  1 root root  18085 Aug  2 14:15 nilfs2_ondisk.h
+-rw-r--r--  1 root root  13161 Aug  2 14:15 nitro_enclaves.h
+-rw-r--r--  1 root root   4602 Aug  2 14:15 nl80211-vnd-intel.h
+-rw-r--r--  1 root root 343002 Aug  2 14:15 nl80211.h
+-rw-r--r--  1 root root   1215 Aug  2 14:15 npcm-video.h
+-rw-r--r--  1 root root    639 Aug  2 14:15 nsfs.h
+-rw-r--r--  1 root root    740 Aug  2 14:15 nsm.h
+-rw-r--r--  1 root root   8191 Aug  2 14:15 nubus.h
+-rw-r--r--  1 root root   2490 Aug  2 14:15 nvme_ioctl.h
+-rw-r--r--  1 root root    532 Aug  2 14:15 nvram.h
+-rw-r--r--  1 root root  20944 Aug  2 14:15 omap3isp.h
+-rw-r--r--  1 root root   5918 Aug  2 14:15 omapfb.h
+-rw-r--r--  1 root root    511 Aug  2 14:15 oom.h
+-rw-r--r--  1 root root   1450 Aug  2 14:15 openat2.h
+-rw-r--r--  1 root root  41011 Aug  2 14:15 openvswitch.h
+-rw-r--r--  1 root root   1672 Aug  2 14:15 packet_diag.h
+-rw-r--r--  1 root root    141 Aug  2 14:15 param.h
+-rw-r--r--  1 root root   3841 Aug  2 14:15 parport.h
+-rw-r--r--  1 root root    892 Aug  2 14:15 patchkey.h
+-rw-r--r--  1 root root   1380 Aug  2 14:15 pci.h
+-rw-r--r--  1 root root  61807 Aug  2 14:15 pci_regs.h
+-rw-r--r--  1 root root    920 Aug  2 14:15 pcitest.h
+-rw-r--r--  1 root root  43298 Aug  2 14:15 perf_event.h
+-rw-r--r--  1 root root   2097 Aug  2 14:15 personality.h
+-rw-r--r--  1 root root  10636 Aug  2 14:15 pfkeyv2.h
+-rw-r--r--  1 root root   7987 Aug  2 14:15 pfrut.h
+-rw-r--r--  1 root root   2394 Aug  2 14:15 pg.h
+-rw-r--r--  1 root root   1654 Aug  2 14:15 phantom.h
+-rw-r--r--  1 root root   4677 Aug  2 14:15 phonet.h
+-rw-r--r--  1 root root    256 Aug  2 14:15 pidfd.h
+-rw-r--r--  1 root root  18583 Aug  2 14:15 pkt_cls.h
+-rw-r--r--  1 root root  29346 Aug  2 14:15 pkt_sched.h
+-rw-r--r--  1 root root   2403 Aug  2 14:15 pktcdvd.h
+-rw-r--r--  1 root root   5444 Aug  2 14:15 pmu.h
+-rw-r--r--  1 root root     22 Aug  2 14:15 poll.h
+-rw-r--r--  1 root root   1254 Aug  2 14:15 posix_acl.h
+-rw-r--r--  1 root root   1115 Aug  2 14:15 posix_acl_xattr.h
+-rw-r--r--  1 root root   1098 Aug  2 14:15 posix_types.h
+-rw-r--r--  1 root root   3285 Aug  2 14:15 ppdev.h
+-rw-r--r--  1 root root   2527 Aug  2 14:15 ppp-comp.h
+-rw-r--r--  1 root root   5729 Aug  2 14:15 ppp-ioctl.h
+-rw-r--r--  1 root root   5557 Aug  2 14:15 ppp_defs.h
+-rw-r--r--  1 root root   4734 Aug  2 14:15 pps.h
+-rw-r--r--  1 root root   1630 Aug  2 14:15 pr.h
+-rw-r--r--  1 root root  10671 Aug  2 14:15 prctl.h
+-rw-r--r--  1 root root   2271 Aug  2 14:15 psample.h
+-rw-r--r--  1 root root   5141 Aug  2 14:15 psci.h
+-rw-r--r--  1 root root   5279 Aug  2 14:15 psp-dbc.h
+-rw-r--r--  1 root root   4493 Aug  2 14:15 psp-sev.h
+-rw-r--r--  1 root root   7644 Aug  2 14:15 ptp_clock.h
+-rw-r--r--  1 root root   5501 Aug  2 14:15 ptrace.h
+-rw-r--r--  1 root root   2469 Aug  2 14:15 qemu_fw_cfg.h
+-rw-r--r--  1 root root   2328 Aug  2 14:15 qnx4_fs.h
+-rw-r--r--  1 root root    624 Aug  2 14:15 qnxtypes.h
+-rw-r--r--  1 root root    893 Aug  2 14:15 qrtr.h
+-rw-r--r--  1 root root   6312 Aug  2 14:15 quota.h
+-rw-r--r--  1 root root    360 Aug  2 14:15 radeonfb.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mraid[0m
+-rw-r--r--  1 root root   1414 Aug  2 14:15 random.h
+-rw-r--r--  1 root root  11168 Aug  2 14:15 rds.h
+-rw-r--r--  1 root root   1343 Aug  2 14:15 reboot.h
+-rw-r--r--  1 root root    775 Aug  2 14:15 reiserfs_fs.h
+-rw-r--r--  1 root root    542 Aug  2 14:15 reiserfs_xattr.h
+-rw-r--r--  1 root root   1102 Aug  2 14:15 remoteproc_cdev.h
+-rw-r--r--  1 root root   2595 Aug  2 14:15 resource.h
+-rw-r--r--  1 root root   6103 Aug  2 14:15 rfkill.h
+-rw-r--r--  1 root root   3248 Aug  2 14:15 rio_cm_cdev.h
+-rw-r--r--  1 root root   9330 Aug  2 14:15 rio_mport_cdev.h
+-rw-r--r--  1 root root  34196 Aug  2 14:15 rkisp1-config.h
+-rw-r--r--  1 root root   1236 Aug  2 14:15 romfs_fs.h
+-rw-r--r--  1 root root   2232 Aug  2 14:15 rose.h
+-rw-r--r--  1 root root   2332 Aug  2 14:15 route.h
+-rw-r--r--  1 root root    854 Aug  2 14:15 rpl.h
+-rw-r--r--  1 root root    424 Aug  2 14:15 rpl_iptunnel.h
+-rw-r--r--  1 root root   1317 Aug  2 14:15 rpmsg.h
+-rw-r--r--  1 root root    288 Aug  2 14:15 rpmsg_types.h
+-rw-r--r--  1 root root   5448 Aug  2 14:15 rseq.h
+-rw-r--r--  1 root root   5316 Aug  2 14:15 rtc.h
+-rw-r--r--  1 root root  21347 Aug  2 14:15 rtnetlink.h
+-rw-r--r--  1 root root   4922 Aug  2 14:15 rxrpc.h
+-rw-r--r--  1 root root   4624 Aug  2 14:15 scc.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34msched[0m
+-rw-r--r--  1 root root   6266 Aug  2 14:15 sched.h
+-rw-r--r--  1 root root   6382 Aug  2 14:15 scif_ioctl.h
+-rw-r--r--  1 root root   2479 Aug  2 14:15 screen_info.h
+-rw-r--r--  1 root root  36017 Aug  2 14:15 sctp.h
+-rw-r--r--  1 root root   5990 Aug  2 14:15 seccomp.h
+-rw-r--r--  1 root root   2704 Aug  2 14:15 securebits.h
+-rw-r--r--  1 root root   5343 Aug  2 14:15 sed-opal.h
+-rw-r--r--  1 root root   1169 Aug  2 14:15 seg6.h
+-rw-r--r--  1 root root    589 Aug  2 14:15 seg6_genl.h
+-rw-r--r--  1 root root    423 Aug  2 14:15 seg6_hmac.h
+-rw-r--r--  1 root root    983 Aug  2 14:15 seg6_iptunnel.h
+-rw-r--r--  1 root root   3867 Aug  2 14:15 seg6_local.h
+-rw-r--r--  1 root root   1195 Aug  2 14:15 selinux_netlink.h
+-rw-r--r--  1 root root   3051 Aug  2 14:15 sem.h
+-rw-r--r--  1 root root   5245 Aug  2 14:15 serial.h
+-rw-r--r--  1 root root   5046 Aug  2 14:15 serial_core.h
+-rw-r--r--  1 root root  16023 Aug  2 14:15 serial_reg.h
+-rw-r--r--  1 root root   2099 Aug  2 14:15 serio.h
+-rw-r--r--  1 root root   2364 Aug  2 14:15 sev-guest.h
+-rw-r--r--  1 root root   3794 Aug  2 14:15 shm.h
+-rw-r--r--  1 root root    388 Aug  2 14:15 signal.h
+-rw-r--r--  1 root root   1233 Aug  2 14:15 signalfd.h
+-rw-r--r--  1 root root   8663 Aug  2 14:15 smc.h
+-rw-r--r--  1 root root   2951 Aug  2 14:15 smc_diag.h
+-rw-r--r--  1 root root   1058 Aug  2 14:15 smiapp.h
+-rw-r--r--  1 root root  14533 Aug  2 14:15 snmp.h
+-rw-r--r--  1 root root   1301 Aug  2 14:15 sock_diag.h
+-rw-r--r--  1 root root   1040 Aug  2 14:15 socket.h
+-rw-r--r--  1 root root   6846 Aug  2 14:15 sockios.h
+-rw-r--r--  1 root root   2290 Aug  2 14:15 sonet.h
+-rw-r--r--  1 root root   5309 Aug  2 14:15 sonypi.h
+-rw-r--r--  1 root root   1237 Aug  2 14:15 sound.h
+-rw-r--r--  1 root root  46048 Aug  2 14:15 soundcard.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mspi[0m
+-rw-r--r--  1 root root   7006 Aug  2 14:15 stat.h
+-rw-r--r--  1 root root   1778 Aug  2 14:15 stddef.h
+-rw-r--r--  1 root root   1274 Aug  2 14:15 stm.h
+-rw-r--r--  1 root root    238 Aug  2 14:15 string.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34msunrpc[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34msurface_aggregator[0m
+-rw-r--r--  1 root root   1431 Aug  2 14:15 suspend_ioctls.h
+-rw-r--r--  1 root root   6940 Aug  2 14:15 swab.h
+-rw-r--r--  1 root root   5262 Aug  2 14:15 switchtec_ioctl.h
+-rw-r--r--  1 root root   3449 Aug  2 14:15 sync_file.h
+-rw-r--r--  1 root root   8985 Aug  2 14:15 synclink.h
+-rw-r--r--  1 root root  26033 Aug  2 14:15 sysctl.h
+-rw-r--r--  1 root root   1049 Aug  2 14:15 sysinfo.h
+-rw-r--r--  1 root root   4652 Aug  2 14:15 target_core_user.h
+-rw-r--r--  1 root root   8322 Aug  2 14:15 taskstats.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mtc_act[0m
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34mtc_ematch[0m
+-rw-r--r--  1 root root  17019 Aug  2 14:15 tcp.h
+-rw-r--r--  1 root root   1549 Aug  2 14:15 tcp_metrics.h
+-rw-r--r--  1 root root   1305 Aug  2 14:15 tdx-guest.h
+-rw-r--r--  1 root root  13405 Aug  2 14:15 tee.h
+-rw-r--r--  1 root root    172 Aug  2 14:15 termios.h
+-rw-r--r--  1 root root   3310 Aug  2 14:15 thermal.h
+-rw-r--r--  1 root root    659 Aug  2 14:15 thp7312.h
+-rw-r--r--  1 root root   1752 Aug  2 14:15 time.h
+-rw-r--r--  1 root root   1267 Aug  2 14:15 time_types.h
+-rw-r--r--  1 root root    936 Aug  2 14:15 timerfd.h
+-rw-r--r--  1 root root    278 Aug  2 14:15 times.h
+-rw-r--r--  1 root root   7817 Aug  2 14:15 timex.h
+-rw-r--r--  1 root root   1729 Aug  2 14:15 tiocl.h
+-rw-r--r--  1 root root   8825 Aug  2 14:15 tipc.h
+-rw-r--r--  1 root root  14915 Aug  2 14:15 tipc_config.h
+-rw-r--r--  1 root root   9395 Aug  2 14:15 tipc_netlink.h
+-rw-r--r--  1 root root    468 Aug  2 14:15 tipc_sockets_diag.h
+-rw-r--r--  1 root root   7226 Aug  2 14:15 tls.h
+-rw-r--r--  1 root root   1930 Aug  2 14:15 toshiba.h
+-rw-r--r--  1 root root   1160 Aug  2 14:15 tps6594_pfsm.h
+-rw-r--r--  1 root root   1785 Aug  2 14:15 tty.h
+-rw-r--r--  1 root root   4501 Aug  2 14:15 tty_flags.h
+-rw-r--r--  1 root root   1773 Aug  2 14:15 types.h
+-rw-r--r--  1 root root  11794 Aug  2 14:15 ublk_cmd.h
+-rw-r--r--  1 root root    697 Aug  2 14:15 udf_fs_i.h
+-rw-r--r--  1 root root    643 Aug  2 14:15 udmabuf.h
+-rw-r--r--  1 root root   1688 Aug  2 14:15 udp.h
+-rw-r--r--  1 root root   4648 Aug  2 14:15 uhid.h
+-rw-r--r--  1 root root   9261 Aug  2 14:15 uinput.h
+-rw-r--r--  1 root root    732 Aug  2 14:15 uio.h
+-rw-r--r--  1 root root    798 Aug  2 14:15 uleds.h
+-rw-r--r--  1 root root   4562 Aug  2 14:15 ultrasound.h
+-rw-r--r--  1 root root   3961 Aug  2 14:15 um_timetravel.h
+-rw-r--r--  1 root root    384 Aug  2 14:15 un.h
+-rw-r--r--  1 root root    220 Aug  2 14:15 unistd.h
+-rw-r--r--  1 root root   1328 Aug  2 14:15 unix_diag.h
+drwxr-xr-x  2 root root   4096 Aug 27 02:00 [01;34musb[0m
+-rw-r--r--  1 root root   8315 Aug  2 14:15 usbdevice_fs.h
+-rw-r--r--  1 root root   1503 Aug  2 14:15 usbip.h
+-rw-r--r--  1 root root   2346 Aug  2 14:15 user_events.h
+-rw-r--r--  1 root root  12017 Aug  2 14:15 userfaultfd.h
+-rw-r--r--  1 root root   1516 Aug  2 14:15 userio.h
+-rw-r--r--  1 root root    223 Aug  2 14:15 utime.h
+-rw-r--r--  1 root root    669 Aug  2 14:15 utsname.h
+-rw-r--r--  1 root root     28 Aug  2 14:15 uuid.h
+-rw-r--r--  1 root root   2627 Aug  2 14:15 uvcvideo.h
+-rw-r--r--  1 root root   2056 Aug  2 14:15 v4l2-common.h
+-rw-r--r--  1 root root 149338 Aug  2 14:15 v4l2-controls.h
+-rw-r--r--  1 root root  31123 Aug  2 14:15 v4l2-dv-timings.h
+-rw-r--r--  1 root root   5228 Aug  2 14:15 v4l2-mediabus.h
+-rw-r--r--  1 root root  10005 Aug  2 14:15 v4l2-subdev.h
+-rw-r--r--  1 root root   7257 Aug  2 14:15 vbox_err.h
+-rw-r--r--  1 root root  11651 Aug  2 14:15 vbox_vmmdev_types.h
+-rw-r--r--  1 root root   9368 Aug  2 14:15 vboxguest.h
+-rw-r--r--  1 root root   1785 Aug  2 14:15 vdpa.h
+-rw-r--r--  1 root root   9808 Aug  2 14:15 vduse.h
+-rw-r--r--  1 root root    216 Aug  2 14:15 version.h
+-rw-r--r--  1 root root    224 Aug  2 14:15 veth.h
+-rw-r--r--  1 root root  71862 Aug  2 14:15 vfio.h
+-rw-r--r--  1 root root   1317 Aug  2 14:15 vfio_ccw.h
+-rw-r--r--  1 root root   2542 Aug  2 14:15 vfio_zdev.h
+-rw-r--r--  1 root root   9972 Aug  2 14:15 vhost.h
+-rw-r--r--  1 root root   5267 Aug  2 14:15 vhost_types.h
+-rw-r--r--  1 root root 100866 Aug  2 14:15 videodev2.h
+-rw-r--r--  1 root root   2052 Aug  2 14:15 virtio_9p.h
+-rw-r--r--  1 root root   5279 Aug  2 14:15 virtio_balloon.h
+-rw-r--r--  1 root root   9979 Aug  2 14:15 virtio_blk.h
+-rw-r--r--  1 root root    910 Aug  2 14:15 virtio_bt.h
+-rw-r--r--  1 root root   4763 Aug  2 14:15 virtio_config.h
+-rw-r--r--  1 root root   3156 Aug  2 14:15 virtio_console.h
+-rw-r--r--  1 root root  16472 Aug  2 14:15 virtio_crypto.h
+-rw-r--r--  1 root root    573 Aug  2 14:15 virtio_fs.h
+-rw-r--r--  1 root root   1714 Aug  2 14:15 virtio_gpio.h
+-rw-r--r--  1 root root  11454 Aug  2 14:15 virtio_gpu.h
+-rw-r--r--  1 root root   1186 Aug  2 14:15 virtio_i2c.h
+-rw-r--r--  1 root root   4303 Aug  2 14:15 virtio_ids.h
+-rw-r--r--  1 root root   2515 Aug  2 14:15 virtio_input.h
+-rw-r--r--  1 root root   3931 Aug  2 14:15 virtio_iommu.h
+-rw-r--r--  1 root root   7157 Aug  2 14:15 virtio_mem.h
+-rw-r--r--  1 root root   4969 Aug  2 14:15 virtio_mmio.h
+-rw-r--r--  1 root root  15437 Aug  2 14:15 virtio_net.h
+-rw-r--r--  1 root root   9631 Aug  2 14:15 virtio_pci.h
+-rw-r--r--  1 root root   2447 Aug  2 14:15 virtio_pcidev.h
+-rw-r--r--  1 root root    882 Aug  2 14:15 virtio_pmem.h
+-rw-r--r--  1 root root   8724 Aug  2 14:15 virtio_ring.h
+-rw-r--r--  1 root root    265 Aug  2 14:15 virtio_rng.h
+-rw-r--r--  1 root root    637 Aug  2 14:15 virtio_scmi.h
+-rw-r--r--  1 root root   6085 Aug  2 14:15 virtio_scsi.h
+-rw-r--r--  1 root root   9304 Aug  2 14:15 virtio_snd.h
+-rw-r--r--  1 root root   2153 Aug  2 14:15 virtio_types.h
+-rw-r--r--  1 root root   3348 Aug  2 14:15 virtio_vsock.h
+-rw-r--r--  1 root root   7354 Aug  2 14:15 vm_sockets.h
+-rw-r--r--  1 root root    963 Aug  2 14:15 vm_sockets_diag.h
+-rw-r--r--  1 root root    455 Aug  2 14:15 vmcore.h
+-rw-r--r--  1 root root   1885 Aug  2 14:15 vsockmon.h
+-rw-r--r--  1 root root   3059 Aug  2 14:15 vt.h
+-rw-r--r--  1 root root   1719 Aug  2 14:15 vtpm_proxy.h
+-rw-r--r--  1 root root    682 Aug  2 14:15 wait.h
+-rw-r--r--  1 root root   3490 Aug  2 14:15 watch_queue.h
+-rw-r--r--  1 root root   2335 Aug  2 14:15 watchdog.h
+-rw-r--r--  1 root root   7748 Aug  2 14:15 wireguard.h
+-rw-r--r--  1 root root  42704 Aug  2 14:15 wireless.h
+-rw-r--r--  1 root root   1761 Aug  2 14:15 wmi.h
+-rw-r--r--  1 root root    295 Aug  2 14:15 wwan.h
+-rw-r--r--  1 root root   3562 Aug  2 14:15 x25.h
+-rw-r--r--  1 root root   3023 Aug  2 14:15 xattr.h
+-rw-r--r--  1 root root   1468 Aug  2 14:15 xdp_diag.h
+-rw-r--r--  1 root root  12651 Aug  2 14:15 xfrm.h
+-rw-r--r--  1 root root   2976 Aug  2 14:15 xilinx-v4l2-controls.h
+-rw-r--r--  1 root root   3296 Aug  2 14:15 zorro.h
+-rw-r--r--  1 root root  29963 Aug  2 14:15 zorro_ids.h
+
+./linux/android:
+total 56
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root 16425 Aug  2 14:15 binder.h
+-rw-r--r--  1 root root   789 Aug  2 14:15 binderfs.h
+
+./linux/byteorder:
+total 40
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  3568 Aug  2 14:15 big_endian.h
+-rw-r--r--  1 root root  3637 Aug  2 14:15 little_endian.h
+
+./linux/caif:
+total 44
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  5829 Aug  2 14:15 caif_socket.h
+-rw-r--r--  1 root root  1041 Aug  2 14:15 if_caif.h
+
+./linux/can:
+total 84
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  4115 Aug  2 14:15 bcm.h
+-rw-r--r--  1 root root  7087 Aug  2 14:15 error.h
+-rw-r--r--  1 root root  8026 Aug  2 14:15 gw.h
+-rw-r--r--  1 root root  7427 Aug  2 14:15 isotp.h
+-rw-r--r--  1 root root  2403 Aug  2 14:15 j1939.h
+-rw-r--r--  1 root root  5140 Aug  2 14:15 netlink.h
+-rw-r--r--  1 root root  3043 Aug  2 14:15 raw.h
+-rw-r--r--  1 root root   232 Aug  2 14:15 vxcan.h
+
+./linux/cifs:
+total 40
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  1183 Aug  2 14:15 cifs_mount.h
+-rw-r--r--  1 root root  1623 Aug  2 14:15 cifs_netlink.h
+
+./linux/dvb:
+total 108
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  2813 Aug  2 14:15 audio.h
+-rw-r--r--  1 root root  3510 Aug  2 14:15 ca.h
+-rw-r--r--  1 root root  9440 Aug  2 14:15 dmx.h
+-rw-r--r--  1 root root 30367 Aug  2 14:15 frontend.h
+-rw-r--r--  1 root root  1390 Aug  2 14:15 net.h
+-rw-r--r--  1 root root  5200 Aug  2 14:15 osd.h
+-rw-r--r--  1 root root   345 Aug  2 14:15 version.h
+-rw-r--r--  1 root root  6369 Aug  2 14:15 video.h
+
+./linux/genwqe:
+total 52
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root 17802 Aug  2 14:15 genwqe_card.h
+
+./linux/hdlc:
+total 36
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  2979 Aug  2 14:15 ioctl.h
+
+./linux/hsi:
+total 40
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  3003 Aug  2 14:15 cs-protocol.h
+-rw-r--r--  1 root root  1243 Aug  2 14:15 hsi_char.h
+
+./linux/iio:
+total 44
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root   270 Aug  2 14:15 buffer.h
+-rw-r--r--  1 root root  1390 Aug  2 14:15 events.h
+-rw-r--r--  1 root root  2438 Aug  2 14:15 types.h
+
+./linux/isdn:
+total 40
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  4783 Aug  2 14:15 capicmd.h
+
+./linux/misc:
+total 36
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  3007 Aug  2 14:15 bcm_vk.h
+
+./linux/mmc:
+total 36
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  2355 Aug  2 14:15 ioctl.h
+
+./linux/netfilter:
+total 464
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34mipset[0m
+-rw-r--r--  1 root root  4588 Aug  2 14:15 nf_conntrack_common.h
+-rw-r--r--  1 root root   438 Aug  2 14:15 nf_conntrack_ftp.h
+-rw-r--r--  1 root root   597 Aug  2 14:15 nf_conntrack_sctp.h
+-rw-r--r--  1 root root  1415 Aug  2 14:15 nf_conntrack_tcp.h
+-rw-r--r--  1 root root   896 Aug  2 14:15 nf_conntrack_tuple_common.h
+-rw-r--r--  1 root root   538 Aug  2 14:15 nf_log.h
+-rw-r--r--  1 root root  1587 Aug  2 14:15 nf_nat.h
+-rw-r--r--  1 root root   576 Aug  2 14:15 nf_synproxy.h
+-rw-r--r--  1 root root 58240 Aug  2 14:15 nf_tables.h
+-rw-r--r--  1 root root   731 Aug  2 14:15 nf_tables_compat.h
+-rw-r--r--  1 root root  2457 Aug  2 14:15 nfnetlink.h
+-rw-r--r--  1 root root   900 Aug  2 14:15 nfnetlink_acct.h
+-rw-r--r--  1 root root  2444 Aug  2 14:15 nfnetlink_compat.h
+-rw-r--r--  1 root root  6186 Aug  2 14:15 nfnetlink_conntrack.h
+-rw-r--r--  1 root root  1206 Aug  2 14:15 nfnetlink_cthelper.h
+-rw-r--r--  1 root root  2951 Aug  2 14:15 nfnetlink_cttimeout.h
+-rw-r--r--  1 root root  2170 Aug  2 14:15 nfnetlink_hook.h
+-rw-r--r--  1 root root  3105 Aug  2 14:15 nfnetlink_log.h
+-rw-r--r--  1 root root  2665 Aug  2 14:15 nfnetlink_osf.h
+-rw-r--r--  1 root root  3585 Aug  2 14:15 nfnetlink_queue.h
+-rw-r--r--  1 root root  4464 Aug  2 14:15 x_tables.h
+-rw-r--r--  1 root root   528 Aug  2 14:15 xt_AUDIT.h
+-rw-r--r--  1 root root   563 Aug  2 14:15 xt_CHECKSUM.h
+-rw-r--r--  1 root root   217 Aug  2 14:15 xt_CLASSIFY.h
+-rw-r--r--  1 root root   199 Aug  2 14:15 xt_CONNMARK.h
+-rw-r--r--  1 root root   301 Aug  2 14:15 xt_CONNSECMARK.h
+-rw-r--r--  1 root root   853 Aug  2 14:15 xt_CT.h
+-rw-r--r--  1 root root   697 Aug  2 14:15 xt_DSCP.h
+-rw-r--r--  1 root root   933 Aug  2 14:15 xt_HMARK.h
+-rw-r--r--  1 root root  1001 Aug  2 14:15 xt_IDLETIMER.h
+-rw-r--r--  1 root root   470 Aug  2 14:15 xt_LED.h
+-rw-r--r--  1 root root   642 Aug  2 14:15 xt_LOG.h
+-rw-r--r--  1 root root   184 Aug  2 14:15 xt_MARK.h
+-rw-r--r--  1 root root   556 Aug  2 14:15 xt_NFLOG.h
+-rw-r--r--  1 root root   779 Aug  2 14:15 xt_NFQUEUE.h
+-rw-r--r--  1 root root   390 Aug  2 14:15 xt_RATEEST.h
+-rw-r--r--  1 root root   648 Aug  2 14:15 xt_SECMARK.h
+-rw-r--r--  1 root root   498 Aug  2 14:15 xt_SYNPROXY.h
+-rw-r--r--  1 root root   235 Aug  2 14:15 xt_TCPMSS.h
+-rw-r--r--  1 root root   407 Aug  2 14:15 xt_TCPOPTSTRIP.h
+-rw-r--r--  1 root root   333 Aug  2 14:15 xt_TEE.h
+-rw-r--r--  1 root root   575 Aug  2 14:15 xt_TPROXY.h
+-rw-r--r--  1 root root  1084 Aug  2 14:15 xt_addrtype.h
+-rw-r--r--  1 root root   935 Aug  2 14:15 xt_bpf.h
+-rw-r--r--  1 root root   740 Aug  2 14:15 xt_cgroup.h
+-rw-r--r--  1 root root   374 Aug  2 14:15 xt_cluster.h
+-rw-r--r--  1 root root   230 Aug  2 14:15 xt_comment.h
+-rw-r--r--  1 root root   577 Aug  2 14:15 xt_connbytes.h
+-rw-r--r--  1 root root   360 Aug  2 14:15 xt_connlabel.h
+-rw-r--r--  1 root root   575 Aug  2 14:15 xt_connlimit.h
+-rw-r--r--  1 root root   646 Aug  2 14:15 xt_connmark.h
+-rw-r--r--  1 root root  2557 Aug  2 14:15 xt_conntrack.h
+-rw-r--r--  1 root root   199 Aug  2 14:15 xt_cpu.h
+-rw-r--r--  1 root root   483 Aug  2 14:15 xt_dccp.h
+-rw-r--r--  1 root root   429 Aug  2 14:15 xt_devgroup.h
+-rw-r--r--  1 root root   701 Aug  2 14:15 xt_dscp.h
+-rw-r--r--  1 root root   736 Aug  2 14:15 xt_ecn.h
+-rw-r--r--  1 root root   418 Aug  2 14:15 xt_esp.h
+-rw-r--r--  1 root root  3256 Aug  2 14:15 xt_hashlimit.h
+-rw-r--r--  1 root root   188 Aug  2 14:15 xt_helper.h
+-rw-r--r--  1 root root   485 Aug  2 14:15 xt_ipcomp.h
+-rw-r--r--  1 root root   581 Aug  2 14:15 xt_iprange.h
+-rw-r--r--  1 root root   680 Aug  2 14:15 xt_ipvs.h
+-rw-r--r--  1 root root   739 Aug  2 14:15 xt_l2tp.h
+-rw-r--r--  1 root root   221 Aug  2 14:15 xt_length.h
+-rw-r--r--  1 root root   673 Aug  2 14:15 xt_limit.h
+-rw-r--r--  1 root root   227 Aug  2 14:15 xt_mac.h
+-rw-r--r--  1 root root   260 Aug  2 14:15 xt_mark.h
+-rw-r--r--  1 root root   721 Aug  2 14:15 xt_multiport.h
+-rw-r--r--  1 root root   421 Aug  2 14:15 xt_nfacct.h
+-rw-r--r--  1 root root  1052 Aug  2 14:15 xt_osf.h
+-rw-r--r--  1 root root   535 Aug  2 14:15 xt_owner.h
+-rw-r--r--  1 root root   553 Aug  2 14:15 xt_physdev.h
+-rw-r--r--  1 root root   188 Aug  2 14:15 xt_pkttype.h
+-rw-r--r--  1 root root  1051 Aug  2 14:15 xt_policy.h
+-rw-r--r--  1 root root   400 Aug  2 14:15 xt_quota.h
+-rw-r--r--  1 root root   859 Aug  2 14:15 xt_rateest.h
+-rw-r--r--  1 root root   220 Aug  2 14:15 xt_realm.h
+-rw-r--r--  1 root root  1058 Aug  2 14:15 xt_recent.h
+-rw-r--r--  1 root root   320 Aug  2 14:15 xt_rpfilter.h
+-rw-r--r--  1 root root  2329 Aug  2 14:15 xt_sctp.h
+-rw-r--r--  1 root root  1827 Aug  2 14:15 xt_set.h
+-rw-r--r--  1 root root   640 Aug  2 14:15 xt_socket.h
+-rw-r--r--  1 root root   331 Aug  2 14:15 xt_state.h
+-rw-r--r--  1 root root   716 Aug  2 14:15 xt_statistic.h
+-rw-r--r--  1 root root   664 Aug  2 14:15 xt_string.h
+-rw-r--r--  1 root root   253 Aug  2 14:15 xt_tcpmss.h
+-rw-r--r--  1 root root  1250 Aug  2 14:15 xt_tcpudp.h
+-rw-r--r--  1 root root   730 Aug  2 14:15 xt_time.h
+-rw-r--r--  1 root root   752 Aug  2 14:15 xt_u32.h
+
+./linux/netfilter/ipset:
+total 32
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 9271 Aug  2 14:15 ip_set.h
+-rw-r--r-- 1 root root  428 Aug  2 14:15 ip_set_bitmap.h
+-rw-r--r-- 1 root root  578 Aug  2 14:15 ip_set_hash.h
+-rw-r--r-- 1 root root  609 Aug  2 14:15 ip_set_list.h
+
+./linux/netfilter_arp:
+total 44
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  6024 Aug  2 14:15 arp_tables.h
+-rw-r--r--  1 root root   606 Aug  2 14:15 arpt_mangle.h
+
+./linux/netfilter_bridge:
+total 108
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  1274 Aug  2 14:15 ebt_802_3.h
+-rw-r--r--  1 root root  2042 Aug  2 14:15 ebt_among.h
+-rw-r--r--  1 root root   900 Aug  2 14:15 ebt_arp.h
+-rw-r--r--  1 root root   289 Aug  2 14:15 ebt_arpreply.h
+-rw-r--r--  1 root root  1094 Aug  2 14:15 ebt_ip.h
+-rw-r--r--  1 root root  1056 Aug  2 14:15 ebt_ip6.h
+-rw-r--r--  1 root root   616 Aug  2 14:15 ebt_limit.h
+-rw-r--r--  1 root root   538 Aug  2 14:15 ebt_log.h
+-rw-r--r--  1 root root   388 Aug  2 14:15 ebt_mark_m.h
+-rw-r--r--  1 root root   831 Aug  2 14:15 ebt_mark_t.h
+-rw-r--r--  1 root root   387 Aug  2 14:15 ebt_nat.h
+-rw-r--r--  1 root root   510 Aug  2 14:15 ebt_nflog.h
+-rw-r--r--  1 root root   267 Aug  2 14:15 ebt_pkttype.h
+-rw-r--r--  1 root root   286 Aug  2 14:15 ebt_redirect.h
+-rw-r--r--  1 root root  1110 Aug  2 14:15 ebt_stp.h
+-rw-r--r--  1 root root   719 Aug  2 14:15 ebt_vlan.h
+-rw-r--r--  1 root root  9398 Aug  2 14:15 ebtables.h
+
+./linux/netfilter_ipv4:
+total 72
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  6672 Aug  2 14:15 ip_tables.h
+-rw-r--r--  1 root root   821 Aug  2 14:15 ipt_CLUSTERIP.h
+-rw-r--r--  1 root root   901 Aug  2 14:15 ipt_ECN.h
+-rw-r--r--  1 root root   654 Aug  2 14:15 ipt_LOG.h
+-rw-r--r--  1 root root   468 Aug  2 14:15 ipt_REJECT.h
+-rw-r--r--  1 root root   375 Aug  2 14:15 ipt_TTL.h
+-rw-r--r--  1 root root   425 Aug  2 14:15 ipt_ah.h
+-rw-r--r--  1 root root   431 Aug  2 14:15 ipt_ecn.h
+-rw-r--r--  1 root root   431 Aug  2 14:15 ipt_ttl.h
+
+./linux/netfilter_ipv6:
+total 88
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  8037 Aug  2 14:15 ip6_tables.h
+-rw-r--r--  1 root root   408 Aug  2 14:15 ip6t_HL.h
+-rw-r--r--  1 root root   665 Aug  2 14:15 ip6t_LOG.h
+-rw-r--r--  1 root root   400 Aug  2 14:15 ip6t_NPT.h
+-rw-r--r--  1 root root   470 Aug  2 14:15 ip6t_REJECT.h
+-rw-r--r--  1 root root   657 Aug  2 14:15 ip6t_ah.h
+-rw-r--r--  1 root root   744 Aug  2 14:15 ip6t_frag.h
+-rw-r--r--  1 root root   458 Aug  2 14:15 ip6t_hl.h
+-rw-r--r--  1 root root   645 Aug  2 14:15 ip6t_ipv6header.h
+-rw-r--r--  1 root root   439 Aug  2 14:15 ip6t_mh.h
+-rw-r--r--  1 root root   649 Aug  2 14:15 ip6t_opts.h
+-rw-r--r--  1 root root   985 Aug  2 14:15 ip6t_rt.h
+-rw-r--r--  1 root root  3305 Aug  2 14:15 ip6t_srh.h
+
+./linux/nfsd:
+total 48
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  3122 Aug  2 14:15 cld.h
+-rw-r--r--  1 root root   736 Aug  2 14:15 debug.h
+-rw-r--r--  1 root root  2442 Aug  2 14:15 export.h
+-rw-r--r--  1 root root   421 Aug  2 14:15 stats.h
+
+./linux/raid:
+total 56
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root 15912 Aug  2 14:15 md_p.h
+-rw-r--r--  1 root root  4147 Aug  2 14:15 md_u.h
+
+./linux/sched:
+total 40
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  4513 Aug  2 14:15 types.h
+
+./linux/spi:
+total 44
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  1914 Aug  2 14:15 spi.h
+-rw-r--r--  1 root root  4694 Aug  2 14:15 spidev.h
+
+./linux/sunrpc:
+total 36
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  1144 Aug  2 14:15 debug.h
+
+./linux/surface_aggregator:
+total 48
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root  5130 Aug  2 14:15 cdev.h
+-rw-r--r--  1 root root  5438 Aug  2 14:15 dtx.h
+
+./linux/tc_act:
+total 104
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root   509 Aug  2 14:15 tc_bpf.h
+-rw-r--r--  1 root root   390 Aug  2 14:15 tc_connmark.h
+-rw-r--r--  1 root root   644 Aug  2 14:15 tc_csum.h
+-rw-r--r--  1 root root  1031 Aug  2 14:15 tc_ct.h
+-rw-r--r--  1 root root   556 Aug  2 14:15 tc_ctinfo.h
+-rw-r--r--  1 root root   322 Aug  2 14:15 tc_defact.h
+-rw-r--r--  1 root root   626 Aug  2 14:15 tc_gact.h
+-rw-r--r--  1 root root   870 Aug  2 14:15 tc_gate.h
+-rw-r--r--  1 root root   600 Aug  2 14:15 tc_ife.h
+-rw-r--r--  1 root root   749 Aug  2 14:15 tc_mirred.h
+-rw-r--r--  1 root root  1024 Aug  2 14:15 tc_mpls.h
+-rw-r--r--  1 root root   424 Aug  2 14:15 tc_nat.h
+-rw-r--r--  1 root root  1527 Aug  2 14:15 tc_pedit.h
+-rw-r--r--  1 root root   456 Aug  2 14:15 tc_sample.h
+-rw-r--r--  1 root root   848 Aug  2 14:15 tc_skbedit.h
+-rw-r--r--  1 root root   587 Aug  2 14:15 tc_skbmod.h
+-rw-r--r--  1 root root  2478 Aug  2 14:15 tc_tunnel_key.h
+-rw-r--r--  1 root root   672 Aug  2 14:15 tc_vlan.h
+
+./linux/tc_ematch:
+total 52
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root   414 Aug  2 14:15 tc_em_cmp.h
+-rw-r--r--  1 root root   391 Aug  2 14:15 tc_em_ipt.h
+-rw-r--r--  1 root root  2116 Aug  2 14:15 tc_em_meta.h
+-rw-r--r--  1 root root   255 Aug  2 14:15 tc_em_nbyte.h
+-rw-r--r--  1 root root   384 Aug  2 14:15 tc_em_text.h
+
+./linux/usb:
+total 196
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 29 root root 28672 Aug 27 02:00 [01;34m..[0m
+-rw-r--r--  1 root root 19489 Aug  2 14:15 audio.h
+-rw-r--r--  1 root root   739 Aug  2 14:15 cdc-wdm.h
+-rw-r--r--  1 root root 13475 Aug  2 14:15 cdc.h
+-rw-r--r--  1 root root  9046 Aug  2 14:15 ch11.h
+-rw-r--r--  1 root root 39930 Aug  2 14:15 ch9.h
+-rw-r--r--  1 root root   598 Aug  2 14:15 charger.h
+-rw-r--r--  1 root root 10427 Aug  2 14:15 functionfs.h
+-rw-r--r--  1 root root  1385 Aug  2 14:15 g_printer.h
+-rw-r--r--  1 root root  1169 Aug  2 14:15 g_uvc.h
+-rw-r--r--  1 root root  2818 Aug  2 14:15 gadgetfs.h
+-rw-r--r--  1 root root  3434 Aug  2 14:15 midi.h
+-rw-r--r--  1 root root  8577 Aug  2 14:15 raw_gadget.h
+-rw-r--r--  1 root root  4854 Aug  2 14:15 tmc.h
+-rw-r--r--  1 root root 17295 Aug  2 14:15 video.h
+
+./misc:
+total 48
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  3936 Aug  2 14:15 cxl.h
+-rw-r--r--  1 root root  4415 Aug  2 14:15 fastrpc.h
+-rw-r--r--  1 root root  1947 Aug  2 14:15 ocxl.h
+-rw-r--r--  1 root root   209 Aug  2 14:15 pvpanic.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34muacce[0m
+-rw-r--r--  1 root root 12341 Aug  2 14:15 xilinx_sdfec.h
+
+./misc/uacce:
+total 16
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root  982 Aug  2 14:15 hisi_qm.h
+-rw-r--r-- 1 root root  796 Aug  2 14:15 uacce.h
+
+./mtd:
+total 52
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  1644 Aug  2 14:15 inftl-user.h
+-rw-r--r--  1 root root 11876 Aug  2 14:15 mtd-abi.h
+-rw-r--r--  1 root root  1242 Aug  2 14:15 mtd-user.h
+-rw-r--r--  1 root root  2116 Aug  2 14:15 nftl-user.h
+-rw-r--r--  1 root root 18557 Aug  2 14:15 ubi-user.h
+
+./net:
+total 64
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 3136 Aug  8 14:47 ethernet.h
+-rw-r--r--  1 root root 7042 Aug  8 14:47 if.h
+-rw-r--r--  1 root root 7151 Aug  8 14:47 if_arp.h
+-rw-r--r--  1 root root 1262 Aug  8 14:47 if_packet.h
+-rw-r--r--  1 root root 6714 Aug  8 14:47 if_ppp.h
+-rw-r--r--  1 root root 1626 Aug  8 14:47 if_shaper.h
+-rw-r--r--  1 root root  933 Aug  8 14:47 if_slip.h
+-rw-r--r--  1 root root   28 Aug  8 14:47 ppp-comp.h
+-rw-r--r--  1 root root  162 Aug  8 14:47 ppp_defs.h
+-rw-r--r--  1 root root 4704 Aug  8 14:47 route.h
+
+./netash:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 1363 Aug  8 14:47 ash.h
+
+./netatalk:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 1029 Aug  8 14:47 at.h
+
+./netax25:
+total 16
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 4811 Aug  8 14:47 ax25.h
+
+./neteconet:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 1668 Aug  8 14:47 ec.h
+
+./netinet:
+total 120
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  1985 Aug  8 14:47 ether.h
+-rw-r--r--  1 root root 11597 Aug  8 14:47 icmp6.h
+-rw-r--r--  1 root root  3976 Aug  8 14:47 if_ether.h
+-rw-r--r--  1 root root  1186 Aug  8 14:47 if_fddi.h
+-rw-r--r--  1 root root  3692 Aug  8 14:47 if_tr.h
+-rw-r--r--  1 root root  4661 Aug  8 14:47 igmp.h
+-rw-r--r--  1 root root 22418 Aug  8 14:47 in.h
+-rw-r--r--  1 root root  1494 Aug  8 14:47 in_systm.h
+-rw-r--r--  1 root root  9641 Aug  8 14:47 ip.h
+-rw-r--r--  1 root root  5394 Aug  8 14:47 ip6.h
+-rw-r--r--  1 root root 10934 Aug  8 14:47 ip_icmp.h
+-rw-r--r--  1 root root 10561 Aug  8 14:47 tcp.h
+-rw-r--r--  1 root root  3774 Aug  8 14:47 udp.h
+
+./netipx:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 2900 Aug  8 14:47 ipx.h
+
+./netiucv:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 1594 Aug  8 14:47 iucv.h
+
+./netpacket:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 2469 Aug  8 14:47 packet.h
+
+./netrom:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 2226 Aug  8 14:47 netrom.h
+
+./netrose:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 3184 Aug  8 14:47 rose.h
+
+./nfs:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root   23 Aug  8 14:47 nfs.h
+
+./protocols:
+total 28
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 3844 Aug  8 14:47 routed.h
+-rw-r--r--  1 root root 2567 Aug  8 14:47 rwhod.h
+-rw-r--r--  1 root root 4826 Aug  8 14:47 talkd.h
+-rw-r--r--  1 root root 3881 Aug  8 14:47 timed.h
+
+./rdma:
+total 228
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  5393 Aug  2 14:15 bnxt_re-abi.h
+-rw-r--r--  1 root root  3122 Aug  2 14:15 cxgb4-abi.h
+-rw-r--r--  1 root root  3490 Aug  2 14:15 efa-abi.h
+-rw-r--r--  1 root root   811 Aug  2 14:15 erdma-abi.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34mhfi[0m
+-rw-r--r--  1 root root  3446 Aug  2 14:15 hns-abi.h
+-rw-r--r--  1 root root  9898 Aug  2 14:15 ib_user_ioctl_cmds.h
+-rw-r--r--  1 root root  7939 Aug  2 14:15 ib_user_ioctl_verbs.h
+-rw-r--r--  1 root root  8530 Aug  2 14:15 ib_user_mad.h
+-rw-r--r--  1 root root  2305 Aug  2 14:15 ib_user_sa.h
+-rw-r--r--  1 root root 28965 Aug  2 14:15 ib_user_verbs.h
+-rw-r--r--  1 root root  2378 Aug  2 14:15 irdma-abi.h
+-rw-r--r--  1 root root  1185 Aug  2 14:15 mana-abi.h
+-rw-r--r--  1 root root  5117 Aug  2 14:15 mlx4-abi.h
+-rw-r--r--  1 root root 13942 Aug  2 14:15 mlx5-abi.h
+-rw-r--r--  1 root root 10785 Aug  2 14:15 mlx5_user_ioctl_cmds.h
+-rw-r--r--  1 root root  3619 Aug  2 14:15 mlx5_user_ioctl_verbs.h
+-rw-r--r--  1 root root  3055 Aug  2 14:15 mthca-abi.h
+-rw-r--r--  1 root root  4116 Aug  2 14:15 ocrdma-abi.h
+-rw-r--r--  1 root root  4307 Aug  2 14:15 qedr-abi.h
+-rw-r--r--  1 root root 15074 Aug  2 14:15 rdma_netlink.h
+-rw-r--r--  1 root root  7132 Aug  2 14:15 rdma_user_cm.h
+-rw-r--r--  1 root root  3751 Aug  2 14:15 rdma_user_ioctl.h
+-rw-r--r--  1 root root  2621 Aug  2 14:15 rdma_user_ioctl_cmds.h
+-rw-r--r--  1 root root  4974 Aug  2 14:15 rdma_user_rxe.h
+-rw-r--r--  1 root root  1771 Aug  2 14:15 rvt-abi.h
+-rw-r--r--  1 root root  3430 Aug  2 14:15 siw-abi.h
+-rw-r--r--  1 root root  8011 Aug  2 14:15 vmw_pvrdma-abi.h
+
+./rdma/hfi:
+total 28
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 6618 Aug  2 14:15 hfi1_ioctl.h
+-rw-r--r-- 1 root root 9298 Aug  2 14:15 hfi1_user.h
+
+./regulator:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 2861 Aug  2 14:15 regulator.h
+
+./rpc:
+total 12
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 2897 Aug  8 14:47 netdb.h
+
+./rpcsvc:
+total 152
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  3188 Apr  8 16:18 bootparam_prot.h
+-rw-r--r--  1 root root  3120 Apr  8 16:18 bootparam_prot.x
+-rw-r--r--  1 root root  6757 Apr  8 16:18 key_prot.h
+-rw-r--r--  1 root root  6568 Apr  8 16:18 key_prot.x
+-rw-r--r--  1 root root  3290 Apr  8 16:18 klm_prot.h
+-rw-r--r--  1 root root  3741 Apr  8 16:18 klm_prot.x
+-rw-r--r--  1 root root  3863 Apr  8 16:18 mount.h
+-rw-r--r--  1 root root  4665 Apr  8 16:18 mount.x
+-rw-r--r--  1 root root 11448 Apr  8 16:18 nfs_prot.h
+-rw-r--r--  1 root root  7986 Apr  8 16:18 nfs_prot.x
+-rw-r--r--  1 root root  9374 Apr  8 16:18 nlm_prot.h
+-rw-r--r--  1 root root  4990 Apr  8 16:18 nlm_prot.x
+-rw-r--r--  1 root root  5252 Apr  8 16:18 rex.h
+-rw-r--r--  1 root root  7422 Apr  8 16:18 rex.x
+-rw-r--r--  1 root root  2249 Apr  8 16:18 rquota.h
+-rw-r--r--  1 root root  1568 Apr  8 16:18 rquota.x
+-rw-r--r--  1 root root  4045 Apr  8 16:18 rstat.h
+-rw-r--r--  1 root root  4001 Apr  8 16:18 rstat.x
+-rw-r--r--  1 root root  3279 Apr  8 16:18 rusers.h
+-rw-r--r--  1 root root  5866 Apr  8 16:18 rusers.x
+-rw-r--r--  1 root root  3173 Apr  8 16:18 sm_inter.h
+-rw-r--r--  1 root root  3752 Apr  8 16:18 sm_inter.x
+-rw-r--r--  1 root root  1887 Apr  8 16:18 spray.h
+-rw-r--r--  1 root root  2543 Apr  8 16:18 spray.x
+
+./scsi:
+total 88
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 10168 Aug  2 14:15 cxlflash_ioctl.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34mfc[0m
+-rw-r--r--  1 root root  6970 Aug  8 14:47 scsi.h
+-rw-r--r--  1 root root  8046 Aug  2 14:15 scsi_bsg_fc.h
+-rw-r--r--  1 root root 15445 Aug  2 14:15 scsi_bsg_mpi3mr.h
+-rw-r--r--  1 root root  5519 Aug  2 14:15 scsi_bsg_ufs.h
+-rw-r--r--  1 root root  1316 Aug  8 14:47 scsi_ioctl.h
+-rw-r--r--  1 root root  2906 Aug  2 14:15 scsi_netlink.h
+-rw-r--r--  1 root root  1328 Aug  2 14:15 scsi_netlink_fc.h
+-rw-r--r--  1 root root 11663 Aug  8 14:47 sg.h
+
+./scsi/fc:
+total 72
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root  4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 38925 Aug  2 14:15 fc_els.h
+-rw-r--r-- 1 root root 11703 Aug  2 14:15 fc_fs.h
+-rw-r--r-- 1 root root  2231 Aug  2 14:15 fc_gs.h
+-rw-r--r-- 1 root root  4317 Aug  2 14:15 fc_ns.h
+
+./sound:
+total 248
+drwxr-xr-x  4 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root 23272 Aug  2 14:15 asequencer.h
+-rw-r--r--  1 root root 22486 Aug  2 14:15 asoc.h
+-rw-r--r--  1 root root 54515 Aug  2 14:15 asound.h
+-rw-r--r--  1 root root  3637 Aug  2 14:15 asound_fm.h
+-rw-r--r--  1 root root  5926 Aug  2 14:15 compress_offload.h
+-rw-r--r--  1 root root 16461 Aug  2 14:15 compress_params.h
+-rw-r--r--  1 root root 18889 Aug  2 14:15 emu10k1.h
+-rw-r--r--  1 root root 11016 Aug  2 14:15 firewire.h
+-rw-r--r--  1 root root  2076 Aug  2 14:15 hdsp.h
+-rw-r--r--  1 root root  4486 Aug  2 14:15 hdspm.h
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34mintel[0m
+-rw-r--r--  1 root root  3563 Aug  2 14:15 sb16_csp.h
+-rw-r--r--  1 root root  1615 Aug  2 14:15 scarlett2.h
+-rw-r--r--  1 root root  6754 Aug  2 14:15 sfnt_info.h
+-rw-r--r--  1 root root  5327 Aug  2 14:15 skl-tplg-interface.h
+-rw-r--r--  1 root root  7655 Aug  2 14:15 snd_ar_tokens.h
+-rw-r--r--  1 root root 11754 Aug  2 14:15 snd_sst_tokens.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34msof[0m
+-rw-r--r--  1 root root  4077 Aug  2 14:15 tlv.h
+-rw-r--r--  1 root root  1238 Aug  2 14:15 usb_stream.h
+
+./sound/intel:
+total 12
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 4 root root 4096 Aug 27 02:00 [01;34m..[0m
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34mavs[0m
+
+./sound/intel/avs:
+total 16
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 4485 Aug  2 14:15 tokens.h
+
+./sound/sof:
+total 28
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 4 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 2140 Aug  2 14:15 abi.h
+-rw-r--r-- 1 root root 2267 Aug  2 14:15 fw.h
+-rw-r--r-- 1 root root 1912 Aug  2 14:15 header.h
+-rw-r--r-- 1 root root 6935 Aug  2 14:15 tokens.h
+
+./video:
+total 24
+drwxr-xr-x  2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  213 Aug  2 14:15 edid.h
+-rw-r--r--  1 root root 7643 Aug  2 14:15 sisfb.h
+-rw-r--r--  1 root root 1078 Aug  2 14:15 uvesafb.h
+
+./x86_64-linux-gnu:
+total 52
+drwxr-xr-x  6 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  4351 Aug  8 14:47 a.out.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34masm[0m
+drwxr-xr-x  4 root root 12288 Aug 27 02:00 [01;34mbits[0m
+-rw-r--r--  1 root root  3553 Aug  8 14:47 fpu_control.h
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34mgnu[0m
+-rw-r--r--  1 root root  4916 Aug  8 14:47 ieee754.h
+drwxr-xr-x  3 root root  4096 Aug 27 02:00 [01;34msys[0m
+
+./x86_64-linux-gnu/asm:
+total 360
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 6 root root  4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root   756 Aug  2 14:15 a.out.h
+-rw-r--r-- 1 root root 11550 Aug  2 14:15 amd_hsmp.h
+-rw-r--r-- 1 root root   546 Aug  2 14:15 auxvec.h
+-rw-r--r-- 1 root root   321 Aug  2 14:15 bitsperlong.h
+-rw-r--r-- 1 root root   323 Aug  2 14:15 boot.h
+-rw-r--r-- 1 root root  8547 Aug  2 14:15 bootparam.h
+-rw-r--r-- 1 root root    40 Aug  2 14:15 bpf_perf_event.h
+-rw-r--r-- 1 root root   200 Aug  2 14:15 byteorder.h
+-rw-r--r-- 1 root root  3329 Aug  2 14:15 debugreg.h
+-rw-r--r-- 1 root root  2579 Aug  2 14:15 e820.h
+-rw-r--r-- 1 root root    31 Aug  2 14:15 errno.h
+-rw-r--r-- 1 root root    31 Aug  2 14:15 fcntl.h
+-rw-r--r-- 1 root root    69 Aug  2 14:15 hw_breakpoint.h
+-rw-r--r-- 1 root root   324 Aug  2 14:15 hwcap2.h
+-rw-r--r-- 1 root root    31 Aug  2 14:15 ioctl.h
+-rw-r--r-- 1 root root    32 Aug  2 14:15 ioctls.h
+-rw-r--r-- 1 root root    32 Aug  2 14:15 ipcbuf.h
+-rw-r--r-- 1 root root   854 Aug  2 14:15 ist.h
+-rw-r--r-- 1 root root 13074 Aug  2 14:15 kvm.h
+-rw-r--r-- 1 root root  4340 Aug  2 14:15 kvm_para.h
+-rw-r--r-- 1 root root   388 Aug  2 14:15 kvm_perf.h
+-rw-r--r-- 1 root root  1306 Aug  2 14:15 ldt.h
+-rw-r--r-- 1 root root  1730 Aug  2 14:15 mce.h
+-rw-r--r-- 1 root root   413 Aug  2 14:15 mman.h
+-rw-r--r-- 1 root root  1079 Aug  2 14:15 msgbuf.h
+-rw-r--r-- 1 root root   346 Aug  2 14:15 msr.h
+-rw-r--r-- 1 root root  3993 Aug  2 14:15 mtrr.h
+-rw-r--r-- 1 root root    31 Aug  2 14:15 param.h
+-rw-r--r-- 1 root root  1403 Aug  2 14:15 perf_regs.h
+-rw-r--r-- 1 root root    30 Aug  2 14:15 poll.h
+-rw-r--r-- 1 root root   224 Aug  2 14:15 posix_types.h
+-rw-r--r-- 1 root root   765 Aug  2 14:15 posix_types_32.h
+-rw-r--r-- 1 root root   609 Aug  2 14:15 posix_types_64.h
+-rw-r--r-- 1 root root   581 Aug  2 14:15 posix_types_x32.h
+-rw-r--r-- 1 root root  1170 Aug  2 14:15 prctl.h
+-rw-r--r-- 1 root root  7137 Aug  2 14:15 processor-flags.h
+-rw-r--r-- 1 root root  2037 Aug  2 14:15 ptrace-abi.h
+-rw-r--r-- 1 root root  1495 Aug  2 14:15 ptrace.h
+-rw-r--r-- 1 root root    34 Aug  2 14:15 resource.h
+-rw-r--r-- 1 root root  1070 Aug  2 14:15 sembuf.h
+-rw-r--r-- 1 root root     6 Aug  2 14:15 setup.h
+-rw-r--r-- 1 root root  8344 Aug  2 14:15 sgx.h
+-rw-r--r-- 1 root root  1321 Aug  2 14:15 shmbuf.h
+-rw-r--r-- 1 root root  9723 Aug  2 14:15 sigcontext.h
+-rw-r--r-- 1 root root   271 Aug  2 14:15 sigcontext32.h
+-rw-r--r-- 1 root root   422 Aug  2 14:15 siginfo.h
+-rw-r--r-- 1 root root  2046 Aug  2 14:15 signal.h
+-rw-r--r-- 1 root root    32 Aug  2 14:15 socket.h
+-rw-r--r-- 1 root root    33 Aug  2 14:15 sockios.h
+-rw-r--r-- 1 root root  3131 Aug  2 14:15 stat.h
+-rw-r--r-- 1 root root   416 Aug  2 14:15 statfs.h
+-rw-r--r-- 1 root root  9773 Aug  2 14:15 svm.h
+-rw-r--r-- 1 root root   724 Aug  2 14:15 swab.h
+-rw-r--r-- 1 root root    34 Aug  2 14:15 termbits.h
+-rw-r--r-- 1 root root    33 Aug  2 14:15 termios.h
+-rw-r--r-- 1 root root    31 Aug  2 14:15 types.h
+-rw-r--r-- 1 root root  2117 Aug  2 14:15 ucontext.h
+-rw-r--r-- 1 root root   623 Aug  2 14:15 unistd.h
+-rw-r--r-- 1 root root 12279 Aug  2 14:15 unistd_32.h
+-rw-r--r-- 1 root root 10090 Aug  2 14:15 unistd_64.h
+-rw-r--r-- 1 root root 17687 Aug  2 14:15 unistd_x32.h
+-rw-r--r-- 1 root root  3186 Aug  2 14:15 vm86.h
+-rw-r--r-- 1 root root  7463 Aug  2 14:15 vmx.h
+-rw-r--r-- 1 root root   263 Aug  2 14:15 vsyscall.h
+
+./x86_64-linux-gnu/bits:
+total 1016
+drwxr-xr-x 4 root root 12288 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 6 root root  4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root   268 Aug  8 14:47 a.out.h
+-rw-r--r-- 1 root root  1010 Aug  8 14:47 argp-ldbl.h
+-rw-r--r-- 1 root root  1283 Aug  8 14:47 atomic_wide_counter.h
+-rw-r--r-- 1 root root  2450 Aug  8 14:47 byteswap.h
+-rw-r--r-- 1 root root  4139 Aug  8 14:47 cmathcalls.h
+-rw-r--r-- 1 root root 23828 Aug  8 14:47 confname.h
+-rw-r--r-- 1 root root  4516 Aug  8 14:47 cpu-set.h
+-rw-r--r-- 1 root root  1771 Aug  8 14:47 dirent.h
+-rw-r--r-- 1 root root  1275 Aug  8 14:47 dirent_ext.h
+-rw-r--r-- 1 root root  1119 Aug  8 14:47 dl_find_object.h
+-rw-r--r-- 1 root root  2521 Aug  8 14:47 dlfcn.h
+-rw-r--r-- 1 root root   426 Aug  8 14:47 elfclass.h
+-rw-r--r-- 1 root root  1905 Aug  8 14:47 endian.h
+-rw-r--r-- 1 root root   273 Aug  8 14:47 endianness.h
+-rw-r--r-- 1 root root  3791 Aug  8 14:47 environments.h
+-rw-r--r-- 1 root root  1071 Aug  8 14:47 epoll.h
+-rw-r--r-- 1 root root  1148 Aug  8 14:47 err-ldbl.h
+-rw-r--r-- 1 root root  1426 Aug  8 14:47 errno.h
+-rw-r--r-- 1 root root  2824 Aug  8 14:47 error-ldbl.h
+-rw-r--r-- 1 root root  2684 Aug  8 14:47 error.h
+-rw-r--r-- 1 root root  1129 Aug  8 14:47 eventfd.h
+-rw-r--r-- 1 root root 14484 Aug  8 14:47 fcntl-linux.h
+-rw-r--r-- 1 root root  2246 Aug  8 14:47 fcntl.h
+-rw-r--r-- 1 root root  5575 Aug  8 14:47 fcntl2.h
+-rw-r--r-- 1 root root  3370 Aug  8 14:47 fenv.h
+-rw-r--r-- 1 root root 10325 Aug  8 14:47 floatn-common.h
+-rw-r--r-- 1 root root  4457 Aug  8 14:47 floatn.h
+-rw-r--r-- 1 root root  1215 Aug  8 14:47 flt-eval-method.h
+-rw-r--r-- 1 root root  1216 Aug  8 14:47 fp-fast.h
+-rw-r--r-- 1 root root  1012 Aug  8 14:47 fp-logb.h
+-rw-r--r-- 1 root root  3667 Aug  8 14:47 getopt_core.h
+-rw-r--r-- 1 root root  3038 Aug  8 14:47 getopt_ext.h
+-rw-r--r-- 1 root root  1810 Aug  8 14:47 getopt_posix.h
+-rw-r--r-- 1 root root   972 Aug  8 14:47 hwcap.h
+-rw-r--r-- 1 root root  9366 Aug  8 14:47 in.h
+-rw-r--r-- 1 root root  1591 Aug  8 14:47 indirect-return.h
+-rw-r--r-- 1 root root    25 Aug  8 14:47 initspin.h
+-rw-r--r-- 1 root root  1080 Aug  8 14:47 inotify.h
+-rw-r--r-- 1 root root  2456 Aug  8 14:47 ioctl-types.h
+-rw-r--r-- 1 root root  4478 Aug  8 14:47 ioctls.h
+-rw-r--r-- 1 root root  1745 Aug  8 14:47 ipc-perm.h
+-rw-r--r-- 1 root root  1523 Aug  8 14:47 ipc.h
+-rw-r--r-- 1 root root  1176 Aug  8 14:47 ipctypes.h
+-rw-r--r-- 1 root root  2479 Aug  8 14:47 iscanonical.h
+-rw-r--r-- 1 root root  4286 Aug  8 14:47 libc-header-start.h
+-rw-r--r-- 1 root root  8933 Aug  8 14:47 libm-simd-decl-stubs.h
+-rw-r--r-- 1 root root  4323 Aug  8 14:47 link.h
+-rw-r--r-- 1 root root  1104 Aug  8 14:47 link_lavcurrent.h
+-rw-r--r-- 1 root root  3175 Aug  8 14:47 local_lim.h
+-rw-r--r-- 1 root root  1368 Aug  8 14:47 locale.h
+-rw-r--r-- 1 root root   970 Aug  8 14:47 long-double.h
+-rw-r--r-- 1 root root  5402 Aug  8 14:47 math-vector.h
+-rw-r--r-- 1 root root  1863 Aug  8 14:47 mathcalls-helper-functions.h
+-rw-r--r-- 1 root root  1515 Aug  8 14:47 mathcalls-narrow.h
+-rw-r--r-- 1 root root 14562 Aug  8 14:47 mathcalls.h
+-rw-r--r-- 1 root root   891 Aug  8 14:47 mathdef.h
+-rw-r--r-- 1 root root  5188 Aug  8 14:47 mman-linux.h
+-rw-r--r-- 1 root root  1961 Aug  8 14:47 mman-map-flags-generic.h
+-rw-r--r-- 1 root root  2928 Aug  8 14:47 mman-shared.h
+-rw-r--r-- 1 root root  1463 Aug  8 14:47 mman.h
+-rw-r--r-- 1 root root  1230 Aug  8 14:47 mman_ext.h
+-rw-r--r-- 1 root root  1047 Aug  8 14:47 monetary-ldbl.h
+-rw-r--r-- 1 root root  1246 Aug  8 14:47 mqueue.h
+-rw-r--r-- 1 root root  2151 Aug  8 14:47 mqueue2.h
+-rw-r--r-- 1 root root  1793 Aug  8 14:47 msq.h
+-rw-r--r-- 1 root root  1264 Aug  8 14:47 netdb.h
+-rw-r--r-- 1 root root  1433 Aug  8 14:47 param.h
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34mplatform[0m
+-rw-r--r-- 1 root root  2076 Aug  8 14:47 poll.h
+-rw-r--r-- 1 root root  3676 Aug  8 14:47 poll2.h
+-rw-r--r-- 1 root root  5198 Aug  8 14:47 posix1_lim.h
+-rw-r--r-- 1 root root  2867 Aug  8 14:47 posix2_lim.h
+-rw-r--r-- 1 root root  5913 Aug  8 14:47 posix_opt.h
+-rw-r--r-- 1 root root   992 Aug  8 14:47 printf-ldbl.h
+-rw-r--r-- 1 root root   963 Aug  8 14:47 procfs-extra.h
+-rw-r--r-- 1 root root  1148 Aug  8 14:47 procfs-id.h
+-rw-r--r-- 1 root root  1050 Aug  8 14:47 procfs-prregset.h
+-rw-r--r-- 1 root root  2025 Aug  8 14:47 procfs.h
+-rw-r--r-- 1 root root  1214 Aug  8 14:47 pthread_stack_min-dynamic.h
+-rw-r--r-- 1 root root   951 Aug  8 14:47 pthread_stack_min.h
+-rw-r--r-- 1 root root  1838 Aug  8 14:47 pthreadtypes-arch.h
+-rw-r--r-- 1 root root  3072 Aug  8 14:47 pthreadtypes.h
+-rw-r--r-- 1 root root  4523 Aug  8 14:47 ptrace-shared.h
+-rw-r--r-- 1 root root  6308 Aug  8 14:47 resource.h
+-rw-r--r-- 1 root root  1248 Aug  8 14:47 rseq.h
+-rw-r--r-- 1 root root  4112 Aug  8 14:47 sched.h
+-rw-r--r-- 1 root root  1234 Aug  8 14:47 select-decl.h
+-rw-r--r-- 1 root root  1505 Aug  8 14:47 select.h
+-rw-r--r-- 1 root root  1266 Aug  8 14:47 select2.h
+-rw-r--r-- 1 root root  2259 Aug  8 14:47 sem.h
+-rw-r--r-- 1 root root  1215 Aug  8 14:47 semaphore.h
+-rw-r--r-- 1 root root  1287 Aug  8 14:47 setjmp.h
+-rw-r--r-- 1 root root  1705 Aug  8 14:47 setjmp2.h
+-rw-r--r-- 1 root root  2766 Aug  8 14:47 shm.h
+-rw-r--r-- 1 root root  1106 Aug  8 14:47 shmlba.h
+-rw-r--r-- 1 root root  2935 Aug  8 14:47 sigaction.h
+-rw-r--r-- 1 root root  4266 Aug  8 14:47 sigcontext.h
+-rw-r--r-- 1 root root  1471 Aug  8 14:47 sigevent-consts.h
+-rw-r--r-- 1 root root   729 Aug  8 14:47 siginfo-arch.h
+-rw-r--r-- 1 root root   204 Aug  8 14:47 siginfo-consts-arch.h
+-rw-r--r-- 1 root root  7117 Aug  8 14:47 siginfo-consts.h
+-rw-r--r-- 1 root root  1285 Aug  8 14:47 signal_ext.h
+-rw-r--r-- 1 root root  1067 Aug  8 14:47 signalfd.h
+-rw-r--r-- 1 root root  2580 Aug  8 14:47 signum-arch.h
+-rw-r--r-- 1 root root  3313 Aug  8 14:47 signum-generic.h
+-rw-r--r-- 1 root root  1168 Aug  8 14:47 sigstack.h
+-rw-r--r-- 1 root root  1283 Aug  8 14:47 sigstksz.h
+-rw-r--r-- 1 root root  1692 Aug  8 14:47 sigthread.h
+-rw-r--r-- 1 root root  1514 Aug  8 14:47 sockaddr.h
+-rw-r--r-- 1 root root  2497 Aug  8 14:47 socket-constants.h
+-rw-r--r-- 1 root root 13726 Aug  8 14:47 socket.h
+-rw-r--r-- 1 root root  3037 Aug  8 14:47 socket2.h
+-rw-r--r-- 1 root root  2216 Aug  8 14:47 socket_type.h
+-rw-r--r-- 1 root root  2489 Aug  8 14:47 spawn_ext.h
+-rw-r--r-- 1 root root  1188 Aug  8 14:47 ss_flags.h
+-rw-r--r-- 1 root root  9040 Aug  8 14:47 stab.def
+-rw-r--r-- 1 root root  2231 Aug  8 14:47 stat.h
+-rw-r--r-- 1 root root  1917 Aug  8 14:47 statfs.h
+-rw-r--r-- 1 root root  3569 Aug  8 14:47 statvfs.h
+-rw-r--r-- 1 root root  2219 Aug  8 14:47 statx-generic.h
+-rw-r--r-- 1 root root  1400 Aug  8 14:47 statx.h
+-rw-r--r-- 1 root root  1037 Aug  8 14:47 stdint-intn.h
+-rw-r--r-- 1 root root  1300 Aug  8 14:47 stdint-least.h
+-rw-r--r-- 1 root root  1049 Aug  8 14:47 stdint-uintn.h
+-rw-r--r-- 1 root root  4313 Aug  8 14:47 stdio-ldbl.h
+-rw-r--r-- 1 root root  5599 Aug  8 14:47 stdio.h
+-rw-r--r-- 1 root root  6309 Aug  8 14:47 stdio2-decl.h
+-rw-r--r-- 1 root root  8202 Aug  8 14:47 stdio2.h
+-rw-r--r-- 1 root root  1059 Aug  8 14:47 stdio_lim.h
+-rw-r--r-- 1 root root  1557 Aug  8 14:47 stdlib-bsearch.h
+-rw-r--r-- 1 root root  1115 Aug  8 14:47 stdlib-float.h
+-rw-r--r-- 1 root root  2020 Aug  8 14:47 stdlib-ldbl.h
+-rw-r--r-- 1 root root  5779 Aug  8 14:47 stdlib.h
+-rw-r--r-- 1 root root  5625 Aug  8 14:47 string_fortified.h
+-rw-r--r-- 1 root root  1240 Aug  8 14:47 strings_fortified.h
+-rw-r--r-- 1 root root  1810 Aug  8 14:47 struct_mutex.h
+-rw-r--r-- 1 root root  2027 Aug  8 14:47 struct_rwlock.h
+-rw-r--r-- 1 root root  6190 Aug  8 14:47 struct_stat.h
+-rw-r--r-- 1 root root  2606 Aug  8 14:47 struct_stat_time64_helper.h
+-rw-r--r-- 1 root root 46189 Aug  8 14:47 syscall.h
+-rw-r--r-- 1 root root  1334 Aug  8 14:47 syslog-decl.h
+-rw-r--r-- 1 root root  1204 Aug  8 14:47 syslog-ldbl.h
+-rw-r--r-- 1 root root  1061 Aug  8 14:47 syslog-path.h
+-rw-r--r-- 1 root root  1695 Aug  8 14:47 syslog.h
+-rw-r--r-- 1 root root  2953 Aug  8 14:47 sysmacros.h
+-rw-r--r-- 1 root root  1824 Aug  8 14:47 termios-baud.h
+-rw-r--r-- 1 root root  1279 Aug  8 14:47 termios-c_cc.h
+-rw-r--r-- 1 root root  1283 Aug  8 14:47 termios-c_cflag.h
+-rw-r--r-- 1 root root  1936 Aug  8 14:47 termios-c_iflag.h
+-rw-r--r-- 1 root root  2594 Aug  8 14:47 termios-c_lflag.h
+-rw-r--r-- 1 root root  2822 Aug  8 14:47 termios-c_oflag.h
+-rw-r--r-- 1 root root   969 Aug  8 14:47 termios-misc.h
+-rw-r--r-- 1 root root  1433 Aug  8 14:47 termios-struct.h
+-rw-r--r-- 1 root root  1062 Aug  8 14:47 termios-tcflow.h
+-rw-r--r-- 1 root root  2168 Aug  8 14:47 termios.h
+-rw-r--r-- 1 root root  3912 Aug  8 14:47 thread-shared-types.h
+-rw-r--r-- 1 root root  3326 Aug  8 14:47 time.h
+-rw-r--r-- 1 root root  1340 Aug  8 14:47 time64.h
+-rw-r--r-- 1 root root  1103 Aug  8 14:47 timerfd.h
+-rw-r--r-- 1 root root  1109 Aug  8 14:47 timesize.h
+-rw-r--r-- 1 root root  6198 Aug  8 14:47 timex.h
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34mtypes[0m
+-rw-r--r-- 1 root root  8806 Aug  8 14:47 types.h
+-rw-r--r-- 1 root root  3737 Aug  8 14:47 typesizes.h
+-rw-r--r-- 1 root root  1542 Aug  8 14:47 uintn-identity.h
+-rw-r--r-- 1 root root  1923 Aug  8 14:47 uio-ext.h
+-rw-r--r-- 1 root root  1385 Aug  8 14:47 uio_lim.h
+-rw-r--r-- 1 root root  8687 Aug  8 14:47 unistd-decl.h
+-rw-r--r-- 1 root root  4488 Aug  8 14:47 unistd.h
+-rw-r--r-- 1 root root  2035 Aug  8 14:47 unistd_ext.h
+-rw-r--r-- 1 root root  4067 Aug  8 14:47 utmp.h
+-rw-r--r-- 1 root root  3578 Aug  8 14:47 utmpx.h
+-rw-r--r-- 1 root root  1213 Aug  8 14:47 utsname.h
+-rw-r--r-- 1 root root  1697 Aug  8 14:47 waitflags.h
+-rw-r--r-- 1 root root  2287 Aug  8 14:47 waitstatus.h
+-rw-r--r-- 1 root root  3945 Aug  8 14:47 wchar-ldbl.h
+-rw-r--r-- 1 root root  1906 Aug  8 14:47 wchar.h
+-rw-r--r-- 1 root root 11461 Aug  8 14:47 wchar2-decl.h
+-rw-r--r-- 1 root root  9433 Aug  8 14:47 wchar2.h
+-rw-r--r-- 1 root root  6307 Aug  8 14:47 wctype-wchar.h
+-rw-r--r-- 1 root root   442 Aug  8 14:47 wordsize.h
+-rw-r--r-- 1 root root  3858 Aug  8 14:47 xopen_lim.h
+
+./x86_64-linux-gnu/bits/platform:
+total 36
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 4 root root 12288 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root  1486 Aug  8 14:47 features.h
+-rw-r--r-- 1 root root 13942 Aug  8 14:47 x86.h
+
+./x86_64-linux-gnu/bits/types:
+total 216
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 4 root root 12288 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root   180 Aug  8 14:47 FILE.h
+-rw-r--r-- 1 root root   110 Aug  8 14:47 __FILE.h
+-rw-r--r-- 1 root root   410 Aug  8 14:47 __fpos64_t.h
+-rw-r--r-- 1 root root   381 Aug  8 14:47 __fpos_t.h
+-rw-r--r-- 1 root root  1661 Aug  8 14:47 __locale_t.h
+-rw-r--r-- 1 root root   564 Aug  8 14:47 __mbstate_t.h
+-rw-r--r-- 1 root root   206 Aug  8 14:47 __sigset_t.h
+-rw-r--r-- 1 root root  1148 Aug  8 14:47 __sigval_t.h
+-rw-r--r-- 1 root root   143 Aug  8 14:47 clock_t.h
+-rw-r--r-- 1 root root   174 Aug  8 14:47 clockid_t.h
+-rw-r--r-- 1 root root  2725 Aug  8 14:47 cookie_io_functions_t.h
+-rw-r--r-- 1 root root   894 Aug  8 14:47 error_t.h
+-rw-r--r-- 1 root root   369 Aug  8 14:47 idtype_t.h
+-rw-r--r-- 1 root root   983 Aug  8 14:47 locale_t.h
+-rw-r--r-- 1 root root   135 Aug  8 14:47 mbstate_t.h
+-rw-r--r-- 1 root root  2010 Aug  8 14:47 res_state.h
+-rw-r--r-- 1 root root   272 Aug  8 14:47 sig_atomic_t.h
+-rw-r--r-- 1 root root  1204 Aug  8 14:47 sigevent_t.h
+-rw-r--r-- 1 root root  3892 Aug  8 14:47 siginfo_t.h
+-rw-r--r-- 1 root root   195 Aug  8 14:47 sigset_t.h
+-rw-r--r-- 1 root root   599 Aug  8 14:47 sigval_t.h
+-rw-r--r-- 1 root root  1062 Aug  8 14:47 stack_t.h
+-rw-r--r-- 1 root root  4104 Aug  8 14:47 struct_FILE.h
+-rw-r--r-- 1 root root  1467 Aug  8 14:47 struct___jmp_buf_tag.h
+-rw-r--r-- 1 root root  1066 Aug  8 14:47 struct_iovec.h
+-rw-r--r-- 1 root root   288 Aug  8 14:47 struct_itimerspec.h
+-rw-r--r-- 1 root root  1094 Aug  8 14:47 struct_msqid64_ds.h
+-rw-r--r-- 1 root root  1522 Aug  8 14:47 struct_msqid64_ds_helper.h
+-rw-r--r-- 1 root root  2127 Aug  8 14:47 struct_msqid_ds.h
+-rw-r--r-- 1 root root   274 Aug  8 14:47 struct_osockaddr.h
+-rw-r--r-- 1 root root  4121 Aug  8 14:47 struct_rusage.h
+-rw-r--r-- 1 root root  1073 Aug  8 14:47 struct_sched_param.h
+-rw-r--r-- 1 root root  1109 Aug  8 14:47 struct_semid64_ds.h
+-rw-r--r-- 1 root root  1212 Aug  8 14:47 struct_semid64_ds_helper.h
+-rw-r--r-- 1 root root  1518 Aug  8 14:47 struct_semid_ds.h
+-rw-r--r-- 1 root root  1111 Aug  8 14:47 struct_shmid64_ds.h
+-rw-r--r-- 1 root root  1353 Aug  8 14:47 struct_shmid64_ds_helper.h
+-rw-r--r-- 1 root root  1993 Aug  8 14:47 struct_shmid_ds.h
+-rw-r--r-- 1 root root  1073 Aug  8 14:47 struct_sigstack.h
+-rw-r--r-- 1 root root  1897 Aug  8 14:47 struct_statx.h
+-rw-r--r-- 1 root root  1202 Aug  8 14:47 struct_statx_timestamp.h
+-rw-r--r-- 1 root root   413 Aug  8 14:47 struct_timeb.h
+-rw-r--r-- 1 root root   867 Aug  8 14:47 struct_timespec.h
+-rw-r--r-- 1 root root   411 Aug  8 14:47 struct_timeval.h
+-rw-r--r-- 1 root root   760 Aug  8 14:47 struct_tm.h
+-rw-r--r-- 1 root root   203 Aug  8 14:47 time_t.h
+-rw-r--r-- 1 root root   159 Aug  8 14:47 timer_t.h
+-rw-r--r-- 1 root root   796 Aug  8 14:47 wint_t.h
+
+./x86_64-linux-gnu/gnu:
+total 28
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 6 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 1434 Aug  8 14:47 lib-names-64.h
+-rw-r--r-- 1 root root  467 Aug  8 14:47 lib-names.h
+-rw-r--r-- 1 root root 1264 Aug  8 14:47 libc-version.h
+-rw-r--r-- 1 root root  481 Aug  8 14:47 stubs-64.h
+-rw-r--r-- 1 root root  384 Aug  8 14:47 stubs.h
+
+./x86_64-linux-gnu/sys:
+total 496
+drwxr-xr-x 3 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 6 root root  4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root  3383 Aug  8 14:47 acct.h
+-rw-r--r-- 1 root root  1260 Aug  8 14:47 auxv.h
+-rw-r--r-- 1 root root    86 Aug  8 14:47 bitypes.h
+-rw-r--r-- 1 root root 27011 Aug  8 14:47 cdefs.h
+-rw-r--r-- 1 root root  3576 Aug  8 14:47 debugreg.h
+-rw-r--r-- 1 root root   922 Aug  8 14:47 dir.h
+-rw-r--r-- 1 root root  1024 Aug  8 14:47 elf.h
+-rw-r--r-- 1 root root  5300 Aug  8 14:47 epoll.h
+-rw-r--r-- 1 root root    19 Aug  8 14:47 errno.h
+-rw-r--r-- 1 root root  1400 Aug  8 14:47 eventfd.h
+-rw-r--r-- 1 root root  1292 Aug  8 14:47 fanotify.h
+-rw-r--r-- 1 root root    19 Aug  8 14:47 fcntl.h
+-rw-r--r-- 1 root root  1675 Aug  8 14:47 file.h
+-rw-r--r-- 1 root root  1188 Aug  8 14:47 fsuid.h
+-rw-r--r-- 1 root root  6230 Aug  8 14:47 gmon.h
+-rw-r--r-- 1 root root  2577 Aug  8 14:47 gmon_out.h
+-rw-r--r-- 1 root root  3901 Aug  8 14:47 inotify.h
+-rw-r--r-- 1 root root  5086 Aug  8 14:47 io.h
+-rw-r--r-- 1 root root  2027 Aug  8 14:47 ioctl.h
+-rw-r--r-- 1 root root  1462 Aug  8 14:47 ipc.h
+-rw-r--r-- 1 root root  1112 Aug  8 14:47 kd.h
+-rw-r--r-- 1 root root  1204 Aug  8 14:47 klog.h
+-rw-r--r-- 1 root root  5615 Aug  8 14:47 mman.h
+-rw-r--r-- 1 root root 12054 Aug  8 14:47 mount.h
+-rw-r--r-- 1 root root  2623 Aug  8 14:47 msg.h
+-rw-r--r-- 1 root root 11111 Aug  8 14:47 mtio.h
+-rw-r--r-- 1 root root  3149 Aug  8 14:47 param.h
+-rw-r--r-- 1 root root   923 Aug  8 14:47 pci.h
+-rw-r--r-- 1 root root  1127 Aug  8 14:47 perm.h
+-rw-r--r-- 1 root root  2723 Aug  8 14:47 personality.h
+-rw-r--r-- 1 root root  2031 Aug  8 14:47 pidfd.h
+drwxr-xr-x 2 root root  4096 Aug 27 02:00 [01;34mplatform[0m
+-rw-r--r-- 1 root root  3025 Aug  8 14:47 poll.h
+-rw-r--r-- 1 root root  1795 Aug  8 14:47 prctl.h
+-rw-r--r-- 1 root root  4338 Aug  8 14:47 procfs.h
+-rw-r--r-- 1 root root  1959 Aug  8 14:47 profil.h
+-rw-r--r-- 1 root root  6680 Aug  8 14:47 ptrace.h
+-rw-r--r-- 1 root root 19539 Aug  8 14:47 queue.h
+-rw-r--r-- 1 root root  5173 Aug  8 14:47 quota.h
+-rw-r--r-- 1 root root  1584 Aug  8 14:47 random.h
+-rw-r--r-- 1 root root  1182 Aug  8 14:47 raw.h
+-rw-r--r-- 1 root root  1633 Aug  8 14:47 reboot.h
+-rw-r--r-- 1 root root  1827 Aug  8 14:47 reg.h
+-rw-r--r-- 1 root root  4034 Aug  8 14:47 resource.h
+-rw-r--r-- 1 root root  6410 Aug  8 14:47 rseq.h
+-rw-r--r-- 1 root root  5039 Aug  8 14:47 select.h
+-rw-r--r-- 1 root root  2660 Aug  8 14:47 sem.h
+-rw-r--r-- 1 root root  1806 Aug  8 14:47 sendfile.h
+-rw-r--r-- 1 root root  2131 Aug  8 14:47 shm.h
+-rw-r--r-- 1 root root    20 Aug  8 14:47 signal.h
+-rw-r--r-- 1 root root  1714 Aug  8 14:47 signalfd.h
+-rw-r--r-- 1 root root  1182 Aug  8 14:47 single_threaded.h
+-rw-r--r-- 1 root root 12382 Aug  8 14:47 socket.h
+-rw-r--r-- 1 root root   141 Aug  8 14:47 socketvar.h
+-rw-r--r-- 1 root root    29 Aug  8 14:47 soundcard.h
+-rw-r--r-- 1 root root 13769 Aug  8 14:47 stat.h
+-rw-r--r-- 1 root root  2094 Aug  8 14:47 statfs.h
+-rw-r--r-- 1 root root  2821 Aug  8 14:47 statvfs.h
+-rw-r--r-- 1 root root  1593 Aug  8 14:47 swap.h
+-rw-r--r-- 1 root root  1256 Aug  8 14:47 syscall.h
+-rw-r--r-- 1 root root  1518 Aug  8 14:47 sysinfo.h
+-rw-r--r-- 1 root root  7840 Aug  8 14:47 syslog.h
+-rw-r--r-- 1 root root  2103 Aug  8 14:47 sysmacros.h
+-rw-r--r-- 1 root root    74 Aug  8 14:47 termios.h
+-rw-r--r-- 1 root root  9139 Aug  8 14:47 time.h
+-rw-r--r-- 1 root root  1155 Aug  8 14:47 timeb.h
+-rw-r--r-- 1 root root  2583 Aug  8 14:47 timerfd.h
+-rw-r--r-- 1 root root  1597 Aug  8 14:47 times.h
+-rw-r--r-- 1 root root  2967 Aug  8 14:47 timex.h
+-rw-r--r-- 1 root root  2499 Aug  8 14:47 ttychars.h
+-rw-r--r-- 1 root root  3568 Aug  8 14:47 ttydefaults.h
+-rw-r--r-- 1 root root  5713 Aug  8 14:47 types.h
+-rw-r--r-- 1 root root  5842 Aug  8 14:47 ucontext.h
+-rw-r--r-- 1 root root  6796 Aug  8 14:47 uio.h
+-rw-r--r-- 1 root root  1467 Aug  8 14:47 un.h
+-rw-r--r-- 1 root root    20 Aug  8 14:47 unistd.h
+-rw-r--r-- 1 root root  5208 Aug  8 14:47 user.h
+-rw-r--r-- 1 root root  2481 Aug  8 14:47 utsname.h
+-rw-r--r-- 1 root root   161 Aug  8 14:47 vfs.h
+-rw-r--r-- 1 root root  1880 Aug  8 14:47 vlimit.h
+-rw-r--r-- 1 root root  1199 Aug  8 14:47 vm86.h
+-rw-r--r-- 1 root root    22 Aug  8 14:47 vt.h
+-rw-r--r-- 1 root root  6106 Aug  8 14:47 wait.h
+-rw-r--r-- 1 root root  4627 Aug  8 14:47 xattr.h
+
+./x86_64-linux-gnu/sys/platform:
+total 12
+drwxr-xr-x 2 root root 4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 3 root root 4096 Aug 27 02:00 [01;34m..[0m
+-rw-r--r-- 1 root root 2423 Aug  8 14:47 x86.h
+
+./xen:
+total 36
+drwxr-xr-x  2 root root  4096 Aug 27 02:00 [01;34m.[0m
+drwxr-xr-x 34 root root  4096 Aug 27 02:03 [01;34m..[0m
+-rw-r--r--  1 root root  3743 Aug  2 14:15 evtchn.h
+-rw-r--r--  1 root root  2679 Aug  2 14:15 gntalloc.h
+-rw-r--r--  1 root root 11022 Aug  2 14:15 gntdev.h
+-rw-r--r--  1 root root  4837 Aug  2 14:15 privcmd.h
+
+./xfs:
+total 8
+drwxr-xr-x  2 root root 4096 Mar 31 17:31 [01;34m.[0m
+drwxr-xr-x 34 root root 4096 Aug 27 02:03 [01;34m..[0m
+[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;ubuntu@ip-172-31-6-66: /usr/include[01;32mubuntu@ip-172-31-6-66[00m:[01;34m/usr/include[00m$ cd
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ mkdir Assignment1
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mAssignment1[0m  typescript
+[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ cd Assignment1/
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ mkdir MyDoc MyAssignment MyCode
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls
+[?2004l[0m[01;34mMyAssignment[0m  [01;34mMyCode[0m  [01;34mMyDoc[0m
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ touch sample.txt sample.c
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls
+[?2004l[0m[01;34mMyAssignment[0m  [01;34mMyCode[0m  [01;34mMyDoc[0m  sample.c  sample.txt
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ echo 'This is the sample text for the assignment1' >> sam ple.txt
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls
+[?2004l[0m[01;34mMyAssignment[0m  [01;34mMyCode[0m  [01;34mMyDoc[0m  sample.c  sample.txt
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ echo '# in[K[K[Kinclude <stdio.h>
+[?2004l[?2004h> int main(){
+[?2004l[?2004h> printf("this is the sample c programming for the assignment 1"):[K;
+[?2004l[?2004h> } >> sample.c
+[?2004l[?2004h> '
+[?2004l#include <stdio.h>
+int main(){
+printf("this is the sample c programming for the assignment 1");
+} >> sample.c
+
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ echo '#include <stdio.h>
+[?2004l[?2004h> int main(){
+[?2004l[?2004h> printf("This is the sample c programming for the assignment1[K 1'[K"_)[K[K):[K;
+[?2004l[?2004h> }' >> sample.c
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ cat sample.c
+[?2004l#include <stdio.h>
+int main(){
+printf("This is the sample c programming for the assignment 1");
+}
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ mv sample..[Kc/My[K[K[K ./MyCode/
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ mv sample.txt ./m[KMyC[KDoc/
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls 
+[?2004l[0m[01;34mMyAssignment[0m  [01;34mMyCode[0m  [01;34mMyDoc[0m
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ cd MyDoc/
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyDoc[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyDoc[00m$ ls -al [K[K[K[K[K[K[Kcd .[K[K[K[Kcd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls -al ./MyDoc/
+[?2004ltotal 12
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep  6 05:43 [0m[01;34m.[0m
+drwxrwxr-x 5 ubuntu ubuntu 4096 Sep  6 05:43 [01;34m..[0m
+-rw-rw-r-- 1 ubuntu ubuntu   44 Sep  6 05:41 sample.txt
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ ls -al ./MyCode/
+[?2004ltotal 12
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep  6 05:43 [0m[01;34m.[0m
+drwxrwxr-x 5 ubuntu ubuntu 4096 Sep  6 05:43 [01;34m..[0m
+-rw-rw-r-- 1 ubuntu ubuntu   98 Sep  6 05:42 sample.c
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ cd MyDoc
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyDoc[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyDoc[00m$ ls
+[?2004lsample.txt
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyDoc[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyDoc[00m$ mv sample.txt code.c[K[K.[K[K[K[K[K[Kte[K[K text.txt
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyDoc[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyDoc[00m$ ls
+[?2004ltext.txt
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyDoc[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyDoc[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ cd My [KCode
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyCode[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyCode[00m$ ls
+[?2004lsample.c
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyCode[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyCode[00m$ mv sample.c C[Kcode.c
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyCode[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyCode[00m$ ls
+[?2004lcode.c
+[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1/MyCode[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1/MyCode[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~/Assignment1[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~/Assignment1[00m$ cd
+[?2004l[?2004h]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ (reverse-i-search)`': [K]0;ubuntu@ip-172-31-6-66: ~[01;32mubuntu@ip-172-31-6-66[00m:[01;34m~[00m$ [?2004l
+exit
+
+Script done on 2024-09-06 05:45:15+00:00 [COMMAND_EXIT_CODE="0"]
