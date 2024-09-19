@@ -5,6 +5,7 @@ Email: semin.bae@stonybrook.edu
 
 #include <stdio.h>
 
+/* Declare enum to use typedef */
 typedef enum DayOfWeek{
     Sunday,
     Monday,
@@ -15,6 +16,7 @@ typedef enum DayOfWeek{
     Saturday
 } DayOfWeek;
 
+/* Function to print Sun ~ Sat according to DayofWeek */
 void printDay(DayOfWeek day) {
     switch (day) {
         case Sunday:
@@ -45,6 +47,7 @@ void printDay(DayOfWeek day) {
 }
 
 int main(int argc, char **argv) {
+    
     printDay(Sunday);
     printDay(Monday);
     printDay(Tuesday);

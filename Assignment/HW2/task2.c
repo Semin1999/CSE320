@@ -30,9 +30,9 @@ void sumAndAverage(int* pnt, int cnt, double** dst){
     *(*dst+1) = average;
 
     /* Print sum and average from the memory address */
-    printf("\nPrint in sumAndAverage function from memory address not the variables");
-    printf("\nThe Sum in List Elements: %.2f \n", **dst);
-    printf("\nthe Average in List Elements: %.2f \n", *(*dst+1));
+    printf("\nPrint in sumAndAverage function from memory address not the variables\n");
+    printf("The Sum in List Elements: %.2f \n", **dst);
+    printf("the Average in List Elements: %.2f \n", *(*dst+1));
 }
 
 void testMyFunction(){
@@ -57,18 +57,19 @@ void testMyFunction(){
         scanf("%d", &pointer[i]);
     }
 
-    /* make dynamic allocated memory for the destination */
-    double** destination = malloc(2 * sizeof(double));
+    /* Initialize the destination address */
+    double* destination;
 
     /* Function call */
-    sumAndAverage(pointer, count, destination);
+    sumAndAverage(pointer, count, &destination);
 
     /* Print sum and Average from testFunction */
-    printf("Print sum and Average from testFunction");
-    printf("The Sum in List Elements: %.2f \n", **destination);
-    printf("the Average in List Elements: %.2f \n", destination+1);
+    printf("Print sum and Average from testFunction\n");
+    printf("The Sum in List Elements: %.2f \n", *destination);
+    printf("the Average in List Elements: %.2f \n", *(destination+1));
 }
 
 int main(int argc, char** argv) {
     testMyFunction();
+    return 0;
 }
