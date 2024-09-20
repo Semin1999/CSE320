@@ -37,8 +37,6 @@ void sumAndAverage(int* pnt, int cnt, double** dst){
 
 void testMyFunction(){
     
-
-
     /* Initialize count variable */
     int count = 0;
 
