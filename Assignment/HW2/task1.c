@@ -48,7 +48,10 @@ void printDay(DayOfWeek day) {
 
 /* Check how it works! */
 int main(int argc, char **argv) {
+
     printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+    printf("============\n== Task 1 ==\n============\n");
+
     printDay(Sunday);
     printDay(Monday);
     printDay(Tuesday);

@@ -91,6 +91,10 @@ char* findCommonWord(char listWord[MAX_WORDCOUNT][MAX_WORDLENGTH], int totalCoun
 }
 
 int main(int argc, char **argv) {
+
+    printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+    printf("============\n== Task 6 ==\n============\n");
+
     /* Initialize the listWord and fileName with given Max Length */
     char listWord[MAX_WORDCOUNT][MAX_WORDLENGTH];
     char fileName[MAX_FILENAME];

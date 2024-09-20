@@ -9,6 +9,7 @@ Email: semin.bae@stonybrook.edu
 
 int main() {
     printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+    printf("============\n= Task 4,5(Calculator) =\n============\n");
 
     /* Initalize variables */
     int selectNubmer = 0;

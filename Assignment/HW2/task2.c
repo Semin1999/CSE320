@@ -69,7 +69,8 @@ void testMyFunction(){
 
 /* Check How it works! */
 int main(int argc, char** argv) {
-    printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+        printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+    printf("============\n== Task 2 ==\n============\n");
     testMyFunction();
     return 0;
 }

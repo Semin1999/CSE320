@@ -126,6 +126,7 @@ int validate_data(struct Automobile* original, struct Automobile* readData, int 
 int main(int argc, char** argv) {
 
     printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+    printf("============\n== Task 3 ==\n============\n");
 
     int count = 0;
 
