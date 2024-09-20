@@ -37,7 +37,7 @@ void sumAndAverage(int* pnt, int cnt, double** dst){
 
 void testMyFunction(){
     
-    printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
+
 
     /* Initialize count variable */
     int count = 0;
@@ -70,6 +70,7 @@ void testMyFunction(){
 }
 
 int main(int argc, char** argv) {
+    printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
     testMyFunction();
     return 0;
 }
