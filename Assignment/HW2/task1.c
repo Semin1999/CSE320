@@ -46,8 +46,9 @@ void printDay(DayOfWeek day) {
     }
 }
 
+/* Validate how it works! */
 int main(int argc, char **argv) {
-    
+
     printDay(Sunday);
     printDay(Monday);
     printDay(Tuesday);
