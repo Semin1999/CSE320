@@ -67,7 +67,7 @@ void testMyFunction(){
     printf("the Average in List Elements: %.2f \n", *(destination+1));
 }
 
-/* Validate How it works! */
+/* Check How it works! */
 int main(int argc, char** argv) {
     printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
     testMyFunction();
