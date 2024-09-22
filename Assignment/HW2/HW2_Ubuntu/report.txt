@@ -1,0 +1,41 @@
+09/22/2024
+CSE320
+Tony Mione
+Semin Bae (114730530)
+
+Assignment2 Instructions / Report 
+
+Run the Program
+1. First, navigate to the directory where the project is located on Ubuntu.
+2. You should see six files in the project folder: Makefile, assignment2.c, auto.data, calculator.c, math_operations.c, and mathoperation.h.
+3. Use the command make to build the project with the Makefile. (you can also delete those file through command make clear)
+4. After running that command, you’ll get some .o object files along with the built files, assignment2 and calculator.
+5. Before you run assignment2 files, make sure to have a file for Task 6 (the program that finds and analyzes the most frequent word) ready in the same location with the Assignment2 program (for example, name.txt).
+6. You can run the assignment2 program using the command ./assignment2 (for the calculator, use ./calculator).
+
+Assignment2 program Instructions:
+1. Task 1 prints the days of the week (Sunday to Saturday) using a typedef enum with their abbreviations.
+2. In Task 2, you input how many numbers you want to sum and average. Then input the numbers that you want to calculate. The program then outputs both the total and the average, showing the values stored in memory and the current variable for comparison.
+3. Task 3 requires you to enter the length of an automobile struct list. Then, for each automobile, you’ll input the manufacturer, model, year, color, and price. The entered values are written in binary to the auto.data file. Later, the program reads them back in binary and checks if they match, displaying “All data are same!” if they do. (There’s no I/O error handling: there’s only instruction for I/O error handling in task6)
+4. For Task 6, after entering the name of the file you ready, the program will output the total word count, the most frequent word, and how many times it appears.
+
+Calculator program Instructions:
+1. Start the calculator by entering the command ./calculator.
+2. You’ll see options 1 through 7, and if you input something outside that range, it will ask you to try again.
+3. Options 1 to 3 require two numbers and will print their sum, difference, and product before exiting.
+4. Options 4 to 7 ask for one number, where options 4 and 6 calculate the square, while options 5 and 7 calculate the cube. Note that options 6 and 7 are implemented as macro functions.
+
+Report:
+This assignment was really challenging for me. 
+It was my first experience with C programming since taking the old CSE220 class, and I invested a lot of time into it. 
+The hardest part was dealing with memory management, especially since the concept of pointers was so new to me, and I’m still not fully comfortable with it. 
+I know future assignments won’t be any easier, but I’m determined to put in more effort as I did this time.
+However, I found it impressive to learn how to handle basic C programming concepts, use libraries, and even create my own header files.
+Building the program using a Makefile was also a valuable experience.
+
+-------------------------------------------------------------------------------------
+And there are bunch of explanation for the code with annotation. (In every .c, .h file!)
+There are almost explanation annotation with every each lines
+
+https://docs.google.com/document/d/1X7eNX6m27nCYumh3isHGKIghqyjJWH7Bjr4RwCnjC58/edit?usp=sharing
+^^^ YOU CAN SEE THE FILE IN GOOGLE DOCS! (for comfortables to see it) ^^^
