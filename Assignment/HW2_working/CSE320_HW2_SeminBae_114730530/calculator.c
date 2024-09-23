@@ -7,7 +7,7 @@ Email: semin.bae@stonybrook.edu
 /* include header what I made */
 #include "math_operations.h"
 
-int main() {
+void calculator() {
     printf("Name: Semin Bae \nEmail: semin.bae@stonybrook.edu\n");
     printf("============\n= Task 4,5(Calculator) =\n============\n");
 
@@ -70,5 +70,5 @@ int main() {
         break;
     }
 
-    return 0;
 }
+

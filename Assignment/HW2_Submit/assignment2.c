@@ -6,6 +6,10 @@ Email: semin.bae@stonybrook.edu
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/* include header what I made */
+#include "math_operations.h"
+
+void calculate();
 
 /* Declare enum to use typedef */
 typedef enum DayOfWeek{
@@ -425,6 +429,8 @@ int main(int argc, char **argv) {
 
     printf("============\n== Task 3 ==\n============\n");
     task3();
+
+    calculate();
     
     printf("============\n== Task 6 ==\n============\n");
     task6();

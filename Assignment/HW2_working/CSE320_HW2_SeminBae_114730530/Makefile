@@ -15,7 +15,7 @@ QFLAG=-L/usr/lib/x86_64-linux-gnu -lm
 
 all: assignment2 calculator
 
-assignment2: assignment2.o math_operations.o
+assignment2: assignment2.o math_operations.o calculator.o
 	$(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
 
 calculator: calculator.o math_operations.o
