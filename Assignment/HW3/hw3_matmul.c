@@ -5,14 +5,16 @@
 #define ROWS_B 8
 #define COLS_B 9
 
-void matrix_multiply(int A[ROWS_A][COLS_A], int B[ROWS_B][COLS_B], int
-			C[ROWS_A][COLS_B]) {
-    for (int i = 0; i < ROWS_A; i++) {
-        for (int j = 0; j < COLS_B; j++) {
-            (Implement your code)// Initialize the result matrix el
-            for (int k = 0; k < COLS_A; k++) {
-                (Implement your code) // Perform matrix multiplicat
+void matrix_multiply(int A[ROWS_A][COLS_A], int B[ROWS_B][COLS_B], int C[ROWS_A][COLS_B]) {
+    for(int i = 0; i < ROWS_A; i++){
+        int mulNum = 0;
+        for(int j = 0; j < COLS_B; j++){
+            mulNum = 0;
+            for(int k = 0; k < COLS_A; k++){
+                mulNum += A[i][k] * B[k][j];
             }
+            // printf("matOut[%d][%d]: %d \n",i,j,mulNum);
+            C[i][j] = mulNum;
         }
     }
 }
@@ -44,10 +46,20 @@ int main() {
     int matOut[ROWS_A][COLS_B];
 
     // Multiply matrices matA and matB
-    (Implement your code)
+    matrix_multiply(matA, matB, matOut);
 
     // Print the result of the matrix multiplication
-    (Implement your code)
+    for(int i = 0; i < ROWS_A; i++){
+        printf("[ ");
+        for(int j = 0; j < COLS_B; j++){
+            if(j == (COLS_B - 1)){
+                printf("%d ]\n", matOut[i][j]);
+            }
+            else{
+                printf("%d, ", matOut[i][j]);
+            }
+        }
+    }
 
     return 0;
 }
