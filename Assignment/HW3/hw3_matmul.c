@@ -13,7 +13,6 @@ void matrix_multiply(int A[ROWS_A][COLS_A], int B[ROWS_B][COLS_B], int C[ROWS_A]
             for(int k = 0; k < COLS_A; k++){
                 mulNum += A[i][k] * B[k][j];
             }
-            // printf("matOut[%d][%d]: %d \n",i,j,mulNum);
             C[i][j] = mulNum;
         }
     }

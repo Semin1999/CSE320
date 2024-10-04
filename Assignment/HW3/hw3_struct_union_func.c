@@ -72,7 +72,7 @@ int main() {
     // Display the modified snnA information
     printf("snnA.commonData.intData : %d <- 'garbage value' since union save only one(the last) value of data type\n", snnA.commonData.intData);
     printf("snnA.commonData.doubleData : %.2f <- 'garbage value' since union save only one(the last) value of data type\n", snnA.commonData.doubleData);
-    printf("snnA.commonData.stringData : %s <- stringData was last assigned data\n", snnA.commonData.stringData);
+    printf("snnA.commonData.stringData : %s <- stringData was a last assigned data\n", snnA.commonData.stringData);
 
     return 0;
 }
