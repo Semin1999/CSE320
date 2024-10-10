@@ -39,8 +39,11 @@ void modifyData(SNN *snn, Data *data) {
 int main() {
     // Create an instance of the SNN structure
     SNN snnA;
+    // allocate memory space
     snnA.neuronName = malloc(50 * sizeof(char));
+    // copy the LIF Neuron in snnA.neuronName
     strcpy(snnA.neuronName, "LIF Neuron");
+    // set snnA.neuronNumber as 100
     snnA.neuronNumber = 100;
 
     // print it
@@ -57,7 +60,6 @@ int main() {
     strcpy(dataA.stringData, "Number of synapses and average weight"); 
     printf("dataA.stringData : %s\n", dataA.stringData);
 
-    printf("\n-- After modify name and number --\n");
     // Call the modifyName function by reference to change the name of snnA
     modifyName(&snnA, "Hodgkin-Huxley");
     printf("snnA.neuronName : %s\n", snnA.neuronName);

@@ -141,12 +141,9 @@ _main:                                  ; @main
 	adrp	x0, l_.str.6@PAGE
 	add	x0, x0, l_.str.6@PAGEOFF
 	bl	_printf
-	adrp	x0, l_.str.7@PAGE
-	add	x0, x0, l_.str.7@PAGEOFF
-	bl	_printf
 	ldr	x0, [sp, #40]                   ; 8-byte Folded Reload
-	adrp	x1, l_.str.8@PAGE
-	add	x1, x1, l_.str.8@PAGEOFF
+	adrp	x1, l_.str.7@PAGE
+	add	x1, x1, l_.str.7@PAGEOFF
 	bl	_modifyName
 	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
 	ldur	x8, [x29, #-32]
@@ -171,20 +168,20 @@ _main:                                  ; @main
 	mov	x8, x9
 	mov	x9, sp
 	str	x8, [x9]
-	adrp	x0, l_.str.9@PAGE
-	add	x0, x0, l_.str.9@PAGEOFF
+	adrp	x0, l_.str.8@PAGE
+	add	x0, x0, l_.str.8@PAGEOFF
 	bl	_printf
 	ldur	d0, [x29, #-16]
 	mov	x8, sp
 	str	d0, [x8]
-	adrp	x0, l_.str.10@PAGE
-	add	x0, x0, l_.str.10@PAGEOFF
+	adrp	x0, l_.str.9@PAGE
+	add	x0, x0, l_.str.9@PAGEOFF
 	bl	_printf
 	ldur	x8, [x29, #-16]
 	mov	x9, sp
 	str	x8, [x9]
-	adrp	x0, l_.str.11@PAGE
-	add	x0, x0, l_.str.11@PAGEOFF
+	adrp	x0, l_.str.10@PAGE
+	add	x0, x0, l_.str.10@PAGEOFF
 	bl	_printf
 	ldur	w0, [x29, #-44]                 ; 4-byte Folded Reload
 	ldp	x29, x30, [sp, #96]             ; 16-byte Folded Reload
@@ -215,18 +212,15 @@ l_.str.6:                               ; @.str.6
 	.asciz	"dataA.stringData : %s\n"
 
 l_.str.7:                               ; @.str.7
-	.asciz	"\n-- After modify name and number --\n"
-
-l_.str.8:                               ; @.str.8
 	.asciz	"Hodgkin-Huxley"
 
-l_.str.9:                               ; @.str.9
+l_.str.8:                               ; @.str.8
 	.asciz	"snnA.commonData.intData : %d <- 'garbage value' since union save only one(the last) value of data type\n"
 
-l_.str.10:                              ; @.str.10
+l_.str.9:                               ; @.str.9
 	.asciz	"snnA.commonData.doubleData : %.2f <- 'garbage value' since union save only one(the last) value of data type\n"
 
-l_.str.11:                              ; @.str.11
-	.asciz	"snnA.commonData.stringData : %s <- stringData was last assigned data\n"
+l_.str.10:                              ; @.str.10
+	.asciz	"snnA.commonData.stringData : %s <- stringData was a last assigned data\n"
 
 .subsections_via_symbols
