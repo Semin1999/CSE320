@@ -1,3 +1,6 @@
+/* Name : Semin Bae (114730530)
+   E-mail : semin.bae@stonybrook.edu */
+
 #include "common.h"
 #include "heap_mgr.h"
 
@@ -39,29 +42,40 @@ static block_t *extend_heap(heap_mgr_t *self, size_t size) {
 
     //find and update the last block
     //TODO: increase brk and get the oldbrk
-    //hint: use heap->sbrk
+
+    // Expand the heap by 'size' and save the previous end (oldbrk) //
+    char *last_sbrk = heap -> sbrk(heap, size);
 
 
     //TODO: from the oldbrk, find the last block (its containing block)
-    //hint: use containerof
-    //hint: oldbrk is the address of the block's payload
+
+    // Get the block containing oldbrk, using it as the start of the block’s data //
+    block_t *last_block = containerof(last_sbrk, block_t, payload);
 
 
     //TODO: set the header of the last block
-    //hint: use bmgr->set_header
+
+    // Set the header of the last block with size and mark it as free (0) //
+    bmgr -> set_header(last_block, size, 0);
 
 
     //the new last block
     //TODO: get the next block of the last block
 
+    // Get the next block that follows last_block //
+    block_t *new_block = bmgr -> next(last_block);
+
 
     //TODO: copy epilog to the header of the block
 
+    // Mark the end of the heap with an epilog in the new block’s header //
+    new_block -> header = bmgr -> hdr_make_epilog();
+
 
     //TODO: coalese the last block and return the result
-    //hint: use self->coalesce
-
-
+    
+    // Merge free blocks if possible, and return the updated block //
+    return self -> coalesce(self, last_block);
 }
 
 static block_t *coalesce(heap_mgr_t *self, block_t *curr) {
@@ -70,22 +84,30 @@ static block_t *coalesce(heap_mgr_t *self, block_t *curr) {
     block_t *next = bmgr->next(curr);
 
     //TODO: handle the four cases
-    //hint: compute the new size and update the header
-    //hint: use bmgr->set_header
+
+    // Those are the way of four possible cases when we are going to coalesce, which is shown class slide. //
     if(bmgr->inuse(prev) &&
        bmgr->inuse(next)) {
-
+        // Case 1: Both previous and next blocks are in use //
+        return curr;
     }
     else if( bmgr->inuse(prev) &&
             !bmgr->inuse(next)) {
-
+                bmgr -> set_header(curr, bmgr -> size(curr) + bmgr -> size(next), 0);
+                // Case 2: Previous block is in use, next block is free //
+                return curr;
     }
     else if(!bmgr->inuse(prev) &&
              bmgr->inuse(next)) {
-
+                // Case 3: Previous block is free, next block is in use //
+                bmgr -> set_header(prev, bmgr -> size(curr) + bmgr -> size(prev), 0);
+                return prev;
     }
     else {
-
+        // Case 4: Both previous and next blocks are free //
+        bmgr -> set_header(prev, bmgr -> size(curr) + bmgr -> size(next) + bmgr -> size(prev), 0);
+        bmgr -> set_header(next, bmgr -> size(curr) + bmgr -> size(next) + bmgr -> size(prev), 0);
+        return prev;
     }
 }
 
@@ -95,13 +117,13 @@ static block_t *find_free_block(heap_mgr_t *self, size_t size) {
     block_t *pos;
 
     //TODO: find and return a free block whose size is at least size
-    //hint: step through the linked list of blocks using for loop
-    //hint: start pos from self->blist_head
-    //hint: stop when the pos' header is equal to epilog
-    //hint: use bmgr->next to find the next block 
 
-
-    return NULL;
+    /* Search for a free block with at least 'size' memory and start from the head of the block list
+         and check each block stop when reaching the epilog (end marker) */
+    for(pos = self->blist_head; pos->header != epilog; pos = bmgr->next(pos)){
+        if(!bmgr->inuse(pos) && bmgr->size(pos) >= size) return pos;
+    }
+    return NULL; // No suitable block found
 }
 
 static size_t mem_aligned_size(heap_mgr_t *self, size_t size) {
@@ -117,15 +139,27 @@ static void *mem_alloc(heap_mgr_t *self, size_t size) {
     size = self->mem_aligned_size(self, size + 2*sizeof(block_hdr_t));
 
     //TODO: find a free block larger than size or extend the heap
-
+    
+    // Find a free block of sufficient size or expand the heap if needed //
+    curr = find_free_block(self, size);
+    if (curr == NULL) curr = extend_heap(self, size);
+    
     //TODO: compute next_size. next_size is the size of the remaining
-    //      block after split
+    
+    // Calculate the size of the remaining space after allocation (next_size)
+    next_size = bmgr -> size(curr) - size;
 
     //TODO: set the header of the free block
+    
+    // Set the header of the allocated block and mark it as in-use (1)
+    bmgr -> set_header(curr, size, 1);
 
     if(next_size >= 2*sizeof(block_hdr_t)) {
         //split
         //TODO: set the header of the remaining block
+
+        // If remaining space is enough for a new block, set its header //
+        bmgr -> set_header(bmgr -> next(curr), next_size, 0);
     }
     else {
         //no split
@@ -133,6 +167,9 @@ static void *mem_alloc(heap_mgr_t *self, size_t size) {
     }
 
     //TODO: return the address of the curr's payload
+    
+    // Return the address of the payload section of the allocated block //
+    return &(curr -> payload);
 }
 
 static void mem_free(heap_mgr_t *self, void *ptr) {
@@ -140,11 +177,19 @@ static void mem_free(heap_mgr_t *self, void *ptr) {
     block_t *curr;
 
     //TODO: find the block_t address of ptr
-    //hint: use containerof
+
+    // Find the block_t address from the given payload pointer (ptr)
+    curr = containerof(ptr, block_t, payload);
 
     //TODO: update the inuse field of curr
+    
+    // Mark the block as free by updating the header's inuse field to 0 //
+    bmgr->set_header(curr, bmgr->size(curr), 0);
 
     //TODO: coalese
+
+    // Coalesce (merge) with neighboring free blocks if possible //
+    self->coalesce(self, curr);
 }
 
 heap_mgr_t *make_heap_mgr_default() {

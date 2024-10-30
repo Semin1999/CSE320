@@ -1,3 +1,6 @@
+/* Name : Semin Bae (114730530)
+   E-mail : semin.bae@stonybrook.edu */
+
 #include <stdlib.h>
 #include "block.h"
 
@@ -45,16 +48,28 @@ static size_t block_size(block_t *blk) {
 static void block_set_header(block_t *blk, size_t size, int inuse) {
     inuse = !!inuse;    //make it either 0 or 1
     //TODO: update blk's header and its next block's prev_footer
+
+    // Set blk's header with given size and in-use status //
+    blk->header = hdr_make(size, inuse);
+
+    // Update the previous footer of the next block //
+    block_next(blk)->prev_footer = blk->header;
 }
 
 static block_t *block_next(block_t *blk) {
     char *ptr = (char*)blk;
     //TODO: return the next block
+
+    // Return the next block by moving pointer forward by header size //
+    return (block_t*)(ptr + hdr_size(blk->header));
 }
 
 static block_t *block_prev(block_t *blk) {
     char *ptr = (char*)blk;
     //TODO: return the previous block
+
+    // Return the previous block by moving pointer backward by footer size //
+    return (block_t*)(ptr - hdr_size(blk->prev_footer));
 }
 
 // block manager
