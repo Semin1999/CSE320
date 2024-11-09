@@ -104,11 +104,80 @@ int main() {
             // and the right side of the pipe
             
             // -----
-            
+            // Extract the arguments for the left command
+            char *left_arguments[MAX_ARGUMENTS];
+            for (int j = 0; j < i; j++) {
+                left_arguments[j] = arguments[j];
+            }
+            left_arguments[i] = NULL;
+
+            // Extract the arguments for the right command
+            char *right_arguments[MAX_ARGUMENTS];
+            int k = 0;
+            for (int j = i + 1; arguments[j] != NULL; j++) {
+                right_arguments[k] = arguments[j];
+                k++;
+            }
+            right_arguments[k] = NULL;
+
+            // Fork the left child process
+            pid_t pid_left = fork();
+            if (pid_left < 0) {
+                perror("Fork failed");
+                exit(EXIT_FAILURE);
+            } else if (pid_left == 0) {
+                // In left child
+                // Redirect input if needed
+                if (input_fd != 0) {
+                    dup2(input_fd, STDIN_FILENO);
+                    close(input_fd);
+                }
+                // Redirect output to pipe
+                close(pipes[0]); 
+                // Close unused read end
+                dup2(pipes[1], STDOUT_FILENO); 
+                // Redirect stdout to pipe write end
+                close(pipes[1]);
+                // Execute the left command
+                command_line_execute(left_arguments[0], left_arguments);
+                exit(EXIT_SUCCESS);
+            }
+
+            // Fork the right child process
+            pid_t pid_right = fork();
+            if (pid_right < 0) {
+                perror("Fork failed");
+                exit(EXIT_FAILURE);
+            } else if (pid_right == 0) {
+                // In right child
+                // Redirect output if needed
+                if (output_fd != 1) {
+                    dup2(output_fd, STDOUT_FILENO);
+                    close(output_fd);
+                }
+                // Redirect input from pipe
+                close(pipes[1]); 
+                // Close unused write end
+                dup2(pipes[0], STDIN_FILENO); 
+                // Redirect stdin to pipe read end
+                close(pipes[0]);
+                // Execute the right command
+                command_line_execute(right_arguments[0], right_arguments);
+                exit(EXIT_SUCCESS);
+            }
+
+            // Parent process
+            // Close both ends of pipe in parent
+            close(pipes[0]);
+            close(pipes[1]);
+
+            // Wait for both child processes
+            waitpid(pid_left, NULL, 0);
+            waitpid(pid_right, NULL, 0);
             // -----
 
-            }
         }
+    }
 
         // Fork a child process to execute the command except the pipe command
 	if (!pipe_flag) {
@@ -134,10 +203,9 @@ int main() {
             } else {
                 // Parent process
 	        // TODO: Wait child process and check if it is exited or terminated
-            waitpid(pid, NULL, 0); // Wait for child process to terminate
-            }
-
-	}
+            int status;
+            waitpid(pid, &status, 0);
+	    }
     }
 
     return 0;
