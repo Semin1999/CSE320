@@ -205,7 +205,8 @@ int main() {
 	        // TODO: Wait child process and check if it is exited or terminated
             int status;
             waitpid(pid, &status, 0);
-	    }
+	        }
+        }
     }
 
     return 0;
