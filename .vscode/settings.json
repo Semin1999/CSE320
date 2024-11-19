@@ -4,7 +4,9 @@
         "math.h": "c",
         "stdlib.h": "c",
         "string.h": "c",
-        "heap_mgr.h": "c"
+        "heap_mgr.h": "c",
+        "socket.h": "c",
+        "inet.h": "c"
     },
     "code-runner.runInTerminal": true
 }
